@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-export default function accountController(_req: Request, res: Response)
+export default function productController(_req: Request, res: Response)
 
 {
 const products = {
