@@ -12,7 +12,7 @@ app.get('/', (req, res) => res.send('Express + TypeScript Server'));
 app.get('/accounts', accountController);
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://mongo:27017/todo', {useNewUrlParser: true}).catch(function(){
+mongoose.connect('mongodb://mongo:27017/', {useNewUrlParser: true}).catch(function(){
   process.exit(1)
 })
 
