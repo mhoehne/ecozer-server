@@ -24,7 +24,7 @@ const accountschema = new Schema<Account>({
 const AccountModel = model<Account>('Account', accountschema);
 
 
-
+//GET
 export async function listAccount(_req: Request, res: Response){
 
   const accounts = await AccountModel.find({});
@@ -33,6 +33,8 @@ export async function listAccount(_req: Request, res: Response){
 res.send({accounts});
 }
 
+
+//POST
 export async function createAccount(req: Request, res: Response){
 
   const createNewAccount = new AccountModel(req.body)
@@ -49,3 +51,14 @@ export async function createAccount(req: Request, res: Response){
   const account = await AccountModel.findOne({ emailAddress: req.body.emailAddress }).exec();
   return res.status(201).send(account);
 }
+
+
+//PUT
+export async function updateAccount(req: Request, res: Response) {
+  
+  const account = await AccountModel.findOne({ emailAddress: req.body.emailAddress }).exec();
+  return res.status(201).send(account);
+}
+
+
+//DELETE
