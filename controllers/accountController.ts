@@ -1,51 +1,51 @@
 import { Request, Response } from 'express';
+import { Schema, model, connect } from 'mongoose';
 
-export default function accountController(_req: Request, res: Response)
-
-{
-const accounts = {
-  "accounts" : [
-    {
-      "id": 0,
-      "emailAddress": "account0@email-test.com",
-      "title": "TitleTest",
-      "firstName": "FirstNameTest",
-      "lastName": "LastNameTest",
-      "companyName": "CompanyNameTest",
-      "lastLogin": "00-12-2021"
-    },
-
-    {
-      "id": 1,
-      "emailAddress": "admin@email.com",
-      "title": "Mister",
-      "firstName": "AdminFirstName",
-      "lastName": "AdminLastName",
-      "companyName": "AdminCompanyName",
-      "lastLogin": "01-12-2021"
-    },
-
-    {
-      "id": 2,
-      "emailAddress": "ironman@email.com",
-      "title": "Lord",
-      "firstName": "Tony",
-      "lastName": "Stark",
-      "companyName": "Stark Industries",
-      "lastLogin": "02-12-2021"
-    },
-
-    {
-      "id": 3,
-      "emailAddress": "batman@email.com",
-      "title": "Sir",
-      "firstName": "Bruce",
-      "lastName": "Wayne",
-      "companyName": "Wayne Enterprises",
-      "lastLogin": "03-12-2021"
-    }
-  ]
+interface Account {
+  emailAddress: string;
+  password: string;
+  title: string;
+  firstName: string;
+  lastName: string;
+  companyName: string;
+  lastLogin: string;
 }
 
-res.send(accounts);
+const accountschema = new Schema<Account>({
+  emailAddress: { type: String, required: true, unique: true },
+  password: { type: String, required: true },
+  title: { type: String, required: false },
+  firstName: { type: String, required: true },
+  lastName: { type: String, required: true },
+  companyName: { type: String, required: true },
+  lastLogin: { type: String, required: false },
+});
+
+const AccountModel = model<Account>('Account', accountschema);
+
+
+
+export async function listAccount(_req: Request, res: Response){
+
+  const accounts = await AccountModel.find({});
+
+  
+res.send({accounts});
+}
+
+export async function createAccount(req: Request, res: Response){
+
+  const createNewAccount = new AccountModel(req.body)
+  
+  try {
+    await createNewAccount.save();
+  }
+
+  catch (e) {
+    res.status(500).send('account already exists')
+    return
+  }
+  
+  const account = await AccountModel.findOne({ emailAddress: req.body.emailAddress }).exec();
+  return res.status(201).send(account);
 }
