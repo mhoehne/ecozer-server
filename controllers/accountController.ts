@@ -9,7 +9,6 @@ interface Account {
   firstName: string;
   lastName: string;
   companyName: string;
-  lastLogin: string;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -22,7 +21,6 @@ const accountSchema = new Schema<Account>({
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
   companyName: { type: String, required: true },
-  lastLogin: { type: String, required: false },
   createdAt: { type: Date, immutable: true, default: () => Date.now() },
   updatedAt: { type: Date, default: () => Date.now()},
 }, { timestamps: true });
