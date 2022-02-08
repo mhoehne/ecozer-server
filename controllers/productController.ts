@@ -1,4 +1,103 @@
 import { Request, Response } from 'express';
+import { Schema, model, connect } from 'mongoose';
+
+interface Product {
+  product_id: number;
+  productName: string;
+  productLink: string;
+  productCompany: string;
+  productDescription: string;
+  zielgruppe: string;
+  anwendungsbereich: string;
+  gradDerIntegrierung: string;
+  objektAspekt: string;
+  systemgrenzen: string;
+  betrachtungskonzept: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+const productSchema = new Schema<Product>({
+  product_id: {type: Number, required: true, immutable: true},
+  productName: {type: String, required: true },
+  productLink: { type: String, required: true, lowercase: true },
+  productCompany: { type: String, required: true, minlength: 3 },
+  productDescription: { type: String, required: false },
+  zielgruppe: { type: String, required: true },
+  anwendungsbereich: { type: String, required: true },
+  gradDerIntegrierung: { type: String, required: true },
+  objektAspekt: { type: String, required: true },
+  systemgrenzen: { type: String, required: true },
+  betrachtungskonzept: { type: String, required: true },
+  createdAt: { type: Date, immutable: true, default: () => Date.now() },
+  updatedAt: { type: Date, default: () => Date.now()},
+}, { timestamps: true });
+
+const ProductModel = model<Product>('Product', productSchema);
+
+/************************************************************************************************/
+//GET / READ
+export async function listProduct(_req: Request, res: Response){
+
+  const products = await ProductModel.find({});
+
+  
+res.send({products});
+}
+
+/************************************************************************************************/
+//POST / CREATE
+export async function createProduct(req: Request, res: Response){
+
+  const createNewProduct = new ProductModel(req.body)
+  
+  productSchema.pre("save", function (next) {
+    this.updatedAt = Date.now()
+    next()
+  })
+
+  try {
+    await createNewProduct.save();
+  }
+
+  catch (e) {
+    res.status(500).send('product already exists')
+    return
+  }
+  
+  const product = await ProductModel.findOne({ product_id: req.body.product_id }).exec();
+  return res.status(201).send(product);
+}
+
+/************************************************************************************************/
+//PUT / UPDATE
+export async function updateProduct(req: Request, res: Response) {
+  
+  try {
+    const product = await ProductModel.findOneAndUpdate({ product_id: req.body.product_id }, req.body, {new: true} ).exec();
+    return res.status(202).send(product);
+  }
+
+  catch (e) {
+    res.status(500).send(e)
+    return
+  }
+}
+
+/************************************************************************************************/
+//DELETE
+export async function deleteProduct(req: Request, res: Response) {
+  
+  try {
+    await ProductModel.findOneAndDelete({ product_id: req.body.product_id }).exec();
+    return res.status(202).send('product successfully deleted');
+  }
+
+  catch (e) {
+    res.status(500).send(e)
+    return
+  }
+}
 
 export default function productController(_req: Request, res: Response)
 
