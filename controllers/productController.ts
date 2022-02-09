@@ -3,6 +3,7 @@ import { Schema, model, connect } from 'mongoose';
 
 interface Product {
   product_id: number;
+  account_id: string;
   productName: string;
   productLink: string;
   productCompany: string;
@@ -19,6 +20,7 @@ interface Product {
 
 const productSchema = new Schema<Product>({
   product_id: {type: Number, required: true, immutable: true},
+  account_id: {type: String, required: false, immutable: false},
   productName: {type: String, required: true },
   productLink: { type: String, required: true, lowercase: true },
   productCompany: { type: String, required: true, minlength: 3 },
