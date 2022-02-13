@@ -22,8 +22,7 @@ const accountSchema = new Schema<Account>({
   lastName: { type: String, required: true },
   companyName: { type: String, required: true },
   createdAt: { type: Date, immutable: true, default: () => Date.now() },
-  updatedAt: { type: Date, default: () => Date.now()},
-}, { timestamps: true });
+  updatedAt: { type: Date, default: () => Date.now()}}, { timestamps: true });
 
 const AccountModel = model<Account>('Account', accountSchema);
 
