@@ -219,7 +219,8 @@ const products = {
       "account_id": 0,
       "productName": "default",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
+
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -270,7 +271,7 @@ const products = {
       "account_id": 1,
       "productName": "Umberto 5",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -306,7 +307,7 @@ const products = {
       "account_id": 1,
       "productName": "Quentic",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -350,7 +351,7 @@ const products = {
       "account_id": 1,
       "productName": "Paul - Plattform für Arbeitsschutz- und Umweltrecht",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -383,7 +384,7 @@ const products = {
       "account_id": 1,
       "productName": "GaBI",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -420,7 +421,7 @@ const products = {
       "account_id": 1,
       "productName": "360report",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -454,7 +455,7 @@ const products = {
       "account_id": 2,
       "productName": "e!Sankey",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -489,7 +490,7 @@ const products = {
       "account_id": 2,
       "productName": "IUWA-Abfallmanager",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -525,7 +526,7 @@ const products = {
       "account_id": 2,
       "productName": "360 Sustainability Essentials Software",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -561,7 +562,7 @@ const products = {
       "account_id": 2,
       "productName": "DataCross",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -597,7 +598,7 @@ const products = {
       "account_id": 2,
       "productName": "Eco-Cockpit",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -630,7 +631,7 @@ const products = {
       "account_id": 2,
       "productName": "Efficio",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -667,7 +668,7 @@ const products = {
       "account_id": 2,
       "productName": "ENIT Agent",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -704,7 +705,7 @@ const products = {
       "account_id": 2,
       "productName": "eSight",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -739,7 +740,7 @@ const products = {
       "account_id": 2,
       "productName": "gutwin",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -776,7 +777,8 @@ const products = {
       "account_id": 3,
       "productName": "FridaCarb",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
+
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -808,7 +810,7 @@ const products = {
       "account_id": 3,
       "productName": "Envis - Environmental System",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -842,7 +844,7 @@ const products = {
       "account_id": 3,
       "productName": "IngSoft InterWatt",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -872,7 +874,7 @@ const products = {
       "account_id": 3,
       "productName": "Velocity EHS",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -905,7 +907,7 @@ const products = {
       "account_id": 3,
       "productName": "EHS Software AURIGA+",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -939,7 +941,7 @@ const products = {
       "account_id": 3,
       "productName": "iSystain",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -973,7 +975,7 @@ const products = {
       "account_id": 3,
       "productName": "QUMcheck 4.0",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -1005,7 +1007,7 @@ const products = {
       "account_id": 3,
       "productName": "QuB-Tool",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -1041,7 +1043,7 @@ const products = {
       "account_id": 3,
       "productName": "PE International SoFI Software",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -1073,7 +1075,7 @@ const products = {
       "account_id": 3,
       "productName": "QEHS-Management",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
@@ -1109,7 +1111,7 @@ const products = {
       "account_id": 3,
       "productName": "Nachhaltigkeitslösung von Oracle",
       "productImage": {},
-      "productLink": {},
+      "productLink": "https://company.de",
       "productCompany": "ABC Software Company",
       "productDescription": "This software makes your live easier! I promise.",
       "zielgruppe": [
