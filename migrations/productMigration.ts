@@ -1,8 +1,3 @@
-import { Request, Response } from 'express';
-import { Schema, model, connect } from 'mongoose';
-import { type } from 'os';
-import mongoose from 'mongoose';
-import autoIncrement from 'mongoose-auto-increment';
 import {ProductModel, productSchema} from '../controllers/productController';
 
 export default async function productMigration(){
