@@ -5,6 +5,7 @@ import cors from 'cors';
 import mongoose, { Mongoose } from 'mongoose';
 import autoIncrement from 'mongoose-auto-increment';
 import { listProduct, createProduct, updateProduct, deleteProduct } from './controllers/productController';
+import productMigration from './migrations/productMigration';
 // rest of the code remains same
 const app = express();
 app.use(cors({
@@ -25,6 +26,9 @@ app.get('/products', listProduct);
 app.post('/products', createProduct);
 app.put('/products', updateProduct);
 app.delete('/products', deleteProduct);
+
+//product migration
+app.post('/migration/products', productMigration);
 
 mongoose.connect('mongodb://mongo:27017/')
 .catch(function(){
