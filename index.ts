@@ -1,18 +1,30 @@
 import express from 'express';
-import indexController from './controllers/indexController';
-import {listAccount, createAccount, updateAccount, deleteAccount } from './controllers/accountController';
+import 
+{ 
+  listAccount, 
+  createAccount, 
+  updateAccount, 
+  deleteAccount 
+} from './controllers/accountController';
+import 
+{ 
+  listProduct, 
+  createProduct, 
+  updateProduct, 
+  deleteProduct 
+} from './controllers/productController';
 import cors from 'cors';
-import mongoose, { Mongoose } from 'mongoose';
-import autoIncrement from 'mongoose-auto-increment';
-import { listProduct, createProduct, updateProduct, deleteProduct } from './controllers/productController';
+import mongoose from 'mongoose';
 import productMigration from './migrations/productMigration';
+
 // rest of the code remains same
 const app = express();
 app.use(cors({
   origin: '*',
 }))
 
-app.use(express.json()) // for parsing application/json
+// for parsing application/json
+app.use(express.json()) 
 
 const PORT = 8000;
 app.get('/', (req, res) => res.send('Express + TypeScript Server'));
