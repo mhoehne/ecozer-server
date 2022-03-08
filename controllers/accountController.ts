@@ -1,5 +1,13 @@
-import { Request, Response } from 'express';
-import { Schema, model, connect } from 'mongoose';
+import 
+{ 
+  Request, 
+  Response 
+} from 'express';
+import 
+{ 
+  Schema, 
+  model
+} from 'mongoose';
 
 interface Account {
   isAdmin: boolean;
@@ -13,7 +21,7 @@ interface Account {
   updatedAt: Date;
 }
 
-const accountSchema = new Schema<Account>({
+export const accountSchema = new Schema<Account>({
   isAdmin: {type: Boolean, required: false, default: false },
   emailAddress: { type: String, required: true, unique: true, lowercase: true },
   password: { type: String, required: true, minlength: 8 },
@@ -24,7 +32,7 @@ const accountSchema = new Schema<Account>({
   createdAt: { type: Date, immutable: true, default: () => Date.now() },
   updatedAt: { type: Date, default: () => Date.now()}}, { timestamps: true });
 
-const AccountModel = model<Account>('Account', accountSchema);
+export const AccountModel = model<Account>('Account', accountSchema);
 
 /************************************************************************************************/
 //GET / READ

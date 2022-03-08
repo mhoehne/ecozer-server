@@ -16,6 +16,7 @@ import
 import cors from 'cors';
 import mongoose from 'mongoose';
 import productMigration from './migrations/productMigration';
+import accountMigration from './migrations/productMigration';
 
 // rest of the code remains same
 const app = express();
@@ -41,6 +42,9 @@ app.delete('/products', deleteProduct);
 
 //product migration
 app.post('/migration/products', productMigration);
+
+//account migration
+app.post('/migration/accounts', accountMigration);
 
 mongoose.connect('mongodb://mongo:27017/')
 .catch(function(){

@@ -1,5 +1,11 @@
-import { Response, Request } from 'express';
-import {ProductModel, productSchema} from '../controllers/productController';
+import 
+{ Response, 
+  Request 
+} from 'express';
+import 
+{ ProductModel, 
+  productSchema
+} from '../controllers/productController';
 
 export default async function productMigration(req: Request, res: Response){
 
