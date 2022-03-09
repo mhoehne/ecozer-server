@@ -17,6 +17,10 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import productMigration from './migrations/productMigration';
 import accountMigration from './migrations/productMigration';
+import 
+{ 
+  checkAuthentication
+} from './controllers/authenticationController';
 
 // rest of the code remains same
 const app = express();
@@ -47,6 +51,9 @@ app.post('/migration/products', productMigration);
 
 //account migration
 app.post('/migration/accounts', accountMigration);
+
+//authentication
+app.post('/authentication', checkAuthentication);
 
 mongoose.connect('mongodb://mongo:27017/')
 .catch(function(){
