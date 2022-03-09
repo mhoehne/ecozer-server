@@ -1,9 +1,11 @@
 import 
-{ Response, 
+{ 
+  Response, 
   Request 
 } from 'express';
 import 
-{ ProductModel, 
+{ 
+  ProductModel, 
   productSchema
 } from '../controllers/productController';
 

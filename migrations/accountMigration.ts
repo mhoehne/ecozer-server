@@ -12,10 +12,23 @@ import
 export default async function accountMigration(req: Request, res: Response){
 
   const accounts = [
-      {
-
-      }
-    ]
+    {
+      "isAdmin": true,
+      "emailAddress": "martin.admin@domain.com",
+      "password": "admin1234",
+      "firstName": "Martin",
+      "lastName": "AdminTest",
+      "companyName": "Test Admin Company"
+    },
+    {
+      "isAdmin": false,
+      "emailAddress": "martin.user@domain.com",
+      "password": "user1234",
+      "firstName": "Martin",
+      "lastName": "UserTest",
+      "companyName": "Test User Company"
+    }
+  ]
 
 for (const account of accounts) {
   
