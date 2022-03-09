@@ -30,11 +30,13 @@ app.use(express.json())
 const PORT = 8000;
 app.get('/', (req, res) => res.send('Express + TypeScript Server'));
 
+// ACCOUNT
 app.get('/accounts', listAccount);
 app.post('/accounts', createAccount);
 app.put('/accounts', updateAccount);
 app.delete('/accounts', deleteAccount);
 
+// PRODUCT
 app.get('/products', listProduct);
 app.post('/products', createProduct);
 app.put('/products', updateProduct);
