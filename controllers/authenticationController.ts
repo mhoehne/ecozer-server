@@ -3,7 +3,10 @@ import
   Request, 
   Response 
 } from 'express';
-import { AccountModel } from "../controllers/accountController";
+import 
+{ 
+  AccountModel 
+} from "../controllers/accountController";
 
 async function canUserLogin(emailaddress: string, password: string) {
 
