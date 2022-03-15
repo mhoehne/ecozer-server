@@ -1,35 +1,32 @@
 import express from 'express';
-import 
-{ 
-  listAccount, 
-  createAccount, 
-  updateAccount, 
-  deleteAccount 
+import {
+  listAccount,
+  createAccount,
+  updateAccount,
+  deleteAccount,
 } from './controllers/accountController';
-import 
-{ 
-  listProduct, 
-  createProduct, 
-  updateProduct, 
-  deleteProduct 
+import {
+  listProduct,
+  createProduct,
+  updateProduct,
+  deleteProduct,
 } from './controllers/productController';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import productMigration from './migrations/productMigration';
 import accountMigration from './migrations/productMigration';
-import 
-{ 
-  checkAuthentication
-} from './controllers/authenticationController';
+import { checkAuthentication } from './controllers/authenticationController';
 
 // rest of the code remains same
 const app = express();
-app.use(cors({
-  origin: '*',
-}))
+app.use(
+  cors({
+    origin: '*',
+  })
+);
 
 // for parsing application/json
-app.use(express.json()) 
+app.use(express.json());
 
 const PORT = 8000;
 app.get('/', (req, res) => res.send('Express + TypeScript Server'));
@@ -55,10 +52,9 @@ app.post('/migration/accounts', accountMigration);
 //authentication
 app.post('/authentication', checkAuthentication);
 
-mongoose.connect('mongodb://mongo:27017/')
-.catch(function(){
+mongoose.connect('mongodb://mongo:27017/').catch(function () {
   process.exit(1);
-})
+});
 
 app.listen(PORT, () => {
   console.log(`⚡️[server]: Server is running at https://localhost:${PORT}`);
