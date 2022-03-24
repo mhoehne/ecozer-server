@@ -43,6 +43,17 @@ export async function listAccount(_req: Request, res: Response) {
   res.send({ accounts });
 }
 
+export async function GetOneAccount(req: Request, res: Response) {
+  const accounts = await AccountModel.findOne({
+    emailAddress: req.params.email,
+  });
+  if (accounts === null) {
+    res.sendStatus(404);
+  }
+
+  res.send(accounts);
+}
+
 /************************************************************************************************/
 //POST / CREATE
 export async function createAccount(req: Request, res: Response) {

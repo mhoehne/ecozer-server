@@ -4,6 +4,7 @@ import {
   createAccount,
   updateAccount,
   deleteAccount,
+  GetOneAccount,
 } from './controllers/accountController';
 import {
   listProduct,
@@ -33,6 +34,7 @@ app.get('/', (req, res) => res.send('Express + TypeScript Server'));
 
 // ACCOUNT
 app.get('/accounts', listAccount);
+app.get('/accounts/:email', GetOneAccount);
 app.post('/accounts', createAccount);
 app.put('/accounts', updateAccount);
 app.delete('/accounts', deleteAccount);
