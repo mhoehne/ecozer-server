@@ -21,6 +21,8 @@ export default async function accountMigration(req: Request, res: Response) {
     },
   ];
 
+  const checkAccount = [];
+
   for (const account of accounts) {
     const createNewAccount = new AccountModel(account);
 
@@ -28,13 +30,14 @@ export default async function accountMigration(req: Request, res: Response) {
       this.updatedAt = Date.now();
       next();
     });
-
-    try {
-      await createNewAccount.save();
-    } catch (e) {
-      console.error(e);
-      return;
-    }
+    const saveAccount = createNewAccount.save();
+    checkAccount.push(saveAccount);
   }
+  try {
+    await Promise.all(checkAccount);
+  } catch (e) {
+    console.error(e);
+  }
+
   res.send();
 }

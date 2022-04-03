@@ -49,6 +49,7 @@ export async function GetOneAccount(req: Request, res: Response) {
   });
   if (accounts === null) {
     res.sendStatus(404);
+    return;
   }
 
   res.send(accounts);
@@ -82,7 +83,7 @@ export async function createAccount(req: Request, res: Response) {
 export async function updateAccount(req: Request, res: Response) {
   try {
     const account = await AccountModel.findOneAndUpdate(
-      { emailAddress: req.body.emailAddress },
+      { _id: req.body._id },
       req.body,
       { new: true }
     ).exec();

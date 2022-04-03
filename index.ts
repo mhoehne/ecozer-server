@@ -15,7 +15,7 @@ import {
 import cors from 'cors';
 import mongoose from 'mongoose';
 import productMigration from './migrations/productMigration';
-import accountMigration from './migrations/productMigration';
+import accountMigration from './migrations/accountMigration';
 import { checkAuthentication } from './controllers/authenticationController';
 
 // rest of the code remains same
