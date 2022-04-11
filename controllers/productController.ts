@@ -9,7 +9,7 @@ interface Zielgruppe {
   Umweltbeauftragte: Boolean;
   Fachabteilung: Boolean;
   Mitarbeiter: Boolean;
-  externeStakeholder: Boolean;
+  'externe Stakeholder': Boolean;
   Behörden: Boolean;
 }
 
@@ -19,7 +19,7 @@ const zielgruppeSchema = new Schema<Zielgruppe>(
     Umweltbeauftragte: { type: Boolean, required: true, default: false },
     Fachabteilung: { type: Boolean, required: true, default: false },
     Mitarbeiter: { type: Boolean, required: true, default: false },
-    externeStakeholder: { type: Boolean, required: true, default: false },
+    'externe Stakeholder': { type: Boolean, required: true, default: false },
     Behörden: { type: Boolean, required: true, default: false },
   },
   { _id: false, autoIndex: false }
@@ -54,17 +54,17 @@ const anwendungsbereichSchema = new Schema<Anwendungsbereich>(
 //gradDerIntegrierung
 interface GradDerIntegrierung {
   integriert: Boolean;
-  AddOn: Boolean;
-  StandAlone: Boolean;
-  SaaSLösung: Boolean;
+  'Add-On': Boolean;
+  'Stand-Alone': Boolean;
+  'SaaS-Lösung': Boolean;
 }
 
 const gradDerIntegrierungSchema = new Schema<GradDerIntegrierung>(
   {
     integriert: { type: Boolean, required: true, default: false },
-    AddOn: { type: Boolean, required: true, default: false },
-    StandAlone: { type: Boolean, required: true, default: false },
-    SaaSLösung: { type: Boolean, required: true, default: false },
+    'Add-On': { type: Boolean, required: true, default: false },
+    'Stand-Alone': { type: Boolean, required: true, default: false },
+    'SaaS-Lösung': { type: Boolean, required: true, default: false },
   },
   { _id: false, autoIndex: false }
 );
@@ -76,7 +76,7 @@ interface ObjektAspekt {
   Gefahrstoffe: Boolean;
   Emissionen: Boolean;
   Energie: Boolean;
-  StoffeStoffströme: Boolean;
+  'Stoffe/Stoffströme': Boolean;
   Kosten: Boolean;
 }
 
@@ -87,7 +87,7 @@ const objektAspektSchema = new Schema<ObjektAspekt>(
     Gefahrstoffe: { type: Boolean, required: true, default: false },
     Emissionen: { type: Boolean, required: true, default: false },
     Energie: { type: Boolean, required: true, default: false },
-    StoffeStoffströme: { type: Boolean, required: true, default: false },
+    'Stoffe/Stoffströme': { type: Boolean, required: true, default: false },
     Kosten: { type: Boolean, required: true, default: false },
   },
   { _id: false, autoIndex: false }
@@ -95,14 +95,14 @@ const objektAspektSchema = new Schema<ObjektAspekt>(
 
 //systemgrenzen
 interface Systemgrenzen {
-  StandortBetrieb: Boolean;
+  'Standort/Betrieb': Boolean;
   Prozess: Boolean;
   Produkt: Boolean;
 }
 
 const systemgrenzenSchema = new Schema<Systemgrenzen>(
   {
-    StandortBetrieb: { type: Boolean, required: true, default: false },
+    'Standort/Betrieb': { type: Boolean, required: true, default: false },
     Prozess: { type: Boolean, required: true, default: false },
     Produkt: { type: Boolean, required: true, default: false },
   },

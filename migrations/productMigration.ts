@@ -16,7 +16,7 @@ export default async function productMigration(req: Request, res: Response) {
         Umweltbeauftragte: true,
         Fachabteilung: true,
         Mitarbeiter: true,
-        externeStakeholder: true,
+        'externe Stakeholder': true,
         Behörden: true,
       },
       anwendungsbereich: {
@@ -30,8 +30,8 @@ export default async function productMigration(req: Request, res: Response) {
       gradDerIntegrierung: {
         integriert: true,
         'Add-On': true,
-        StandAlone: true,
-        SaaSLösung: true,
+        'Stand-Alone': true,
+        'SaaS-Lösung': true,
       },
       objektAspekt: {
         Abfall: true,
@@ -43,7 +43,7 @@ export default async function productMigration(req: Request, res: Response) {
         Kosten: true,
       },
       systemgrenzen: {
-        StandortBetrieb: true,
+        'Standort/Betrieb': true,
         Prozess: true,
         Produkt: true,
       },
