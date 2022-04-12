@@ -30,6 +30,7 @@ interface Anwendungsbereich {
   Gesetzeskonformität: Boolean;
   Zertifizierung: Boolean;
   Ökobilanzierung: Boolean;
+  Lebenszyklus: Boolean;
   Berichterstattung: Boolean;
   Entscheidungsunterstützung: Boolean;
   Arbeitsschutz: Boolean;
@@ -40,6 +41,7 @@ const anwendungsbereichSchema = new Schema<Anwendungsbereich>(
     Gesetzeskonformität: { type: Boolean, required: true, default: false },
     Zertifizierung: { type: Boolean, required: true, default: false },
     Ökobilanzierung: { type: Boolean, required: true, default: false },
+    Lebenszyklus: { tyoe: Boolean, requered: true, default: false },
     Berichterstattung: { type: Boolean, required: true, default: false },
     Entscheidungsunterstützung: {
       type: Boolean,
