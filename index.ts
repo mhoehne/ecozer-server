@@ -11,6 +11,7 @@ import {
   createProduct,
   updateProduct,
   deleteProduct,
+  incrementNewCount,
 } from './controllers/productController';
 import cors from 'cors';
 import mongoose from 'mongoose';
@@ -44,6 +45,7 @@ app.get('/products', listProduct);
 app.post('/products', createProduct);
 app.put('/products', updateProduct);
 app.delete('/products', deleteProduct);
+app.post('/products/:_id/view', incrementNewCount);
 
 //product migration
 app.post('/migration/products', productMigration);

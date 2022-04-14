@@ -41,7 +41,7 @@ const anwendungsbereichSchema = new Schema<Anwendungsbereich>(
     Gesetzeskonformität: { type: Boolean, required: true, default: false },
     Zertifizierung: { type: Boolean, required: true, default: false },
     Ökobilanzierung: { type: Boolean, required: true, default: false },
-    Lebenszyklus: { tyoe: Boolean, requered: true, default: false },
+    Lebenszyklus: { type: Boolean, required: true, default: false },
     Berichterstattung: { type: Boolean, required: true, default: false },
     Entscheidungsunterstützung: {
       type: Boolean,
@@ -100,6 +100,7 @@ interface Systemgrenzen {
   'Standort/Betrieb': Boolean;
   Prozess: Boolean;
   Produkt: Boolean;
+  Zwischenbetrieblich: Boolean;
 }
 
 const systemgrenzenSchema = new Schema<Systemgrenzen>(
@@ -107,6 +108,7 @@ const systemgrenzenSchema = new Schema<Systemgrenzen>(
     'Standort/Betrieb': { type: Boolean, required: true, default: false },
     Prozess: { type: Boolean, required: true, default: false },
     Produkt: { type: Boolean, required: true, default: false },
+    Zwischenbetrieblich: { type: Boolean, required: true, default: false },
   },
   { _id: false, autoIndex: false }
 );
@@ -142,6 +144,7 @@ interface Product {
   betrachtungskonzept: Betrachtungskonzept;
   createdAt: Date;
   updatedAt: Date;
+  viewCounter: number;
   isPublished: boolean;
 }
 
@@ -161,6 +164,7 @@ export const productSchema = new Schema<Product>(
     betrachtungskonzept: betrachtungskonzeptSchema,
     createdAt: { type: Date, immutable: true, default: () => Date.now() },
     updatedAt: { type: Date, default: () => Date.now() },
+    viewCounter: { type: Number, default: () => 0 },
     isPublished: { type: Boolean, required: true, default: false },
   },
   { timestamps: true }
@@ -172,8 +176,12 @@ export const ProductModel = model<Product>('Product', productSchema);
 
 /************************************************************************************************/
 //GET / READ
-export async function listProduct(_req: Request, res: Response) {
-  const products = await ProductModel.find({});
+export async function listProduct(req: Request, res: Response) {
+  const products = await ProductModel.find({})
+    .sort({
+      createdAt: req.query.sortOrder === 'asc' ? 1 : -1,
+    })
+    .limit(parseInt(req.query.limit as string));
 
   res.send({ products });
 }
@@ -208,6 +216,21 @@ export async function updateProduct(req: Request, res: Response) {
       { new: true }
     ).exec();
     return res.status(202).send(product);
+  } catch (e) {
+    res.status(500).send(e);
+    return;
+  }
+}
+
+export async function incrementNewCount(req: Request, res: Response) {
+  try {
+    const counter = await ProductModel.findOneAndUpdate(
+      {
+        _id: parseInt(req.params._id),
+      },
+      { $inc: { viewCounter: 1 } }
+    );
+    res.send({ counter, productID: req.params._id });
   } catch (e) {
     res.status(500).send(e);
     return;
