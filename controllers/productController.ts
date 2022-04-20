@@ -177,13 +177,32 @@ export const ProductModel = model<Product>('Product', productSchema);
 /************************************************************************************************/
 //GET / READ
 export async function listProduct(req: Request, res: Response) {
+  const sort: { [key: string]: number } = {};
+  if (req.query.sortBy === 'createdAt') {
+    sort.createdAt = req.query.sortOrder === 'asc' ? 1 : -1;
+  }
+  if (req.query.sortBy === 'viewCounter') {
+    sort.viewCounter = req.query.sortOrder === 'asc' ? 1 : -1;
+  }
+
   const products = await ProductModel.find({})
-    .sort({
-      createdAt: req.query.sortOrder === 'asc' ? 1 : -1,
-    })
+    .sort(sort)
     .limit(parseInt(req.query.limit as string));
 
   res.send({ products });
+}
+
+export async function getProduct(req: Request, res: Response) {
+  const product = await ProductModel.findOne({
+    _id: parseInt(req.params.id),
+  });
+
+  if (product === null) {
+    res.sendStatus(404);
+    return;
+  }
+
+  res.send(product);
 }
 
 /************************************************************************************************/

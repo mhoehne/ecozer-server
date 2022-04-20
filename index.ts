@@ -8,6 +8,7 @@ import {
 } from './controllers/accountController';
 import {
   listProduct,
+  getProduct,
   createProduct,
   updateProduct,
   deleteProduct,
@@ -45,6 +46,7 @@ app.get('/products', listProduct);
 app.post('/products', createProduct);
 app.put('/products', updateProduct);
 app.delete('/products', deleteProduct);
+app.get('/products/:id', getProduct);
 app.post('/products/:_id/view', incrementNewCount);
 
 //product migration
