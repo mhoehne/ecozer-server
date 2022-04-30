@@ -185,7 +185,128 @@ export async function listProduct(req: Request, res: Response) {
     sort.viewCounter = req.query.sortOrder === 'asc' ? 1 : -1;
   }
 
-  const products = await ProductModel.find({})
+  // START ### FILTER ON SEARCH PAGE ###
+  const query: { [key: string]: boolean } = {};
+  const zielgruppe = (req.query.zielgruppe as string[]) ?? [];
+  const anwendungsbereich = (req.query.anwendungsbereich as string[]) ?? [];
+  const gradDerIntegrierung = (req.query.gradDerIntegrierung as string[]) ?? [];
+  const objektAspekt = (req.query.objektAspekt as string[]) ?? [];
+  const systemgrenzen = (req.query.systemgrenzen as string[]) ?? [];
+  const betrachtungskonzept = (req.query.betrachtungskonzept as string[]) ?? [];
+
+  // ZIELGRUPPE
+  if (zielgruppe.includes('Geschäftsführung')) {
+    query['zielgruppe.Geschäftsführung'] = true;
+  }
+
+  if (zielgruppe.includes('Umweltbeauftragte')) {
+    query['zielgruppe.Umweltbeauftragte'] = true;
+  }
+
+  if (zielgruppe.includes('Fachabteilung')) {
+    query['zielgruppe.Fachabteilung'] = true;
+  }
+
+  if (zielgruppe.includes('Mitarbeiter')) {
+    query['zielgruppe.Mitarbeiter'] = true;
+  }
+
+  if (zielgruppe.includes('externe Stakeholder')) {
+    query['zielgruppe.externe Stakeholder'] = true;
+  }
+
+  if (zielgruppe.includes('Behörden')) {
+    query['zielgruppe.Behörden'] = true;
+  }
+
+  // ANWENDUNGSBEREICH
+  if (anwendungsbereich.includes('Gesetzeskonformität')) {
+    query['anwendungsbereich.Gesetzeskonformität'] = true;
+  }
+  if (anwendungsbereich.includes('Zertifizierung')) {
+    query['anwendungsbereich.Zertifizierung'] = true;
+  }
+  if (anwendungsbereich.includes('Ökobilanzierung')) {
+    query['anwendungsbereich.Ökobilanzierung'] = true;
+  }
+  if (anwendungsbereich.includes('Lebenszyklus')) {
+    query['anwendungsbereich.Lebenszyklus'] = true;
+  }
+  if (anwendungsbereich.includes('Berichterstattung')) {
+    query['anwendungsbereich.Berichterstattung'] = true;
+  }
+  if (anwendungsbereich.includes('Entscheidungsunterstützung')) {
+    query['anwendungsbereich.Entscheidungsunterstützung'] = true;
+  }
+  if (anwendungsbereich.includes('Arbeitsschutz')) {
+    query['anwendungsbereich.Arbeitsschutz'] = true;
+  }
+
+  // GRAD DER INTEGRIERUNG / INTEGRIERUNGSGRAD
+  if (gradDerIntegrierung.includes('integriert')) {
+    query['gradDerIntegrierung.integriert'] = true;
+  }
+  if (gradDerIntegrierung.includes('Add-On')) {
+    query['gradDerIntegrierung.Add-On'] = true;
+  }
+  if (gradDerIntegrierung.includes('Stand-Alone')) {
+    query['gradDerIntegrierung.Stand-Alone'] = true;
+  }
+  if (gradDerIntegrierung.includes('SaaS-Lösung')) {
+    query['gradDerIntegrierung.SaaS-Lösung'] = true;
+  }
+
+  // OBJEKTASPEKT
+  if (objektAspekt.includes('Abfall')) {
+    query['objektAspekt.Abfall'] = true;
+  }
+  if (objektAspekt.includes('Anlagen')) {
+    query['objektAspekt.Anlagen'] = true;
+  }
+  if (objektAspekt.includes('Gefahrstoffe')) {
+    query['objektAspekt.Gefahrstoffe'] = true;
+  }
+  if (objektAspekt.includes('Emissionen')) {
+    query['objektAspekt.AbfEmissionenall'] = true;
+  }
+  if (objektAspekt.includes('Energie')) {
+    query['objektAspekt.Energie'] = true;
+  }
+  if (objektAspekt.includes('Stoffe/Stoffströme')) {
+    query['objektAspekt.Stoffe/Stoffströme'] = true;
+  }
+  if (objektAspekt.includes('Kosten')) {
+    query['objektAspekt.Kosten'] = true;
+  }
+
+  // SYSTEMGRENZEN
+  if (systemgrenzen.includes('Standort/Betrieb')) {
+    query['systemgrenzen.Standort/Betrieb'] = true;
+  }
+  if (systemgrenzen.includes('Prozess')) {
+    query['systemgrenzen.Prozess'] = true;
+  }
+  if (systemgrenzen.includes('Produkt')) {
+    query['systemgrenzen.Produkt'] = true;
+  }
+  if (systemgrenzen.includes('Zwischenbetrieblich')) {
+    query['systemgrenzen.Zwischenbetrieblich'] = true;
+  }
+
+  //BETRACHTUNGSKONZEPT
+  if (betrachtungskonzept.includes('Verwaltungszentriert')) {
+    query['betrachtungskonzept.Verwaltungszentriert'] = true;
+  }
+  if (betrachtungskonzept.includes('Bewertungszentriert')) {
+    query['betrachtungskonzept.Verwaltungszentriert'] = true;
+  }
+  if (betrachtungskonzept.includes('Managementzentriert')) {
+    query['betrachtungskonzept.Verwaltungszentriert'] = true;
+  }
+
+  // END ### FILTER ON SEARCH PAGE ###
+
+  const products = await ProductModel.find(query)
     .sort(sort)
     .limit(parseInt(req.query.limit as string));
 
