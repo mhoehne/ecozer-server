@@ -58,6 +58,7 @@ app.post('/migration/accounts', accountMigration);
 //authentication
 app.post('/authentication', checkAuthentication);
 
+// replace mongo with environmentable variable
 mongoose.connect('mongodb://mongo:27017/').catch(function () {
   process.exit(1);
 });

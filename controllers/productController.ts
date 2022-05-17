@@ -305,10 +305,14 @@ export async function listProduct(req: Request, res: Response) {
   }
 
   // END ### FILTER ON SEARCH PAGE ###
+  let limit = req.query.limit as string;
+  if (!limit) {
+    limit = '10';
+  }
 
   const products = await ProductModel.find(query)
     .sort(sort)
-    .limit(parseInt(req.query.limit as string));
+    .limit(parseInt(limit));
 
   res.send({ products });
 }
