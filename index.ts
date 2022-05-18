@@ -59,9 +59,11 @@ app.post('/migration/accounts', accountMigration);
 app.post('/authentication', checkAuthentication);
 
 // replace mongo with environmentable variable
-mongoose.connect('mongodb://mongo:27017/').catch(function () {
-  process.exit(1);
-});
+mongoose
+  .connect(`mongodb://${process.env.MONGODB_HOSTNAME}:27017/`)
+  .catch(function () {
+    process.exit(1);
+  });
 
 app.listen(PORT, () => {
   console.log(`⚡️[server]: Server is running at https://localhost:${PORT}`);
