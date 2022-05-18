@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "dotenv": "^16.0.1",
     "express": "4.17.1",
     "mongoose": "^6.1.6",
@@ -20,10 +21,9 @@
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
   },
-  "type": "module",
   "scripts": {
     "build": "tsc --project ./",
-    "start": "nodemon -r ./env.ts index.ts",
-    "startdev": "nodemon -r ./.env.local index.ts"
+    "start": "export MONGODB_HOSTNAME=localhost && nodemon index.ts",
+    "startdev": "export MONGODB_HOSTNAME=mongo && nodemon index.ts"
   }
 }
