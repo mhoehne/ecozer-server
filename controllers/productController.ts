@@ -133,6 +133,7 @@ interface Product {
   product_id: number;
   account_id: number;
   productName: string;
+  // productImage:
   productLink: string;
   productCompany: string;
   productDescription: string;
@@ -150,7 +151,7 @@ interface Product {
 
 export const productSchema = new Schema<Product>(
   {
-    account_id: { type: Number, required: true, immutable: false },
+    account_id: { type: Number, required: true, immutable: true },
     productName: { type: String, required: true },
     // productImage:
     productLink: { type: String, required: true, lowercase: true },

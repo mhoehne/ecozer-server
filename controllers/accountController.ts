@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 import autoIncrement from 'mongoose-auto-increment';
 
 interface Account {
+  account_id: number;
   isAdmin: boolean;
   emailAddress: string;
   password: string;
@@ -22,6 +23,7 @@ export const accountSchema = new Schema<Account>(
       type: String,
       required: true,
       unique: true,
+      lowercase: true,
     },
     password: { type: String, required: true, minlength: 8 },
     title: { type: String, required: false },
