@@ -1,5 +1,7 @@
 import { Request, Response } from 'express';
 import { Schema, model } from 'mongoose';
+import mongoose from 'mongoose';
+import autoIncrement from 'mongoose-auto-increment';
 
 interface Account {
   isAdmin: boolean;
@@ -20,7 +22,6 @@ export const accountSchema = new Schema<Account>(
       type: String,
       required: true,
       unique: true,
-      lowercase: true,
     },
     password: { type: String, required: true, minlength: 8 },
     title: { type: String, required: false },
@@ -32,7 +33,8 @@ export const accountSchema = new Schema<Account>(
   },
   { timestamps: true }
 );
-
+autoIncrement.initialize(mongoose.connection);
+accountSchema.plugin(autoIncrement.plugin, 'Account');
 export const AccountModel = model<Account>('Account', accountSchema);
 
 /************************************************************************************************/
@@ -53,6 +55,18 @@ export async function GetOneAccount(req: Request, res: Response) {
   }
 
   res.send(accounts);
+}
+
+export async function GetOneByIDAccount(req: Request, res: Response) {
+  const account = await AccountModel.findOne({
+    accountID: req.params.account_id,
+  });
+  if (account === null) {
+    res.sendStatus(404);
+    return;
+  }
+
+  res.send(account);
 }
 
 /************************************************************************************************/

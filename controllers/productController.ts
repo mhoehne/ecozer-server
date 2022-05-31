@@ -131,7 +131,7 @@ const betrachtungskonzeptSchema = new Schema<Betrachtungskonzept>(
 
 interface Product {
   product_id: number;
-  account_id: string;
+  account_id: number;
   productName: string;
   productLink: string;
   productCompany: string;
@@ -150,7 +150,7 @@ interface Product {
 
 export const productSchema = new Schema<Product>(
   {
-    account_id: { type: String, required: false, immutable: false },
+    account_id: { type: Number, required: true, immutable: false },
     productName: { type: String, required: true },
     // productImage:
     productLink: { type: String, required: true, lowercase: true },
