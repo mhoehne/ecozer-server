@@ -5,6 +5,7 @@ import {
   updateAccount,
   deleteAccount,
   GetOneAccount,
+  GetOneAccountByID,
 } from './controllers/accountController';
 import {
   listProduct,
@@ -37,6 +38,7 @@ app.get('/', (req, res) => res.send('Express + TypeScript Server'));
 // ACCOUNT
 app.get('/accounts', listAccount);
 app.get('/accounts/:email', GetOneAccount);
+app.get('/accounts/:id', GetOneAccountByID);
 app.post('/accounts', createAccount);
 app.put('/accounts', updateAccount);
 app.delete('/accounts', deleteAccount);
