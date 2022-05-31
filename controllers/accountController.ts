@@ -57,7 +57,7 @@ export async function GetOneAccount(req: Request, res: Response) {
   res.send(accounts);
 }
 
-export async function GetOneByIDAccount(req: Request, res: Response) {
+export async function GetOneAccountByID(req: Request, res: Response) {
   const account = await AccountModel.findOne({
     accountID: req.params.account_id,
   });
