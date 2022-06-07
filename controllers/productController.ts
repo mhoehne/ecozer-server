@@ -194,6 +194,11 @@ export async function listProduct(req: Request, res: Response) {
   const objektAspekt = (req.query.objektAspekt as string[]) ?? [];
   const systemgrenzen = (req.query.systemgrenzen as string[]) ?? [];
   const betrachtungskonzept = (req.query.betrachtungskonzept as string[]) ?? [];
+  // filter by acount id
+  // query = {
+  //   account_id: 10
+  // }
+  // /products?account_id=10
 
   // ZIELGRUPPE
   if (zielgruppe.includes('Geschäftsführung')) {

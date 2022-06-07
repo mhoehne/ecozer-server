@@ -55,7 +55,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 1,
+      account_id: 0,
       productName: 'Umberto 5',
       productImage: {},
       productLink: 'https://company.de',
@@ -90,7 +90,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 1,
+      account_id: 0,
       productName: 'Quentic',
       productImage: {},
       productLink: 'https://company.de',
@@ -133,7 +133,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 1,
+      account_id: 0,
       productName: 'Paul - Plattform für Arbeitsschutz- und Umweltrecht',
       productImage: {},
       productLink: 'https://company.de',
@@ -164,7 +164,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 1,
+      account_id: 0,
       productName: 'GaBI',
       productImage: {},
       productLink: 'https://company.de',
@@ -200,7 +200,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 1,
+      account_id: 0,
       productName: '360report',
       productImage: {},
       productLink: 'https://company.de',
@@ -233,7 +233,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 2,
+      account_id: 0,
       productName: 'e!Sankey',
       productImage: {},
       productLink: 'https://company.de',
@@ -267,7 +267,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 2,
+      account_id: 0,
       productName: 'IUWA-Abfallmanager',
       productImage: {},
       productLink: 'https://company.de',
@@ -302,7 +302,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 2,
+      account_id: 0,
       productName: '360 Sustainability Essentials Software',
       productImage: {},
       productLink: 'https://company.de',
@@ -337,7 +337,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 2,
+      account_id: 0,
       productName: 'DataCross',
       productImage: {},
       productLink: 'https://company.de',
@@ -372,7 +372,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 2,
+      account_id: 0,
       productName: 'Eco-Cockpit',
       productImage: {},
       productLink: 'https://company.de',
@@ -404,7 +404,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 2,
+      account_id: 0,
       productName: 'Efficio',
       productImage: {},
       productLink: 'https://company.de',
@@ -440,7 +440,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 2,
+      account_id: 0,
       productName: 'ENIT Agent',
       productImage: {},
       productLink: 'https://company.de',
@@ -476,7 +476,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 2,
+      account_id: 0,
       productName: 'eSight',
       productImage: {},
       productLink: 'https://company.de',
@@ -509,7 +509,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 2,
+      account_id: 0,
       productName: 'gutwin',
       productImage: {},
       productLink: 'https://company.de',
@@ -545,7 +545,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 3,
+      account_id: 0,
       productName: 'FridaCarb',
       productImage: {},
       productLink: 'https://company.de',
@@ -577,7 +577,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 3,
+      account_id: 0,
       productName: 'Envis - Environmental System',
       productImage: {},
       productLink: 'https://company.de',
@@ -610,7 +610,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 3,
+      account_id: 0,
       productName: 'IngSoft InterWatt',
       productImage: {},
       productLink: 'https://company.de',
@@ -639,7 +639,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 3,
+      account_id: 0,
       productName: 'Velocity EHS',
       productImage: {},
       productLink: 'https://company.de',
@@ -671,7 +671,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 3,
+      account_id: 0,
       productName: 'EHS Software AURIGA+',
       productImage: {},
       productLink: 'https://company.de',
@@ -704,7 +704,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 3,
+      account_id: 0,
       productName: 'iSystain',
       productImage: {},
       productLink: 'https://company.de',
@@ -737,7 +737,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 3,
+      account_id: 0,
       productName: 'QUMcheck 4.0',
       productImage: {},
       productLink: 'https://company.de',
@@ -768,7 +768,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 3,
+      account_id: 0,
       productName: 'QuB-Tool',
       productImage: {},
       productLink: 'https://company.de',
@@ -803,7 +803,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 3,
+      account_id: 0,
       productName: 'PE International SoFI Software',
       productImage: {},
       productLink: 'https://company.de',
@@ -834,7 +834,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 3,
+      account_id: 0,
       productName: 'QEHS-Management',
       productImage: {},
       productLink: 'https://company.de',
@@ -869,7 +869,7 @@ export default async function productMigration(req: Request, res: Response) {
     },
 
     {
-      account_id: 3,
+      account_id: 0,
       productName: 'Nachhaltigkeitslösung von Oracle',
       productImage: {},
       productLink: 'https://company.de',

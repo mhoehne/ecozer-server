@@ -48,15 +48,15 @@ export async function listAccount(_req: Request, res: Response) {
 }
 
 export async function GetOneAccount(req: Request, res: Response) {
-  const accounts = await AccountModel.findOne({
+  const account = await AccountModel.findOne({
     emailAddress: req.params.email,
   });
-  if (accounts === null) {
+  if (account === null) {
     res.sendStatus(404);
     return;
   }
 
-  res.send(accounts);
+  res.send({ account });
 }
 
 export async function GetOneAccountByID(req: Request, res: Response) {
@@ -68,7 +68,7 @@ export async function GetOneAccountByID(req: Request, res: Response) {
     return;
   }
 
-  res.send(account);
+  res.send({ account });
 }
 
 /************************************************************************************************/
