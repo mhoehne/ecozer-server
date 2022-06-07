@@ -133,6 +133,7 @@ interface Product {
   product_id: number;
   account_id: number;
   productName: string;
+  // productImage:
   productLink: string;
   productCompany: string;
   productDescription: string;
@@ -150,7 +151,7 @@ interface Product {
 
 export const productSchema = new Schema<Product>(
   {
-    account_id: { type: Number, required: true, immutable: false },
+    account_id: { type: Number, required: true, immutable: true },
     productName: { type: String, required: true },
     // productImage:
     productLink: { type: String, required: true, lowercase: true },
@@ -193,6 +194,11 @@ export async function listProduct(req: Request, res: Response) {
   const objektAspekt = (req.query.objektAspekt as string[]) ?? [];
   const systemgrenzen = (req.query.systemgrenzen as string[]) ?? [];
   const betrachtungskonzept = (req.query.betrachtungskonzept as string[]) ?? [];
+  // filter by acount id
+  // query = {
+  //   account_id: 10
+  // }
+  // /products?account_id=10
 
   // ZIELGRUPPE
   if (zielgruppe.includes('Geschäftsführung')) {
