@@ -1,52 +1,1278 @@
-[
-  {
-    "account_id": 0,
-    "productName": "BUIS Name",
-    "productImage": {},
-    "productLink": "https://company.de",
+{
+  "products": [
+    {
+      "account_id": 0,
+      "productName": "BUIS Name",
+      "productImage": {},
+      "productLink": "https://company.de",
 
-    "productCompany": "ABC Software Company",
-    "productDescription": "This software makes your live easier! I promise.",
-    "zielgruppe": {
-      "Geschäftsführung": true,
-      "Umweltbeauftragte": true,
-      "Fachabteilung": true,
-      "Mitarbeiter": true,
-      "externe Stakeholder": true,
-      "Behörden": true
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": true,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": true,
+        "externe Stakeholder": true,
+        "Behörden": true
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": true,
+        "Zertifizierung": true,
+        "Ökobilanzierung": true,
+        "Berichterstattung": true,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": true
+      },
+      "gradDerIntegrierung": {
+        "integriert": true,
+        "Add-On": true,
+        "Stand-Alone": true,
+        "SaaS-Lösung": true
+      },
+      "objektAspekt": {
+        "Abfall": true,
+        "Anlagen": true,
+        "Gefahrstoffe": true,
+        "Emissionen": true,
+        "Energie": true,
+        "StoffeStoffströme": true,
+        "Kosten": true
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": true,
+        "Produkt": true
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": true,
+        "Bewertungszentriert": true,
+        "Managementzentriert": true
+      }
     },
-    "anwendungsbereich": {
-      "Gesetzeskonformität": true,
-      "Zertifizierung": true,
-      "Ökobilanzierung": true,
-      "Berichterstattung": true,
-      "Entscheidungsunterstützung": true,
-      "Arbeitsschutz": true
+    {
+      "account_id": 0,
+      "productName": "Umberto 5",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": false,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": false,
+        "externe Stakeholder": false,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": false,
+        "Zertifizierung": false,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": false,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": true,
+        "Anlagen": false,
+        "Gefahrstoffe": false,
+        "Emissionen": true,
+        "Energie": true,
+        "Stoffe/Stoffströme": false,
+        "Kosten": true
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": false,
+        "Prozess": true,
+        "Produkt": true,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": true,
+        "Managementzentriert": false
+      }
     },
-    "gradDerIntegrierung": {
-      "integriert": true,
-      "Add-On": true,
-      "Stand-Alone": true,
-      "SaaS-Lösung": true
+    {
+      "account_id": 0,
+      "productName": "Quentic",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": true,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": true,
+        "externe Stakeholder": true,
+        "Behörden": true
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": true,
+        "Zertifizierung": true,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": true,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": true
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": true
+      },
+      "objektAspekt": {
+        "Abfall": true,
+        "Anlagen": true,
+        "Gefahrstoffe": true,
+        "Emissionen": false,
+        "Energie": false,
+        "Stoffe/Stoffströme": true,
+        "Kosten": true
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": false,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": true,
+        "Bewertungszentriert": false,
+        "Managementzentriert": true
+      }
     },
-    "objektAspekt": {
-      "Abfall": true,
-      "Anlagen": true,
-      "Gefahrstoffe": true,
-      "Emissionen": true,
-      "Energie": true,
-      "StoffeStoffströme": true,
-      "Kosten": true
+    {
+      "account_id": 0,
+      "productName": "Paul - Plattform für Arbeitsschutz- und Umweltrecht",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": false,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": true,
+        "externe Stakeholder": false,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": true,
+        "Zertifizierung": true,
+        "Ökobilanzierung": false,
+        "Lebenszyklus": false,
+        "Berichterstattung": true,
+        "Entscheidungsunterstützung": false,
+        "Arbeitsschutz": true
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": false,
+        "SaaS-Lösung": true
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": false,
+        "Gefahrstoffe": false,
+        "Emissionen": false,
+        "Energie": false,
+        "Stoffe/Stoffströme": false,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": true,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": true,
+        "Bewertungszentriert": false,
+        "Managementzentriert": false
+      }
     },
-    "systemgrenzen": {
-      "Standort/Betrieb": true,
-      "Prozess": true,
-      "Produkt": true
+    {
+      "account_id": 0,
+      "productName": "GaBI",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": false,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": false,
+        "externe Stakeholder": true,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": false,
+        "Zertifizierung": false,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": true,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": false,
+        "Gefahrstoffe": false,
+        "Emissionen": true,
+        "Energie": true,
+        "Stoffe/Stoffströme": true,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": true,
+        "Produkt": true,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": true,
+        "Managementzentriert": true
+      }
     },
-    "betrachtungskonzept": {
-      "Verwaltungszentriert": true,
-      "Bewertungszentriert": true,
-      "Managementzentriert": true
+    {
+      "account_id": 0,
+      "productName": "360report",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": true,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": false,
+        "externe Stakeholder": true,
+        "Behörden": true
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": true,
+        "Zertifizierung": true,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": false,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": false,
+        "SaaS-Lösung": true
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": false,
+        "Gefahrstoffe": false,
+        "Emissionen": true,
+        "Energie": false,
+        "Stoffe/Stoffströme": false,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": false,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": true,
+        "Managementzentriert": false
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "e!Sankey",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": true,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": false,
+        "Mitarbeiter": false,
+        "externe Stakeholder": false,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": false,
+        "Zertifizierung": false,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": true,
+        "Anlagen": false,
+        "Gefahrstoffe": false,
+        "Emissionen": true,
+        "Energie": true,
+        "Stoffe/Stoffströme": true,
+        "Kosten": true
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": true,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": true,
+        "Managementzentriert": false
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "IUWA-Abfallmanager",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": false,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": false,
+        "externe Stakeholder": false,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": true,
+        "Zertifizierung": true,
+        "Ökobilanzierung": false,
+        "Lebenszyklus": false,
+        "Berichterstattung": true,
+        "Entscheidungsunterstützung": false,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": true
+      },
+      "objektAspekt": {
+        "Abfall": true,
+        "Anlagen": false,
+        "Gefahrstoffe": true,
+        "Emissionen": false,
+        "Energie": false,
+        "Stoffe/Stoffströme": true,
+        "Kosten": true
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": false,
+        "Produkt": true,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": true,
+        "Bewertungszentriert": false,
+        "Managementzentriert": false
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "360 Sustainability Essentials Software",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": true,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": false,
+        "externe Stakeholder": true,
+        "Behörden": true
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": true,
+        "Zertifizierung": true,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": false,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": true
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": false,
+        "Gefahrstoffe": false,
+        "Emissionen": true,
+        "Energie": false,
+        "Stoffe/Stoffströme": false,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": false,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": true,
+        "Managementzentriert": true
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "DataCross",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": false,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": false,
+        "externe Stakeholder": true,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": true,
+        "Zertifizierung": false,
+        "Ökobilanzierung": false,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": true,
+        "Stand-Alone": false,
+        "SaaS-Lösung": true
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": true,
+        "Gefahrstoffe": true,
+        "Emissionen": false,
+        "Energie": false,
+        "Stoffe/Stoffströme": true,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": false,
+        "Prozess": true,
+        "Produkt": true,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": true,
+        "Bewertungszentriert": true,
+        "Managementzentriert": false
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "Eco-Cockpit",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": false,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": true,
+        "externe Stakeholder": false,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": false,
+        "Zertifizierung": false,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": false,
+        "SaaS-Lösung": true
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": false,
+        "Gefahrstoffe": false,
+        "Emissionen": true,
+        "Energie": false,
+        "Stoffe/Stoffströme": false,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": true,
+        "Produkt": true,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": true,
+        "Managementzentriert": false
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "Efficio",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": false,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": true,
+        "externe Stakeholder": false,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": false,
+        "Zertifizierung": true,
+        "Ökobilanzierung": false,
+        "Lebenszyklus": false,
+        "Berichterstattung": true,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": false,
+        "SaaS-Lösung": true
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": true,
+        "Gefahrstoffe": false,
+        "Emissionen": false,
+        "Energie": true,
+        "Stoffe/Stoffströme": false,
+        "Kosten": true
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": true,
+        "Produkt": true,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": true,
+        "Managementzentriert": true
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "ENIT Agent",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": false,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": true,
+        "externe Stakeholder": false,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": false,
+        "Zertifizierung": true,
+        "Ökobilanzierung": false,
+        "Lebenszyklus": false,
+        "Berichterstattung": true,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": true,
+        "Gefahrstoffe": false,
+        "Emissionen": true,
+        "Energie": true,
+        "Stoffe/Stoffströme": false,
+        "Kosten": true
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": true,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": true,
+        "Managementzentriert": true
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "eSight",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": false,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": true,
+        "externe Stakeholder": false,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": false,
+        "Zertifizierung": true,
+        "Ökobilanzierung": false,
+        "Lebenszyklus": false,
+        "Berichterstattung": true,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": false,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": false,
+        "Gefahrstoffe": false,
+        "Emissionen": true,
+        "Energie": true,
+        "Stoffe/Stoffströme": false,
+        "Kosten": true
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": true,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": true,
+        "Managementzentriert": true
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "gutwin",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": false,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": false,
+        "externe Stakeholder": true,
+        "Behörden": true
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": true,
+        "Zertifizierung": false,
+        "Ökobilanzierung": false,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": true
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": true,
+        "Anlagen": true,
+        "Gefahrstoffe": true,
+        "Emissionen": false,
+        "Energie": false,
+        "Stoffe/Stoffströme": true,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": false,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": true,
+        "Bewertungszentriert": false,
+        "Managementzentriert": true
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "FridaCarb",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": false,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": false,
+        "externe Stakeholder": true,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": false,
+        "Zertifizierung": false,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": false,
+        "Gefahrstoffe": false,
+        "Emissionen": true,
+        "Energie": false,
+        "Stoffe/Stoffströme": false,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": false,
+        "Produkt": true,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": true,
+        "Managementzentriert": false
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "Envis - Environmental System",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": true,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": false,
+        "externe Stakeholder": false,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": true,
+        "Zertifizierung": false,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": false,
+        "Arbeitsschutz": true
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": true,
+        "Anlagen": false,
+        "Gefahrstoffe": true,
+        "Emissionen": false,
+        "Energie": false,
+        "Stoffe/Stoffströme": false,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": true,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": false,
+        "Managementzentriert": true
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "IngSoft InterWatt",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": false,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": false,
+        "Mitarbeiter": false,
+        "externe Stakeholder": false,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": false,
+        "Zertifizierung": true,
+        "Ökobilanzierung": false,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": false,
+        "Gefahrstoffe": false,
+        "Emissionen": false,
+        "Energie": true,
+        "Stoffe/Stoffströme": false,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": true,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": false,
+        "Managementzentriert": true
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "Velocity EHS",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": true,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": false,
+        "Mitarbeiter": false,
+        "externe Stakeholder": false,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": true,
+        "Zertifizierung": false,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": false,
+        "Arbeitsschutz": true
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": true,
+        "Anlagen": false,
+        "Gefahrstoffe": true,
+        "Emissionen": true,
+        "Energie": false,
+        "Stoffe/Stoffströme": false,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": false,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": false,
+        "Managementzentriert": true
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "EHS Software AURIGA+",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": true,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": false,
+        "Mitarbeiter": false,
+        "externe Stakeholder": false,
+        "Behörden": true
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": true,
+        "Zertifizierung": false,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": false,
+        "Arbeitsschutz": true
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": true,
+        "Gefahrstoffe": false,
+        "Emissionen": false,
+        "Energie": false,
+        "Stoffe/Stoffströme": false,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": true,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": true,
+        "Bewertungszentriert": false,
+        "Managementzentriert": true
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "iSystain",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": true,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": false,
+        "Mitarbeiter": false,
+        "externe Stakeholder": true,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": false,
+        "Zertifizierung": false,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": false,
+        "SaaS-Lösung": true
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": false,
+        "Gefahrstoffe": false,
+        "Emissionen": true,
+        "Energie": true,
+        "Stoffe/Stoffströme": true,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": false,
+        "Produkt": true,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": true,
+        "Managementzentriert": false
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "QUMcheck 4.0",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": false,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": false,
+        "Mitarbeiter": false,
+        "externe Stakeholder": false,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": false,
+        "Zertifizierung": true,
+        "Ökobilanzierung": false,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": false,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": true,
+        "Gefahrstoffe": false,
+        "Emissionen": true,
+        "Energie": true,
+        "Stoffe/Stoffströme": false,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": true,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": true,
+        "Bewertungszentriert": false,
+        "Managementzentriert": true
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "QuB-Tool",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": true,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": false,
+        "Mitarbeiter": false,
+        "externe Stakeholder": false,
+        "Behörden": true
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": true,
+        "Zertifizierung": true,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": true,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": true,
+        "Anlagen": false,
+        "Gefahrstoffe": false,
+        "Emissionen": true,
+        "Energie": true,
+        "Stoffe/Stoffströme": false,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": false,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": true,
+        "Bewertungszentriert": false,
+        "Managementzentriert": false
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "PE International SoFI Software",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": false,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": false,
+        "Mitarbeiter": false,
+        "externe Stakeholder": false,
+        "Behörden": true
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": false,
+        "Zertifizierung": true,
+        "Ökobilanzierung": false,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": false,
+        "Arbeitsschutz": false
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": false,
+        "Anlagen": true,
+        "Gefahrstoffe": false,
+        "Emissionen": true,
+        "Energie": true,
+        "Stoffe/Stoffströme": false,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": false,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": true,
+        "Managementzentriert": true
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "QEHS-Management",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": true,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": true,
+        "Mitarbeiter": false,
+        "externe Stakeholder": false,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": false,
+        "Zertifizierung": false,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": true,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": true
+      },
+      "gradDerIntegrierung": {
+        "integriert": false,
+        "Add-On": false,
+        "Stand-Alone": true,
+        "SaaS-Lösung": false
+      },
+      "objektAspekt": {
+        "Abfall": true,
+        "Anlagen": false,
+        "Gefahrstoffe": true,
+        "Emissionen": true,
+        "Energie": false,
+        "Stoffe/Stoffströme": false,
+        "Kosten": false
+      },
+      "systemgrenzen": {
+        "Standort/Betrieb": true,
+        "Prozess": false,
+        "Produkt": false,
+        "Zwischenbetrieblich": false
+      },
+      "betrachtungskonzept": {
+        "Verwaltungszentriert": false,
+        "Bewertungszentriert": true,
+        "Managementzentriert": true
+      }
+    },
+    {
+      "account_id": 0,
+      "productName": "Nachhaltigkeitslösung von Oracle",
+      "productLink": "https://company.de",
+      "productCompany": "ABC Software Company",
+      "productDescription": "This software makes your live easier! I promise.",
+      "zielgruppe": {
+        "Geschäftsführung": true,
+        "Umweltbeauftragte": true,
+        "Fachabteilung": false,
+        "Mitarbeiter": false,
+        "externe Stakeholder": false,
+        "Behörden": false
+      },
+      "anwendungsbereich": {
+        "Gesetzeskonformität": false,
+        "Zertifizierung": false,
+        "Ökobilanzierung": true,
+        "Lebenszyklus": false,
+        "Berichterstattung": false,
+        "Entscheidungsunterstützung": true,
+        "Arbeitsschutz": true
+      }
     }
-  }
-]
+  ]
+}
