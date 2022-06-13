@@ -186,6 +186,13 @@ export async function listProduct(req: Request, res: Response) {
     sort.viewCounter = req.query.sortOrder === 'asc' ? 1 : -1;
   }
 
+  const myProductList = (req.query.myProductList as string[]) ?? [];
+  // filter by acount id
+  // query = {
+  //   account_id: 10
+  // }
+  // /my-products?account_id=10
+
   // START ### FILTER ON SEARCH PAGE ###
   const query: { [key: string]: boolean } = {};
   const zielgruppe = (req.query.zielgruppe as string[]) ?? [];
@@ -194,11 +201,6 @@ export async function listProduct(req: Request, res: Response) {
   const objektAspekt = (req.query.objektAspekt as string[]) ?? [];
   const systemgrenzen = (req.query.systemgrenzen as string[]) ?? [];
   const betrachtungskonzept = (req.query.betrachtungskonzept as string[]) ?? [];
-  // filter by acount id
-  // query = {
-  //   account_id: 10
-  // }
-  // /products?account_id=10
 
   // ZIELGRUPPE
   if (zielgruppe.includes('Geschäftsführung')) {
