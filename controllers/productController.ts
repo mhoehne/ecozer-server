@@ -186,7 +186,6 @@ export async function listProduct(req: Request, res: Response) {
     sort.viewCounter = req.query.sortOrder === 'asc' ? 1 : -1;
   }
 
-  const myProductList = (req.query.myProductList as string[]) ?? [];
   // filter by acount id
   // query = {
   //   account_id: 10
@@ -314,7 +313,8 @@ export async function listProduct(req: Request, res: Response) {
 
   // END ### FILTER ON SEARCH PAGE ###
   let limit = req.query.limit as string;
-  if (!limit) {
+  //parseInt(' '.trim() ?0:1) weird error on production
+  if (!limit.trim()) {
     limit = '100';
   }
 
