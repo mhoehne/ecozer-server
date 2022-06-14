@@ -312,7 +312,7 @@ export async function listProduct(req: Request, res: Response) {
   }
 
   // END ### FILTER ON SEARCH PAGE ###
-  let limit = req.query.limit as string;
+  let limit = (req.query.limit as string) ?? '';
   //parseInt(' '.trim() ?0:1) weird error on production
   if (!limit.trim()) {
     limit = '100';
