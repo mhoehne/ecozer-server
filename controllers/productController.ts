@@ -186,20 +186,20 @@ export async function listProduct(req: Request, res: Response) {
     sort.viewCounter = req.query.sortOrder === 'asc' ? 1 : -1;
   }
 
-  // filter by acount id
-  // query = {
-  //   account_id: 10
-  // }
-  // /my-products?account_id=10
-
   // START ### FILTER ON SEARCH PAGE ###
-  const query: { [key: string]: boolean } = {};
+  const query: { [key: string]: boolean | number } = {};
+  const account_id = (req.query.account_id as string) ?? '';
   const zielgruppe = (req.query.zielgruppe as string[]) ?? [];
   const anwendungsbereich = (req.query.anwendungsbereich as string[]) ?? [];
   const gradDerIntegrierung = (req.query.gradDerIntegrierung as string[]) ?? [];
   const objektAspekt = (req.query.objektAspekt as string[]) ?? [];
   const systemgrenzen = (req.query.systemgrenzen as string[]) ?? [];
   const betrachtungskonzept = (req.query.betrachtungskonzept as string[]) ?? [];
+
+  if (account_id.length !== 0) {
+    console.log(account_id);
+    query['account_id'] = parseInt(account_id);
+  }
 
   // ZIELGRUPPE
   if (zielgruppe.includes('Geschäftsführung')) {
