@@ -20,6 +20,7 @@ import mongoose from 'mongoose';
 import productMigration from './migrations/productMigration';
 import accountMigration from './migrations/accountMigration';
 import { checkAuthentication } from './controllers/authenticationController';
+import { getImage } from './controllers/imageController';
 
 // rest of the code remains same
 const app = express();
@@ -34,6 +35,9 @@ app.use(express.json());
 
 const PORT = 8000;
 app.get('/', (req, res) => res.send('Express + TypeScript Server'));
+
+//IMAGE
+app.get('/images/:filename', getImage);
 
 // ACCOUNT
 app.get('/accounts', listAccount);
