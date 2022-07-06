@@ -1,4 +1,6 @@
 import express from 'express';
+import fileUpload from 'express-fileupload';
+import bodyParser from 'body-parser';
 import {
   listAccount,
   createAccount,
@@ -20,7 +22,7 @@ import mongoose from 'mongoose';
 import productMigration from './migrations/productMigration';
 import accountMigration from './migrations/accountMigration';
 import { checkAuthentication } from './controllers/authenticationController';
-import { getImage } from './controllers/imageController';
+import { getFile, postFile } from './controllers/fileController';
 
 // rest of the code remains same
 const app = express();
@@ -33,11 +35,22 @@ app.use(
 // for parsing application/json
 app.use(express.json());
 
+app.use(
+  fileUpload({
+    createParentPath: true,
+  })
+);
+
+//add other middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 const PORT = 8000;
 app.get('/', (req, res) => res.send('Express + TypeScript Server'));
 
-//IMAGE
-app.get('/images/:filename', getImage);
+//File
+app.get('/files/:filename', getFile);
+app.post('/files', postFile);
 
 // ACCOUNT
 app.get('/accounts', listAccount);
