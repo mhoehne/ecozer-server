@@ -29,7 +29,8 @@ export async function postFile(req: Request, res: Response) {
         name: file.name,
         mimetype: file.mimetype,
         size: file.size,
-        url: `http://localhost:8000/files/${file.name}`,
+        url: `http://${process.env.SERVER_ADDRESS}/files/${file.name}`,
+        secure_url: `http://${process.env.SERVER_ADDRESS}/files/${file.name}`,
       });
     }
   } catch (err) {

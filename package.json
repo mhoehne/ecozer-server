@@ -26,7 +26,7 @@
   },
   "scripts": {
     "build": "tsc --project ./",
-    "start": "export MONGODB_HOSTNAME=localhost && nodemon index.ts",
-    "startdev": "export MONGODB_HOSTNAME=mongo && nodemon index.ts"
+    "start": "export MONGODB_HOSTNAME=localhost && export SERVER_ADDRESS=141.45.92.203:8000 && nodemon index.ts",
+    "startdev": "export MONGODB_HOSTNAME=mongo && export SERVER_ADDRESS=localhost:8000 && nodemon index.ts"
   }
 }
