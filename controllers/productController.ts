@@ -274,7 +274,7 @@ export async function listProduct(req: Request, res: Response) {
     query['objektAspekt.Gefahrstoffe'] = true;
   }
   if (objektAspekt.includes('Emissionen')) {
-    query['objektAspekt.AbfEmissionenall'] = true;
+    query['objektAspekt.Emissionen'] = true;
   }
   if (objektAspekt.includes('Energie')) {
     query['objektAspekt.Energie'] = true;
