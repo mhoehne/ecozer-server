@@ -346,6 +346,7 @@ export async function getProduct(req: Request, res: Response) {
 //POST / CREATE
 export async function createProduct(req: Request, res: Response) {
   const createNewProduct = new ProductModel(req.body);
+  createNewProduct.state = 'pending';
 
   productSchema.pre('save', function (next) {
     this.updatedAt = Date.now();
