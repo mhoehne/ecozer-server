@@ -1,6 +1,7 @@
 import express from 'express';
 import fileUpload from 'express-fileupload';
 import bodyParser from 'body-parser';
+import cookieParser from 'cookie-parser';
 import {
   listAccount,
   createAccount,
@@ -15,6 +16,7 @@ import {
   createProduct,
   updateProduct,
   deleteProduct,
+  rejectProduct,
   incrementNewCount,
 } from './controllers/productController';
 import cors from 'cors';
@@ -44,6 +46,7 @@ app.use(
 //add other middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 const PORT = 8000;
 app.get('/', (req, res) => res.send('Express + TypeScript Server'));
@@ -67,6 +70,8 @@ app.put('/products', updateProduct);
 app.delete('/products', deleteProduct);
 app.get('/products/:id', getProduct);
 app.post('/products/:_id/view', incrementNewCount);
+// PRODUCT STATES
+app.post('/products/:id/reject', rejectProduct);
 
 //product migration
 app.post('/migration/products', productMigration);

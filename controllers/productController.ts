@@ -2,6 +2,8 @@ import { Request, Response } from 'express';
 import { Schema, model } from 'mongoose';
 import mongoose from 'mongoose';
 import autoIncrement from 'mongoose-auto-increment';
+import { AccountModel } from './accountController';
+import { read } from 'fs';
 
 //Zielgruppe
 interface Zielgruppe {
@@ -130,7 +132,7 @@ const betrachtungskonzeptSchema = new Schema<Betrachtungskonzept>(
 );
 
 interface Product {
-  product_id: number;
+  _id: number;
   account_id: number;
   productName: string;
   // productImage:
@@ -361,6 +363,35 @@ export async function createProduct(req: Request, res: Response) {
   }
 
   return res.status(201).send(createNewProduct);
+}
+
+export async function rejectProduct(req: Request, res: Response) {
+  const account = await AccountModel.findOne({
+    emailAddress: req.cookies.email,
+  });
+  if (account === undefined || account?.isAdmin === false) {
+    res.status(401).send();
+    return;
+  }
+  let product = await ProductModel.findOne({ _id: req.params.id });
+  if (product === null || product === undefined) {
+    res.status(404).send();
+    return;
+  }
+  if (product?.state !== 'pending') {
+    res.status(400).send(req.params.id);
+    return;
+  }
+  product = await ProductModel.findOneAndUpdate(
+    { _id: req.params.id },
+    { state: 'rejected' },
+    { new: true }
+  );
+  if (product?.state === 'rejected') {
+    res.status(200).send();
+    return;
+  }
+  res.status(412).send();
 }
 
 /************************************************************************************************/
