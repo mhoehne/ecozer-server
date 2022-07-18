@@ -397,10 +397,12 @@ export async function rejectProduct(req: Request, res: Response) {
 /************************************************************************************************/
 //PUT / UPDATE
 export async function updateProduct(req: Request, res: Response) {
+  const productBody = { ...req.body, state: 'pending' };
+  delete productBody._id;
   try {
     const product = await ProductModel.findOneAndUpdate(
-      { product_id: req.body.product_id },
-      { ...req.body, state: 'pending' },
+      { _id: req.body._id },
+      productBody,
       { new: true }
     ).exec();
     return res.status(202).send(product);
