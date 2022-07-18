@@ -369,7 +369,7 @@ export async function updateProduct(req: Request, res: Response) {
   try {
     const product = await ProductModel.findOneAndUpdate(
       { product_id: req.body.product_id },
-      req.body,
+      { ...req.body, state: 'pending' },
       { new: true }
     ).exec();
     return res.status(202).send(product);
