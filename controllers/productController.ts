@@ -146,7 +146,7 @@ interface Product {
   createdAt: Date;
   updatedAt: Date;
   viewCounter: number;
-  isPublished: boolean;
+  state: 'pending' | 'published' | 'unpublished' | 'rejected';
 }
 
 export const productSchema = new Schema<Product>(
@@ -166,7 +166,7 @@ export const productSchema = new Schema<Product>(
     createdAt: { type: Date, immutable: true, default: () => Date.now() },
     updatedAt: { type: Date, default: () => Date.now() },
     viewCounter: { type: Number, default: () => 0 },
-    isPublished: { type: Boolean, required: true, default: false },
+    state: { type: String, required: true, default: () => 'pending' },
   },
   { timestamps: true }
 );
