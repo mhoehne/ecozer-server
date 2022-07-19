@@ -394,6 +394,62 @@ export async function rejectProduct(req: Request, res: Response) {
   res.status(412).send();
 }
 
+export async function publishProduct(req: Request, res: Response) {
+  const account = await AccountModel.findOne({
+    emailAddress: req.cookies.email,
+  });
+  if (account === undefined || account?.isAdmin === false) {
+    res.status(401).send();
+    return;
+  }
+  let product = await ProductModel.findOne({ _id: req.params.id });
+  if (product === null || product === undefined) {
+    res.status(404).send();
+    return;
+  }
+  if (product?.state !== 'pending') {
+    res.status(400).send(req.params.id);
+    return;
+  }
+  product = await ProductModel.findOneAndUpdate(
+    { _id: req.params.id },
+    { state: 'published' },
+    { new: true }
+  );
+  if (product?.state === 'published') {
+    res.status(200).send();
+    return;
+  }
+  res.status(412).send();
+}
+
+export async function unpublishProduct(req: Request, res: Response) {
+  // in this case everyone (user & admin) can unpublish a product
+  let product = await ProductModel.findOne({ _id: req.params.id });
+  if (product === null || product === undefined) {
+    res.status(404).send();
+    return;
+  }
+  if (product?.state !== 'published') {
+    res.status(400).send(req.params.id);
+    return;
+  }
+  product = await ProductModel.findOneAndUpdate(
+    { _id: req.params.id },
+    { state: 'unpublished' },
+    { new: true }
+  );
+  if (product?.state === 'unpublished') {
+    res.status(200).send();
+    return;
+  }
+  res.status(412).send();
+}
+
+export async function pendProduct(req: Request, res: Response) {
+  // Q: do I need the pendProduct(pending) endpoint? I guess it is covered by the updateProduct endpoint, but not 100% sure
+}
+
 /************************************************************************************************/
 //PUT / UPDATE
 export async function updateProduct(req: Request, res: Response) {
