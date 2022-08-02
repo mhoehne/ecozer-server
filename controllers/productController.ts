@@ -446,9 +446,11 @@ export async function unpublishProduct(req: Request, res: Response) {
   res.status(412).send();
 }
 
-export async function pendProduct(req: Request, res: Response) {
-  // Q: do I need the pendProduct(pending) endpoint? I guess it is covered by the updateProduct endpoint, but not 100% sure
-}
+// FEATURE USE CASE:
+// if admin updates a product, product state should keep published if state is published
+// export async function pendProduct(req: Request, res: Response) {
+//   // currently not needed
+// }
 
 /************************************************************************************************/
 //PUT / UPDATE
