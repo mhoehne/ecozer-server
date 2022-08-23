@@ -19,7 +19,6 @@ import {
   rejectProduct,
   publishProduct,
   unpublishProduct,
-  pendProduct,
   incrementNewCount,
 } from './controllers/productController';
 import cors from 'cors';
@@ -77,7 +76,6 @@ app.post('/products/:_id/view', incrementNewCount);
 app.post('/products/:id/reject', rejectProduct);
 app.post('/products/:id/publish', publishProduct);
 app.post('/products/:id/unpublish', unpublishProduct);
-app.post('/products/:id/pend', pendProduct);
 
 //product migration
 app.post('/migration/products', productMigration);
