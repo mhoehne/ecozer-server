@@ -20,6 +20,7 @@ import {
   publishProduct,
   unpublishProduct,
   incrementNewCount,
+  productSchema,
 } from './controllers/productController';
 import cors from 'cors';
 import mongoose from 'mongoose';

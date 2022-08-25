@@ -189,7 +189,10 @@ export async function listProduct(req: Request, res: Response) {
   }
 
   // START ### FILTER ON SEARCH PAGE ###
-  const query: { [key: string]: boolean | number | string } = {};
+  const query: {
+    [key: string]: boolean | number | string | RegExp;
+  } = {};
+  const productName = (req.query.productName as string) ?? '';
   const state = (req.query.state as string) ?? '';
   const account_id = (req.query.account_id as string) ?? '';
   const zielgruppe = (req.query.zielgruppe as string[]) ?? [];
@@ -198,6 +201,10 @@ export async function listProduct(req: Request, res: Response) {
   const objektAspekt = (req.query.objektAspekt as string[]) ?? [];
   const systemgrenzen = (req.query.systemgrenzen as string[]) ?? [];
   const betrachtungskonzept = (req.query.betrachtungskonzept as string[]) ?? [];
+
+  if (productName !== '') {
+    query['productName'] = new RegExp(productName, 'i');
+  }
 
   if (state.length !== 0) {
     query['state'] = state;
