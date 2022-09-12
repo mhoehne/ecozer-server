@@ -66,6 +66,13 @@ app.post('/accounts', createAccount);
 app.put('/accounts', updateAccount);
 app.delete('/accounts', deleteAccount);
 
+// NOTIFICATION
+// notification for created product is handled by the product controller
+// notification for accepting product is also hanlded by the product controller
+// notification for rejecting product is also hanlded by the product controller
+// app.get('', )
+// app.post('', )
+
 // PRODUCT
 app.get('/products', listProduct);
 app.post('/products', createProduct);
