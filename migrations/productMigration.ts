@@ -6,7 +6,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'default',
-      productImage: 'http://141.45.92.203:8000/files/sample-img.png',
+      // productImage: 'http://141.45.92.203:8000/files/sample-img.png',
       state: 'published',
       productLink: 'https://company.de',
 
@@ -58,7 +58,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'Umberto 5',
-      productImage: '',
+      // // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -94,7 +94,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'Quentic',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -138,7 +138,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'Paul - Plattform für Arbeitsschutz- und Umweltrecht',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -170,7 +170,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'GaBI',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -207,7 +207,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: '360report',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -241,7 +241,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'e!Sankey',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -276,7 +276,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'IUWA-Abfallmanager',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -312,7 +312,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: '360 Sustainability Essentials Software',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -348,7 +348,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'DataCross',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -384,7 +384,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'Eco-Cockpit',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -417,7 +417,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'Efficio',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -454,7 +454,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'ENIT Agent',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -491,7 +491,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'eSight',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -525,7 +525,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'gutwin',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -562,7 +562,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'FridaCarb',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
 
@@ -595,7 +595,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'Envis - Environmental System',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -629,7 +629,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'IngSoft InterWatt',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -659,7 +659,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'Velocity EHS',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -692,7 +692,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'EHS Software AURIGA+',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -726,7 +726,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'iSystain',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -760,7 +760,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'QUMcheck 4.0',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -792,7 +792,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'QuB-Tool',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -828,7 +828,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'PE International SoFI Software',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -860,7 +860,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'QEHS-Management',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
@@ -896,7 +896,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'Nachhaltigkeitslösung von Oracle',
-      productImage: '',
+      // productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
