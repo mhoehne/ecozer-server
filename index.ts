@@ -24,7 +24,7 @@ import {
 } from './controllers/productController';
 import {
   listNotification,
-  createNotification,
+  markAsReadNotification,
   deleteNotification,
 } from './controllers/notificationController';
 import cors from 'cors';
@@ -76,8 +76,8 @@ app.delete('/accounts', deleteAccount);
 // notification for accepting product is also hanlded by the product controller
 // notification for rejecting product is also hanlded by the product controller
 app.get('/notifications', listNotification);
-app.post('/notifications', createNotification);
-app.delete('/notifications', deleteNotification);
+app.post('/notifications/:id', markAsReadNotification);
+app.delete('/notifications/:id', deleteNotification);
 
 // PRODUCT
 app.get('/products', listProduct);

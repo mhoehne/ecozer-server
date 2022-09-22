@@ -11,6 +11,6 @@ export async function listNotification(req: Request, res: Response) {
   }
 }
 
-export async function createNotification(req: Request, res: Response) {}
+export async function markAsReadNotification(req: Request, res: Response) {}
 
 export async function deleteNotification(req: Request, res: Response) {}
