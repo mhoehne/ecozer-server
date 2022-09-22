@@ -22,6 +22,11 @@ import {
   incrementNewCount,
   productSchema,
 } from './controllers/productController';
+import {
+  listNotification,
+  createNotification,
+  deleteNotification,
+} from './controllers/notificationController';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import productMigration from './migrations/productMigration';
@@ -70,8 +75,9 @@ app.delete('/accounts', deleteAccount);
 // notification for created product is handled by the product controller
 // notification for accepting product is also hanlded by the product controller
 // notification for rejecting product is also hanlded by the product controller
-// app.get('', )
-// app.post('', )
+app.get('/notifications', listNotification);
+app.post('/notifications', createNotification);
+app.delete('/notifications', deleteNotification);
 
 // PRODUCT
 app.get('/products', listProduct);
