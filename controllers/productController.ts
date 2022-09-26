@@ -148,7 +148,7 @@ interface Product {
   updatedAt: Date;
   viewCounter: number;
   state: 'pending' | 'published' | 'unpublished' | 'rejected';
-  // rejectReason: string | null;
+  rejectReason: string | null;
 }
 
 export const productSchema = new Schema<Product>(
@@ -169,7 +169,7 @@ export const productSchema = new Schema<Product>(
     updatedAt: { type: Date, default: () => Date.now() },
     viewCounter: { type: Number, default: () => 0 },
     state: { type: String, required: true, default: () => 'pending' },
-    // rejectReason: {type: String, required: false, default: () => ''},
+    rejectReason: { type: String, required: false, default: () => '' },
   },
   { timestamps: true }
 );
