@@ -169,7 +169,7 @@ export const productSchema = new Schema<Product>(
     updatedAt: { type: Date, default: () => Date.now() },
     viewCounter: { type: Number, default: () => 0 },
     state: { type: String, required: true, default: () => 'pending' },
-    // rejectReason:
+    // rejectReason: {type: String, required: false, default: () => ''},
   },
   { timestamps: true }
 );
