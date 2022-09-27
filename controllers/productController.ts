@@ -3,6 +3,7 @@ import { Schema, model } from 'mongoose';
 import mongoose from 'mongoose';
 import autoIncrement from 'mongoose-auto-increment';
 import { AccountModel } from './accountController';
+import { NotificationModel } from './notificationController';
 
 //Zielgruppe
 interface Zielgruppe {
@@ -358,6 +359,14 @@ export async function createProduct(req: Request, res: Response) {
   const createNewProduct = new ProductModel(req.body);
   createNewProduct.state = 'pending';
 
+  const createNewNotification = new NotificationModel({
+    account_id: createNewProduct.account_id,
+    productName: createNewProduct.productName,
+    rejectReason: '',
+    createdAt: Date.now(),
+    isRead: false,
+  });
+
   productSchema.pre('save', function (next) {
     this.updatedAt = Date.now();
     next();
@@ -365,6 +374,7 @@ export async function createProduct(req: Request, res: Response) {
 
   try {
     await createNewProduct.save();
+    await createNewNotification.save();
   } catch (e) {
     res.status(500).send(e);
     return;

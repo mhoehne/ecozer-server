@@ -23,7 +23,7 @@ import {
   productSchema,
 } from './controllers/productController';
 import {
-  listNotification,
+  listNotifications,
   markAsReadNotification,
   deleteNotification,
 } from './controllers/notificationController';
@@ -75,7 +75,7 @@ app.delete('/accounts', deleteAccount);
 // notification for created product is handled by the product controller
 // notification for accepting product is also hanlded by the product controller
 // notification for rejecting product is also hanlded by the product controller
-app.get('/notifications', listNotification);
+app.get('/notifications', listNotifications);
 app.post('/notifications/:id', markAsReadNotification);
 app.delete('/notifications/:id', deleteNotification);
 
