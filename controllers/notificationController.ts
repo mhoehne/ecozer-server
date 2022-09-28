@@ -19,6 +19,8 @@ export const notificationSchema = new Schema<Notifications>(
   {
     account_id: { type: Number, required: true, immutable: true },
     productName: { type: String, required: true },
+    message: { type: String, required: false, default: () => '' },
+    messageType: { type: String, required: true },
     rejectReason: { type: String, required: false, default: () => '' },
     createdAt: { type: Date, immutable: true, default: () => Date.now() },
     isRead: { type: Boolean, required: false, default: false },
