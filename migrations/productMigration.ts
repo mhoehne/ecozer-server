@@ -9,7 +9,6 @@ export default async function productMigration(req: Request, res: Response) {
       productImage: '',
       state: 'published',
       productLink: 'https://company.de',
-
       productCompany: 'ABC Software Company',
       productDescription: 'This software makes your live easier! I promise.',
       zielgruppe: {
@@ -58,7 +57,7 @@ export default async function productMigration(req: Request, res: Response) {
     {
       account_id: 0,
       productName: 'Umberto 5',
-      // productImage: '',
+      productImage: '',
       state: 'published',
       productLink: 'https://company.de',
       productCompany: 'ABC Software Company',
