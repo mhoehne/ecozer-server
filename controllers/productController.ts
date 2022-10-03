@@ -510,7 +510,7 @@ export async function incrementNewCount(req: Request, res: Response) {
 export async function deleteProduct(req: Request, res: Response) {
   try {
     await ProductModel.findOneAndDelete({
-      product_id: req.body.product_id,
+      _id: req.body._id,
     }).exec();
     return res.status(202).send('product successfully deleted');
   } catch (e) {

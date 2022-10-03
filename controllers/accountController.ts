@@ -14,6 +14,7 @@ interface Account {
   companyName: string;
   createdAt: Date;
   updatedAt: Date;
+  acceptedTermAndConditions: boolean;
 }
 
 export const accountSchema = new Schema<Account>(
@@ -32,6 +33,11 @@ export const accountSchema = new Schema<Account>(
     companyName: { type: String, required: true },
     createdAt: { type: Date, immutable: true, default: () => Date.now() },
     updatedAt: { type: Date, default: () => Date.now() },
+    acceptedTermAndConditions: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
   },
   { timestamps: true }
 );

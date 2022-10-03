@@ -40,6 +40,20 @@ export async function listNotifications(req: Request, res: Response) {
   if (req.query.sortBy === 'createdAt') {
     sort.createdAt = req.query.sortOrder === 'asc' ? 1 : -1;
   }
+
+  const accountByEmailAddress = await AccountModel.findOne({
+    emailAddress: req.cookies.email,
+  });
+  if (accountByEmailAddress === null) {
+    res.sendStatus(401);
+    return;
+  }
+
+  const notifications = await NotificationModel.find({
+    account_id: accountByEmailAddress?._id,
+  });
+
+  res.send({ notifications });
 }
 
 export async function markAsReadNotification(req: Request, res: Response) {}
