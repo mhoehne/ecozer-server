@@ -8,9 +8,9 @@ export default async function productMigration(req: Request, res: Response) {
       productName: 'default',
       productImage: '',
       state: 'published',
-      productLink: '',
-      productCompany: '',
-      productDescription: '',
+      productLink: 'link',
+      productCompany: 'Firmenname',
+      productDescription: 'Beschreibung',
       zielgruppe: {
         Geschäftsführung: true,
         Umweltbeauftragte: true,
