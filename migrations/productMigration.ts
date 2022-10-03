@@ -744,40 +744,6 @@ export default async function productMigration(req: Request, res: Response) {
       },
     },
 
-    // {
-    //   account_id: 0,
-    //   productName: 'EHS Software AURIGA+',
-    //   productImage: '',
-    //   state: 'published',
-    //   productLink: '',
-    //   productCompany: '',
-    //   productDescription: '',
-    //   zielgruppe: {
-    //     Geschäftsführung: true,
-    //     Umweltbeauftragte: true,
-    //     Behörden: true,
-    //   },
-    //   anwendungsbereich: {
-    //     Gesetzeskonformität: true,
-    //     Ökobilanzierung: true,
-    //     Arbeitsschutz: true,
-    //   },
-    //   gradDerIntegrierung: {
-    //     'Stand-Alone': true,
-    //   },
-    //   objektAspekt: {
-    //     Anlagen: true,
-    //   },
-    //   systemgrenzen: {
-    //     'Standort/Betrieb': true,
-    //     Prozess: true,
-    //   },
-    //   betrachtungskonzept: {
-    //     Verwaltungszentriert: true,
-    //     Managementzentriert: true,
-    //   },
-    // },
-
     {
       account_id: 0,
       productName: 'iSystain',
@@ -785,7 +751,8 @@ export default async function productMigration(req: Request, res: Response) {
       state: 'published',
       productLink: 'https://www.isystain.com/',
       productCompany: 'iSystain',
-      productDescription: `iSystain is our flexible suite of cloud-based software modules for managing safety, health, environment, carbon, corporate social responsibility and more. With iSystain almost every aspect of running a business responsibly can be measured. Find your baseline performance, than set targets to continuously improve. We've worked hard to make our platform both easy to use and flexible enough to deal with the ever changing mandatory and voluntary legislative requirements and international standards. Our health, safety and environment solution combines risk, events, health, compliance, competency, change, supplier and corrective action management processes with workflow, reporting and analytics tools.`,
+      productDescription:
+        'iSystain is our flexible suite of cloud-based software modules for managing safety, health, environment, carbon, corporate social responsibility and more. With iSystain almost every aspect of running a business responsibly can be measured. Find your baseline performance, than set targets to continuously improve. We have worked hard to make our platform both easy to use and flexible enough to deal with the ever changing mandatory and voluntary legislative requirements and international standards. Our health, safety and environment solution combines risk, events, health, compliance, competency, change, supplier and corrective action management processes with workflow, reporting and analytics tools.',
       zielgruppe: {
         Geschäftsführung: true,
         Umweltbeauftragte: true,
@@ -916,42 +883,6 @@ export default async function productMigration(req: Request, res: Response) {
         Managementzentriert: true,
       },
     },
-
-    // {
-    //   account_id: 0,
-    //   productName: 'QEHS-Management',
-    //   productImage: '',
-    //   state: 'published',
-    //   productLink: '',
-    //   productCompany: '',
-    //   productDescription: '',
-    //   zielgruppe: {
-    //     Geschäftsführung: true,
-    //     Umweltbeauftragte: true,
-    //     Fachabteilung: true,
-    //   },
-    //   anwendungsbereich: {
-    //     Ökobilanzierung: true,
-    //     Berichterstattung: true,
-    //     Entscheidungsunterstützung: true,
-    //     Arbeitsschutz: true,
-    //   },
-    //   gradDerIntegrierung: {
-    //     'Stand-Alone': true,
-    //   },
-    //   objektAspekt: {
-    //     Abfall: true,
-    //     Gefahrstoffe: true,
-    //     Emissionen: true,
-    //   },
-    //   systemgrenzen: {
-    //     'Standort/Betrieb': true,
-    //   },
-    //   betrachtungskonzept: {
-    //     Bewertungszentriert: true,
-    //     Managementzentriert: true,
-    //   },
-    // },
 
     {
       account_id: 0,
