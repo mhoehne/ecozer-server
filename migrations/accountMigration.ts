@@ -23,9 +23,9 @@ export default async function accountMigration(req: Request, res: Response) {
       isAdmin: true,
       emailAddress: 'Volker.Wohlgemuth+admin@htw-berlin.de',
       password: 'VW_Admin!',
-      firstName: 'Martin',
-      lastName: 'UserTest',
-      companyName: 'Test User Company',
+      firstName: 'Volker',
+      lastName: 'Wohlgemuth',
+      companyName: 'HTW Berlin',
     },
 
     {
