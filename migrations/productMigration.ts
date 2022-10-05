@@ -46,6 +46,7 @@ export default async function productMigration(req: Request, res: Response) {
         'Standort/Betrieb': true,
         Prozess: true,
         Produkt: true,
+        Zwischenbetrieblich: true,
       },
       betrachtungskonzept: {
         Verwaltungszentriert: true,
@@ -917,6 +918,127 @@ export default async function productMigration(req: Request, res: Response) {
             Managementzentriert: true,
           },
         },
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'RISKPROJECT',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.risk-project.de/arbeitssicherheit-software/',
+      productCompany: 'RMS GmbH',
+      productDescription:
+        'Die RISK-Project Arbeitssicherheit-Software stellt Ihnen mit den Modulen Unternehmensverwaltung, Gefährdungsbeurteilung, Gefahrstoffmanagement, Betriebsanweisung und Unterweisung umfangreiche Lösungen sowie alle erforderlichen Dokumentationen für die effektive Umsetzung der Arbeitssicherheit zur Seite. Außerdem garantiert Ihnen RISK-Project Aktualität sowie Rechtssicherheit.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+        Mitarbeiter: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Ökobilanzierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Gefahrstoffe: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Argumed Arbeitsschutz Software',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.argumed.eu/kundenportal/',
+      productCompany: 'Dialogue Argumed GmbH',
+      productDescription:
+        'Die Arbeitsschutz-Software von Argumed bietet Ihnen die Möglichkeit, ein „digitales Erstaudit“ Ihres aktuellen Compliance-Status durchzuführen. Sie erlaubt es Ihnen auch, jederzeit alle bereits laufenden, abgeschlossenen und noch offenen Arbeitsschutz-Maßnahmen über ein zentrales Dashboard einzusehen und zu koordinieren. Auch die dafür benötigten Dokumente, Unterweisungen und zuständigen Kontaktpersonen sind digital hinterlegt. Damit Sie ohne viel Aufwand zum Beispiel eine Gefährdungsbeurteilung erstellen, eine ASA-Sitzung einberufen, Ihr Personal flexibel unterweisen können.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Arbeitsschutz: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {},
+      systemgrenzen: { Zwischenbetrieblich: true },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'EHQSplus',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.ehqs.de/',
+      productCompany: 'EHQS GmbH',
+      productDescription:
+        'Die Software für Arbeitsschutz-, Umweltschutz-, Gesundheitsschutz- und Qualitätsmanagementsysteme.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+        Mitarbeiter: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Gefahrstoffe: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'AUDITORplus',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.hnc-datentechnik.de/',
+      productCompany: 'HNC-Datentechnik GmbH',
+      productDescription:
+        'Mit diesem modularen Arbeitsschutz-Management-System investieren Sie in die Gesundheit Ihrer Mitarbeiter und damit in die Produktivität Ihres Unternehmens. Die AUDITOR-Software unterstützt Sie dabei und erleichtert die rechtssichere und datenschutzkonforme Dokumentation und Organisation sämtlicher Arbeitsschutzmaßnahmen – auch bei hochkomplexen Anforderungen. AUDITOR plus als Schaltzentrale stellt hier die Basis für Ihren erfolgreichen Arbeits- und Umweltschutz.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Anlagen: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
       },
     },
   ];
