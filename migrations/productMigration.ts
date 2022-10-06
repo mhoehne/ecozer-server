@@ -1041,6 +1041,311 @@ export default async function productMigration(req: Request, res: Response) {
         Verwaltungszentriert: true,
       },
     },
+    {
+      account_id: 0,
+      productName: 'CO2-Rechner PRO',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://klimaktiv.co2ckpit.de/de_DE/page/start/',
+      productCompany:
+        'KlimAktiv gemeinnützige Gesellschaft zur Förderung des Klimaschutzes mbH',
+      productDescription:
+        'Der CO2-Rechner für Unternehmen hat sich als Standard zur Berechnung des Corporate Carbon Footprints (CCF) von kleinen und mittleren Unternehmen etabliert und ist die Software für langfristiges Klimamanagement',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Anlagen: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: '360 Sustainability Software',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.ul.com/services/360-sustainability-software',
+      productCompany: 'UL Solutions',
+      productDescription:
+        'Sustainability and ESG Reporting for Enterprises: Gather, analyze and communicate your sustainability and ESG data in one place. We help companies gather and analyze data for their annual corporate social responsibility (CSR)/Sustainability reports and meet a range of external requirements including the Sustainability Accountability Standards Board (SASB), Carbon Disclosure Project (CDP), Global Reporting Initiative (GRI), Dow Jones Sustainability Index (DJSI), and UN Global Compact. In addition to automating reporting, 360 Sustainability gives you the data you need to create and track new sustainability initiatives in your organization.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Gefahrstoffe: true,
+        Emissionen: true,
+        Energie: true,
+        StoffeStoffströme: true,
+      },
+      systemgrenzen: {
+        Zwischenbetrieblich: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Zedal',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.zedal.de/',
+      productCompany: 'Zedal AG',
+      productDescription:
+        'ZEDAL bietet allen nachweis- und registerpflichtigen Unternehmen eine rechtssichere eANV-Lösung zur Umsetzung des Kreislaufwirtschaftsgesetzes mit seinem untergesetzlichen Regelwerk. Darüber hinaus bietet ZEDAL Optionen an, die alle Unternehmen in der Prozessautomatisierung effektiv unterstützen. Insbesondere bietet ZEDAL für Erzeuger ein komplettes Auftrags-, Stoffstrom- und Kontrollmanagement an.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        StoffeStoffströme: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'eNATUREportal (ehem. TRIAS-AMOS)',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.axians-ewaste.com/loesungen/innerbetriebliches-abfallmanagement/',
+      productCompany: 'Axians eWaste GmbH',
+      productDescription:
+        'eNATUREportal (ehem. TRIAS-AMOS): Die leistungsstarke und modular aufgebaute Lösung unterstützt Sie bei der Digitalisierung von komplexen und individuellen Prozessen Ihres betrieblichen Abfallmanagements. Aus einem umfangreichen Portfolio von Bausteinen und Schnittstellen wird eine Lösung durch Customizing individuell auf Ihre Prozesse zugeschnitten. Zielgruppe sind mittelständische und Konzernunternehmen, Industrie- und Chemieparks mit umfangreichen Ansprüchen und Vorgaben für ein effizientes betriebliches Abfall- und Umweltmanagement.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        StoffeStoffströme: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'eTFSportal',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.axians-ewaste.com/loesungen/grenzueberschreitender-abfalltransport-und-entsorgung/',
+      productCompany: 'Axians eWaste GmbH',
+      productDescription:
+        'Die grenzüberschreitende Abfallverbringung stellt hohe Anforderungen an die Antragsstellung, die Dokumentations- und Nachweispflichten. eTFSportal ist Ihre maßgeschneiderte Lösung um Zeit und Ressourcen einzusparen sowie die Rechtssicherheit in den Prozessen zu erhöhen.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        StoffeStoffströme: true,
+      },
+      systemgrenzen: {
+        Zwischenbetrieblich: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'eTALKportal',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.axians-ewaste.com/loesungen/datendrehscheibe-fuer-die-abfallwirtschaft/',
+      productCompany: 'Axians eWaste GmbH',
+      productDescription:
+        'Vereinfachen Sie die Kommunikation zwischen der Vielzahl an Beteiligten und Datenschnittstellen, die es in der Entsorgungswirtschaft gibt. Mit eTALKportal steht Ihnen eine einheitliche Datenanbindung zur Verfügung, die alle Daten an Partner, Kunden, Institutionen und Behörden weiterleitet.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+      },
+      systemgrenzen: {
+        Zwischenbetrieblich: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'eAVALportal',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.axians-ewaste.com/loesungen/eavalportal/',
+      productCompany: 'Axians eWaste GmbH',
+      productDescription:
+        'Nicht alle abfalltransportbeteiligten Unternehmen können sich den neuen Schnittstellen-Standard „AvaL“ aus Kostengründen oder fehlenden Ressource leisten. Daher stellen wir mit dem eAVALportal eine öffentliche SaaS-Plattform zur Verfügung, die nicht extra in das eigene ERP-System implementiert werden muss. eAVALportal ermöglicht allen Beteiligten den kompletten Datenaustausch innerhalb eines Entsorgungsprozesses zu digitalisieren – von der Beauftragung, über den Transport bis hin zu Abrechnung.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+      },
+      systemgrenzen: {
+        Zwischenbetrieblich: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'EPO Gefahrstoffmanager',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.gefahrstoff.com/epos-gefahrstoff-manager/',
+      productCompany: 'Epos Software & Service AG',
+      productDescription:
+        'Sicherheitsdatenblätter und MSDS erstellen, verwalten und verteilen. Der epos Gefahrstoff-Manager® unterstützt den gesamten Informationsfluss von der Entwicklung im Labor bis zum Anwender des Produktes.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Gefahrstoffe: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Austal2000',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.umweltbundesamt.de/themen/luft/regelungen-strategien/ausbreitungsmodelle-fuer-anlagenbezogene',
+      productCompany: 'Umweltbundesamt',
+      productDescription:
+        'AUSTAL - Immissionsprognose für die Anlagengenehmigung: Industrieanlagen werden nur genehmigt, wenn durch Modellrechnungen nachgewiesen ist, dass die Emissionen der geplanten Anlagen keine Überschreitungen der zulässigen Konzentrationen von Luftschadstoffen verursachen. Ein im Auftrag des Umweltbundesamtes entwickeltes Computerprogramm, das den Anforderungen der TA Luft entspricht, wird kostenlos unter dem Namen AUSTAL bzw. AUSTAL2000 bereitgestellt und hat sich in der Praxis bewährt.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Emissionen: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Lasat',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.janicke.de/de/lasat.html',
+      productCompany: 'Ingenierubüro Janicke',
+      productDescription:
+        'Das Ausbreitungsmodell LASAT (Lagrange-Simulation von Aerosol-Transport) berechnet die Ausbreitung von Spurenstoffen in der Atmosphäre. LASAT ist ein Werkzeug für den Fachmann zur Beurteilung besonderer Ausbreitungssituationen. Seit 1990 ist es allgemein als Softwarepaket verfügbar und wird bei Landesbehörden, TÜVs und anderen Gutachtern und der Industrie eingesetzt. Auf Anfrage kann eine kostenlose Demo-Version des Programmsystems bezogen werden.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Emissionen: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Bewertungszentriert: true,
+      },
+    },
   ];
 
   for (const product of products) {
