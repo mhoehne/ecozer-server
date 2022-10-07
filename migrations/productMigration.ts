@@ -1346,6 +1346,330 @@ export default async function productMigration(req: Request, res: Response) {
         Bewertungszentriert: true,
       },
     },
+    {
+      account_id: 0,
+      productName: 'Biomis',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.umweltbundesamt.de/themen/luft/regelungen-strategien/ausbreitungsmodelle-fuer-anlagenbezogene',
+      productCompany: 'Umweltbundesamt',
+      productDescription:
+        'Feinstaubrechner BIOMIS (Immissionsprognose für die thermische Biomassenutzung) für Wohngebiete: Diese PC-Anwendung erlaubt es – auf Basis der installierten Heizungen –die Luftbelastung mit Feinstaub und Stickstoffdioxid aus Kleinfeuerungsanlagen für ein konkretes Gebiet darzustellen.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Emissionen: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'deZem Energiemanagement Software',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.dezem.de/uebersicht-energiemanagement-software/',
+      productCompany: 'deZem GmbH',
+      productDescription:
+        'Die deZem Energie­management Software ist der Schlüssel um Ihren Energieverbrauch zu verfolgen, Optimierungen zu planen, Effizienzmaßnahmen zu bewerten und Einsparungen zu quantifizieren. Analysieren Sie den Zusammenhang zwischen Verbrauch, Produktion und Umweltbedingungen. Tun Sie dies in Echtzeit. Für das ganze Unternehmen im Überblick oder ganz detailliert an einzelnen Maschinen.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Enerchart',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.enerchart.com/',
+      productCompany: 'krumedia GmbH',
+      productDescription:
+        'Die Nutzung aktueller und zukünftiger IoT-Technologien für das Energiemanagement ist eine besonders effiziente Form der Digitalisierung. Genau hierfür wurde enerchart geschaffen. Wir bieten Ihnen die ideale Plattform für ein Energiemanagement nach ISO 50001 und unterstützen gleichzeitig die Digitalisierung Ihres Unternehmens.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Simapro',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://simapro.com/',
+      productCompany: 'PRé Sustainability',
+      productDescription:
+        'SimaPro is a powerful solution for those looking to drive sustainable change. Its fact-based LCA approach provides the insights you need to make better decisions, empower better choices and reduce the environmental footprints of products and services.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        StoffeStoffströme: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+        Produkt: true,
+        Zwischenbetrieblich: true,
+      },
+      betrachtungskonzept: {
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Regis',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://sinum.com/regis',
+      productCompany: 'sinum AG',
+      productDescription:
+        'REGIS lässt Sie auf einfachste und kontinuierliche Weise Ihre Umweltleistung messen, kontrollieren und glaubwürdig kommunizieren und Ihre Stoff- und Energieflüsse ökonomisch und professionell im Griff behalten.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        StoffeStoffströme: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Zwischenbetrieblich: true,
+      },
+      betrachtungskonzept: {
+        Bewertungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Gefahrstoff-Programm',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.deutscher-apotheker-verlag.de/shop/produkt/141018014/gefahrstoff-programm',
+      productCompany: 'Deutscher Apotheker Verlag',
+      productDescription:
+        'Mit dem Gefahrstoff-Programm für die Apothekenpraxis erfüllen Sie die gesetzlichen Forderungen ganz leicht. Es leitet Sie sicher durch alle erforderlichen Prozeduren, erzeugt das richtige Abgabe- oder Vorratsetikett, liefert die nötigen Informationen zur Unterrichtung der Kunden und Unterweisung der Mitarbeiter und hält stets die korrekten Formblätter bereit. Auch die Gefährdungsbeurteilung haben Sie mit wenigen Klicks erstellt.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Gefahrstoffe: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'IMMI',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.immi.eu/',
+      productCompany: 'WÖLFEL-GRUPPE',
+      productDescription:
+        'Als eines der führenden Softwaretools im Immissionsschutz vertrauen Dienstleister, Behörden und Industrieunternehmen seit mehr als 30 Jahren auf IMMI. IMMI ist unser Software-Paket zur Lärmberechnung im Freien, Lärmbelastung in Arbeitsräumen und Ausbreitung von Luftschadstoffen.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Emissionen: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'EnerBoard',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.enerboard.de/',
+      productCompany: 'Tengelmann Energie GmbH',
+      productDescription:
+        'Digitalisieren Sie mit EnerBoard alle Energiedaten und -prozesse in der Cloud. Die Funktionen von EnerBoard werden zwei Modulen zugeordnet. Im Energiemanagement finden Sie alle Anwendungen, um Energieverbräuche und -kosten im Blick zu behalten. In der Prozessoptimierung unterstützen unsere Funktionen Sie bei der Datenverwaltung und automatischen Rechnungsprüfung.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Energy Monitor',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.optenda.de/energiemanagement-software/',
+      productCompany: 'OPTENDA GmbH',
+      productDescription:
+        'Von der automatisierten Erfassung des Energieverbrauchs über die einfache und übersichtliche Visualisierung der Energiedaten bis hin zu nutzerspezifischen Auswertungen: Der Energy Monitor macht Energiemanagement effizient und einfach. Ausgelegt auf die praktische Anwendung und Nutzung im Unternehmen ist das System so aufgebaut, dass auch ein “Nicht-Techniker” damit arbeiten kann.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'ITC PowerCommerce® EnMS',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://online-enms.de/',
+      productCompany: 'ITC-AG',
+      productDescription:
+        'Die webbasierte Energiemanagement Software ermöglicht es Kennzahlen aus einer Vielzahl an Datenquellen darzustellen, sodass die Anforderungen verschiedener Zielgruppen berücksichtigt werden können. So kann mit Benchmark-Funktionen und Energieanalysen ermittelt werden, ob Ihre Verbrauchswerte und Betriebskosten im Rahmen liegen. Auf Basis der Reporting-Funktion lassen sich individuelle Energieberichte erzeugen. Neben Medien wie Strom, Gas, Wärme oder Kälte können beliebige weitere Daten und virtuelle Zähler vom System verarbeitet werden.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
   ];
 
   for (const product of products) {
