@@ -1670,6 +1670,334 @@ export default async function productMigration(req: Request, res: Response) {
         Managementzentriert: true,
       },
     },
+    {
+      account_id: 0,
+      productName: 'ReTHiNK',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.kiwa.com/de/de/service2/zertifizieren/rethink-okobilanz-epd/',
+      productCompany: 'Kiwa Deutschland GmbH',
+      productDescription:
+        'R<THiNK ist eine Softwareapplikation, die es Unternehmen ermöglicht Ökobilanzen für ihre Produkte, sogenannte Umweltproduktdeklarationen (EPD), effizient und nach internationalen Standards zu erstellen. Mit R<THiNK können Sie sowohl projektspezifische Berechnung durchführen als auch die Umweltauswirkungen Ihres gesamten Produktportfolios berechnen.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Lebenszyklus: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        StoffeStoffströme: true,
+      },
+      systemgrenzen: {
+        Prozess: true,
+        Produkt: true,
+      },
+      betrachtungskonzept: {
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Turbo Carbon™',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.ul.com/services/digital-applications/simplified-co2-reporting',
+      productCompany: 'UL Solutions',
+      productDescription:
+        'UL Turbo Carbon software enables you to provide critical carbon emissions data and generate detailed reports for a range of audiences and submission requirements. Designed for use exclusively by smaller businesses, Turbo Carbon is easy to use and makes carbon reporting more efficient and cost-effective.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Emissionen: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'CR-Kompass',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.crkompass.de/',
+      productCompany: 'WeSustain',
+      productDescription:
+        'Der CR-Kompass bietet kleinen und mittelständischen Unternehmen (KMU) Unterstützung beim Aufbau ihres CR-Managements sowie bei der Erstellung von Nachhaltigkeitsberichten und Fortschrittberichten nach den Anforderungen des UN Global Compact. Unsere online-basierte Software wurde vom ESF-Programm unterstützt und steht unseren Kunden in ihrer Basis-Version kostenfrei zur Verfügung.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'CSRmanager',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.csr-manager.org/',
+      productCompany: 'macondo publishing GmbH',
+      productDescription:
+        'Mit der Software „CSRmanager“ können Sie selbständig, einfach und effizient Ihre Nachhaltigkeitsdaten, Ihre Audits und auch Ihr Risikomanagement bearbeiten, evaluieren und nach internationalen Standards berichten! Wählen Sie aus dem Fundus an Erweiterungsmöglichkeiten die für Ihr Haus passende Lösung.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'enablon',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.wolterskluwer.com/en/solutions/enablon',
+      productCompany: 'Wolters Kluwer',
+      productDescription:
+        'With the Enablon Integrated Risk Management software platform, you can manage risk, drive sustainability and boost productivity across your entire value chain - from EHSQ to GRC, and from Operational Risk to ESG.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'SAP Sustainability Control Tower',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.sap.com/germany/products/sustainability-control-tower.html',
+      productCompany: 'SAP',
+      productDescription:
+        'As a central key figure ledger of reliable sustainability-related data, the solution enables you to set targets, monitor progress, and gain actionable insights with automated and updated performance reports by business unit and location.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Tofuture CSM',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://tofuture.fi/',
+      productCompany: 'Tofuture',
+      productDescription:
+        'Unser Angebot besteht aus einem cloudbasierten Nachhaltigkeitsmanagement-Tool (SaaS-Service) und Beratung rund um das Nachhaltigkeitsdatenmanagement. Mit unserem Sustainability Business Intelligence (BI)-Service können Sie die oft verstreut vorliegenden Nachhaltigkeitsdaten nutzen, um Ihre strategischen Ziele zu verfolgen und Ihre Nachhaltigkeitsberichterstattungsprozesse zu optimieren.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'SaaS-Lösung': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'envoria',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://envoria.com/de',
+      productCompany: 'fisa',
+      productDescription:
+        'Envoria bietet eine holistische Lösung für alle relevanten Bereiche im Nachhaltigkeitsreporting. Länder- und Branchen-unabhängig. Sie ermöglicht die Verfolgung des CO2-Fußabdrucks und Ergreifung entsprechender Maßnahmen. Envoria berücksichtigt alle Nachhaltigkeit-Initiativen Ihres Unternehmens. Erstellte Reports erfüllen automatisch alle zutreffenden Prüfungs-Anforderungen. Alle relevanten Reporting-Frameworks (CSRD, GRI, EMAS, SDG, EU Taxonomie) werden unterstützt.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'ESGcockpit',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://esg-cockpit.com/',
+      productCompany: 'akaryon GmbH und Mensalia Unternehmensberatungs GmbH',
+      productDescription:
+        'ESG-Cockpit, das Tool für Nachhaltigkeitsdaten und für eine Unternehmenssteuerung nach den Prinzipien der Nachhaltigkeit, inklusive Umweltdaten und aller gängigen Standards. Es ermöglicht einfach und dezentral die Verwaltung von nachhaltigkeitsrelevanten Daten und die Berechnung von ESG-Indikatoren. Dank flexibler Konfiguration, gestaltbaren, transparenten und nachvollziehbaren Auswertungen wird Ihr Nachhaltigkeits-Reporting nicht nur komfortabler, mit dem ESG-Cockpit sind Sie auch effizienter.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Substain®',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.conclimate.de/software',
+      productCompany: 'ConClimate',
+      productDescription:
+        'Substain® ist eine Software-as-a-Service Lösung, die praktisch alle Szenarien des modernen Nachhaltigkeitsmanagements abdeckt und sich flexibel an die Bedürfnisse von Unternehmen anpasst. Sie ermöglicht Corporate- und Product Carbon Footprints auf Knopfdruck nach GHG Protocol oder ISO 14064/14067, unternehmensweite Datenerfassung und automatisierte Aufbereitung für Management-Dashboards, CSR-Reportings oder spezifische Zertifizierungen wie EMAS oder ISO 14001 und effektives Lieferkettenmanagement durch Abfrage von Daten und Erhebung von Primärdaten direkt von Lieferanten.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
   ];
 
   for (const product of products) {
