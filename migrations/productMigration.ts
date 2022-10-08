@@ -1998,6 +1998,1601 @@ export default async function productMigration(req: Request, res: Response) {
         Bewertungszentriert: true,
       },
     },
+    {
+      account_id: 0,
+      productName: 'VERSO CSR Hub Reporting',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://verso.de/csr-hub-reporting/',
+      productCompany: 'Verso',
+      productDescription:
+        'Mit dem VERSO CSR Hub Reporting sammeln Sie alle Nachhaltigkeitsinformationen an einem Ort, die Sie für Ihren Nachhaltigkeitsbericht benötigen. Eine intuitive Benutzeroberfläche und integrierte Leitfäden aller gängigen Standards machen Ihren CSR Bericht zum Kinderspiel. VERSO ist eine Cloud Software. Daher gibt es auch keinen aufwendigen Implementierungsprozess.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Workiva',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.workiva.com/de/solutions/esg-reporting',
+      productCompany: 'Workiva',
+      productDescription:
+        'Workiva ermöglicht den Aufbau einer vertrauenswürdigen, prüfungsfähigen ESG-Berichterstattung für Investoren. Operationalisieren Sie alle ESG Workflows mit einer Plattform, die Ihre Unternehmensstrategie unterstützt, damit Sie Aufgaben zuweisen, deren Status verfolgen und in Echtzeit zusammenarbeiten können.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Enterprise Sustainability Management',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.wesustain.com/software-esm/',
+      productCompany: 'WeSustain',
+      productDescription:
+        'Setzen Sie mit der “Enterprise Sustainability Management” Lösung von WeSustain auf einen fortschrittlichen Datenmanagement-Ansatz. Planen und steuern Sie browserbasiert Ihre Nachhaltigkeitsmaßnahmen und -ziele. Analysieren und werten Sie Ihre aggregierten Nachhaltigkeitsdaten umfassend und automatisiert für die interne und externe Berichterstattung aus. Binden Sie über gängige und sichere Schnittstellen bestehende Systeme oder Tools einfach an die IT-Infrastruktur von WeSustain an.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Enterprise Compliance Management',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.wesustain.com/software-ecm/',
+      productCompany: 'WeSustain',
+      productDescription:
+        'Setzen Sie mit der “Enterprise Compliance Management” Lösung von WeSustain auf einen fortschrittlichen Datenmanagement-Ansatz, mit dem Sie Ihre EHS-Prozesse zuverlässig steuern und so für Ihre EHS Compliance Sorge tragen. Kommen Sie Ihrer Betreiberverantwortung rechtssicher nach, dokumentieren Sie zuverlässig Ihre Prozesse und Daten und führen Sie effiziente Audits durch.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Impact Management',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.wesustain.com/impact-management/',
+      productCompany: 'WeSustain',
+      productDescription:
+        'Setzen Sie mit der “Impact Management” Lösung von WeSustain schon heute auf einen wirkungs- und zukunftsweisenden Datenmanagement-Ansatz, mit dem Sie künftig (u.a. durch Künstliche Intelligenz) zu ganz neuen Erkenntnissen bezüglich Ihrer Wirkungskette gelangen. Machen Sie durch ein belastbares und zentrales Datenmanagement Ihre Wirkungskette messbar und berichten Sie transparent über Fortschritte. Verbinden Sie über unsere kollaborativen Workflows zudem Ihre Mitarbeiter weltweit für noch mehr Impact.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        Produkt: true,
+      },
+      betrachtungskonzept: {
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Web Sara Abfallmanagement',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://qumsult.de/abfallmanagement-software/',
+      productCompany: 'Qumsult',
+      productDescription:
+        'Mit Web SARA-Abfallmanagement erhalten Unternehmen ein Werkzeug, um ihre Abfälle zu verwalten. Webbasiert bietet es allen Mitarbeitern an allen Standorten Zugriff auf das zentrale und stets aktuelle Abfallkataster. Bauen Sie Ihr Abfallkataster mit allen Abfallarten Ihres Unternehmens lückenlos auf und organisieren Sie nachweislich die Erfassung, Auswertung und Entsorgung Ihrer Abfälle.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Ökobilanzierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Web Sara Anlagen',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://qumsult.de/anlagen_instandhaltungssoftware/',
+      productCompany: 'Qumsult',
+      productDescription:
+        'Mit Web SARA-Anlagen steht Unternehmen aller Branchen und Größen ein Werkzeug für Anlagen und Maschinen (Prüfungen und Wartungen / Anlagenkataster / Betriebsanweisung) zur Verfügung. Webbasiert bietet es allen Mitarbeitern an allen Standorten Zugriff auf das zentrale und stets aktuelle Anlagenkataster. Der Nachweis gegenüber Zertifizierer und Aufsichtsbehörde ist jederzeit möglich und die Abläufe können gesteuert und dokumentiert werden.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Anlagen: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'AWSV-Software',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://qumsult.de/software/awsv-anlagendokumentation-software-2/',
+      productCompany: 'Qumsult',
+      productDescription:
+        'Betreiber von Anlagen zum Umgang mit wassergefährdenden Stoffen können mit der AwSV Software, die von ihnen verwendeten Stoffe und Gemische nach ihrer Gefährlichkeit einstufen und entsprechend dokumentieren. Die webbasierte Anwendung ist konform mit der Verordnung über Anlagen zum Umgang mit wassergefährdenden Stoffen (AwSV) und erfüllt alle AwSV Betreiberpflichten. Mit der AwSV Software bleiben sie immer auf dem aktuellen Stand der Rechtslage.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Anlagen: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Web Sara Gefahrstoffe',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://qumsult.de/software/gefahrstoffmanagement-software/',
+      productCompany: 'Qumsult',
+      productDescription:
+        'Mit Web SARA-Gefahrstoffe steht Unternehmen ein Werkzeug für das Gefahrstoffmanagement (Gefahrstoffverzeichnis / Gefahrstoffkataster und Betriebsanweisung) im Arbeitsschutz zur Verfügung. Webbasiert bietet es allen Mitarbeitern Zugriff auf das zentrale und stets aktuelle Gefahrstoffkataster und kann ideal für die Unterweisung im Arbeitsschutz herangezogen werden. Der Nachweis gegenüber Zertifizierer und Aufsichtsbehörde ist jederzeit möglich, die Abläufe können gesteuert und dokumentiert werden.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Gefahrstoffe: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Web Sara Gefährdungsbeurteilung',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://qumsult.de/gefaehrdungsbeurteilung-software/',
+      productCompany: 'Qumsult',
+      productDescription:
+        'Mit Web SARA-Gefährdungsbeurteilung können Sie Ihre Gefährdungen effizient und effektiv ermitteln, beurteilen, dokumentieren und geeignete Maßnahmen festlegen sowie diese verwalten. Steigen Sie um von Excel, Word oder PDF auf eine webbasierte Anwendung, auf die alle Beschäftigten am Standort Zugriff haben und die Ergebnisse der Gefährdungsbeurteilungen einsehen können.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Mitarbeiter: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Gefahrstoffe: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'UTA Unterweisung',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://qumsult.de/software/arbeitsschutz-software_unterweisungen/',
+      productCompany: 'Qumsult',
+      productDescription:
+        'UTA ist ein Instrument, um Ihre Unterweisungen und Schulungen zu planen, zu organisieren, durchzuführen und zu verwalten.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Mitarbeiter: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Gefahrstoffe: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'DiEva',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://di-eva.de/',
+      productCompany: 'tec4U-Solutions GmbH',
+      productDescription:
+        'DiEva bietet der Marktüberwachung eine intelligente und interaktive Kommunikationsplattform, um Unternehmen bezüglich der Einhaltung von gesetzlichen Anforderungen zu befragen und die Antworten im Hinblick auf die Gesetzeskonformität auszuwerten. Derzeit können über DiEva umwelt- und arbeitsschutzrelevante Regelwerke wie die REACH-Verordnung oder die POP-Verordnung abgebildet werden. Die Plattform unterstützt und entlastet Unternehmen beim Antwortprozess auf Vollzugsanfragen. Unternehmen können Umsetzungsdefizite frühzeitig erkennen und so Haftung vermeiden.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Gefahrstoffe: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'FridaQuest',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://frida.dfge.de/2.html',
+      productCompany: 'DFGE Institute for Energy - Ecology - Economy ©',
+      productDescription:
+        'FridaQuest is a SaaS tool which enables you to collect necessary data for your sustainability report. It allows to set-up a questionnaire with delegated ...',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'SaaS-Lösung': true,
+      },
+      objektAspekt: {
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+        Produkt: true,
+      },
+      betrachtungskonzept: {
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'FridaCorp',
+      productImage: '',
+      state: 'published',
+      productLink: 'http://frida.dfge.de/',
+      productCompany: 'DFGE Institute for Energy - Ecology - Economy ©',
+      productDescription:
+        'Ermitteln Sie standortübergreifend, auf internationalen Normen basierend, den Carbon Footprint Ihres Unternehmens. Durch die Datenpflege in FridaCorp lassen sich nicht nur die Treibhausgas-Emissionen eines Unternehmens kontinuierlich beobachten, sondern es können kritische Werte frühzeitig erkannt und langfristig verringert werden.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'SaaS-Lösung': true,
+      },
+      objektAspekt: {
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Zwischenbetrieblich: true,
+      },
+      betrachtungskonzept: {
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'FridaLog',
+      productImage: '',
+      state: 'published',
+      productLink: 'http://frida.dfge.de/',
+      productCompany: 'DFGE Institute for Energy - Ecology - Economy ©',
+      productDescription:
+        'Mit FridaLog können Logistik-Unternehmen die Transportemissionen Ihrer Flotte in einer Software-as-a-Service Applikation einfach und schnell ermitteln – pro Sendung per Lkw, Bahn, Schiff, Flugzeug oder für die gesamte Flotte. Die Berechnungen erfolgen gemäß internationaler Standards wie z.B. dem GHG Protokoll oder der DIN EN 16258 und berücksichtigen dabei nicht Durchschnittswerte, sondern unternehmensspezifische Daten. Ergebnis ist ein von der DFGE validierter Report mit Logo des Kunden im PDF Format, der mit dem DFGE-Siegel für die Richtigkeit der Berechnungen bürgt und der Forderung nach einer Überprüfung durch unabhängige Dritte gerecht wird.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'SaaS-Lösung': true,
+      },
+      objektAspekt: {
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Cority Environmental Cloud',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.cority.com/environmental-cloud/',
+      productCompany: 'Cority',
+      productDescription:
+        'Transform compliance and drive continuous improvement to meet your environmental goals. Our Cority Environmental Cloud is developed to help transform how you manage compliance and drive continuous improvement towards your corporate goals. Advance your performance to a cleaner, greener future more easily and efficiently. Purpose-built solutions to meet your environmental needs are for example Air Emissions Management, Waste Management, Audits & Inspections, Sustainability & ESG, …',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'SaaS-Lösung': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Gefahrstoffe: true,
+        Energie: true,
+        StoffeStoffströme: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+        Produkt: true,
+      },
+      betrachtungskonzept: {
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Cority Sustainability Cloud',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.cority.com/sustainability-cloud/',
+      productCompany: 'Cority',
+      productDescription:
+        'Ensure accurate and auditable sustainability and ESG data to create a greener future: Create objectives and targets, collect data from across the entire organization or portfolio, and use powerful dashboards to visualize the success of your programs. Cority’s Sustainability Cloud makes it easy to work collaboratively with colleagues across their organization. It provides accurate, high-quality data that can be used to inform effective decision making. Plausibility checks ensure data being captured meets high standards for accuracy. From sustainability reports to ESG disclosures, organizations need to share visually compelling, comprehensive data with a variety of stakeholders. Cority’s Sustainability Cloud makes it easy to generate beautiful, accurate reports with the click of a button.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'SaaS-Lösung': true,
+      },
+      objektAspekt: {
+        Emissionen: true,
+        Energie: true,
+        StoffeStoffströme: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+        Produkt: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'PASO',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.cwk-itconsulting.de/qehs-management/',
+      productCompany: 'CWK IT Consulting GmbH',
+      productDescription:
+        'Schaffen Sie mit PASO den Perspektivwechsel: Von der reinen Kostenbetrachtung hin zur Darstellung des Wertbeitrages des QEHS-Managements für Ihr Unternehmen. Die PASO-Suite ist modular aufgebaut. Kombinieren Sie nach Ihrem Bedarf und integrieren Sie auch unternehmenseigene Lösungen. Einsatzfelder sind Bestandsaufnahmen Audits, Gefährdungsbeurteilungen, Tätigkeitsberichte, Checklisten, Berichte, Bewertungen, Maßnahmenmanagement und Reporting.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        integriert: true,
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Gefahrstoffe: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'pro.emonio.de',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.emonio.de/de/content/7-analysesoftware',
+      productCompany: 'Berliner Energieinstitut GmbH',
+      productDescription:
+        'In unserer Analysesoftware pro.emonio werden Ihre gemessenen Daten gesammelt und grafisch dargestellt, sodass einem effizienten Energie Monitoring nichts im Weg steht. Egal wie viele Emonio P3 Energiemessgeräte Sie im Einsatz haben: Indem Sie Projekte anlegen und Ihre eingesetzten Leistungsmessgeräte diesen Projekten zuordnen, behalten Sie stets den Überblick und sparen beim Energie Monitoring wertvolle Zeit.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Energymaster',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.bmsvision.com/products/energymaster',
+      productCompany: 'BMSVision',
+      productDescription:
+        'Monitoring of energy consumptions in the Plastics Markets: EnergyMaster is the BMSvision real time energy monitoring system. Following the principle of Monitoring & Targeting (M&T), it maps the different energy consumptions (electricity, gas, compressed air, water, steam,…) for further analysis and optimization. The EnergyMaster system can be offered as an extension of existing BMSvision MES systems but can also be used as standalone system.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+      },
+      gradDerIntegrierung: {
+        'Add-On': true,
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'imperium®',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.binserv.de/',
+      productCompany: 'BINSERV GmbH',
+      productDescription:
+        'Imperium® ist mehr als ein Datawarehouse, das Daten sammelt und speichert. Imperium® bietet Ihnen darüber hinaus die Vernetzung Ihrer Daten, egal ob auf dem Server oder in der Cloud. Verbinden Sie beispielsweise die Energiekosten mit den Raumtemperaturen. Schon sehen Sie, wie das Heizverhalten die Energiekosten beeinflusst. Nutzen Sie das Modul Energie-Monitoring, um die Energiekosten zu überwachen. So ermitteln Sie schnell Einsparpotenziale. Sie können aber auch Informationen über die interaktive 3-D-Karte aufrufen, etwa die Rauchmelder oder Feuermelder inklusiv Wartungsterminen und -protokollen.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'ProfiSignal',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.delphin.de/produkte/software/profisignal.html',
+      productCompany: 'Delphin Technology AG',
+      productDescription:
+        'ProfiSignal ist das klassische, windowsbasierte Standardwerkzeug für die Mess- und Prozessdatenerfassung, Prüfstandsautomatisierung sowie Messtechnik. Der Anwendungsbereich für die Messtechnik-Software liegt in der einfachen Datenarchivierung und Visualisierung bis hin zur kompletten Automatisierungslösung mit automatisiertem Reporting.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'econ4',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.econ-solutions.de/software/energiemanagement-software',
+      productCompany: 'econ solutions GmbH',
+      productDescription:
+        'Die vierte Generation unserer Energiemanagement-Software econ4 ist eine der aktuell führenden Lösungen für betriebliches Energiemanagement. Der modulare, flexible Aufbau ermöglicht die Anpassung an die individuellen Rahmenbedingungen vor Ort. Die nutzereigenen Dashboards liefern unmittelbare Erkenntnisse über Ihren Verbrauch. econ4 ist offen für alle Energiearten, Medien (Strom, Gas, Wasser, usw.) und Zustandsdaten (Temperatur, Druck usw.) und ermöglicht eine flexible Auswertung im umfangreichen Berichtswesen. Im Kennzahleneditor können Energy Performance Indicators gebildet werden. Außerdem werden Kosten- und CO2-Umrechnungen für Kostenstellen und Umweltreporting bereitgestellt. Der Assistent zur DIN EN ISO 50001:2018 hilft alle Anforderungen der Norm im Blick zu behalten.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Dialogo',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.elektroanlagen-roering.de/index.php/kompetenzen-und-leistungen/dialogo',
+      productCompany: 'Elektro-Anlagen Röring GmbH',
+      productDescription:
+        'Die Steuerungssoftware DiaLogo® bietet Ihnen vor Ort oder über Fernwartung einen schnellen Zugriff auf die Prozessleittechnik. Sie stellt die erforderlichen Prozessparameter nach kundenspezifischen Vorgaben transparent dar. Über die intuitive Bedienung steuert, misst, regelt und überwacht DiaLogo® den effizienten Betrieb Ihrer Maschinen- und Anlagenprozesse.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+        Mitarbeiter: true,
+      },
+      anwendungsbereich: {
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'BlueLiKon',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.gpi-stenn.de/produkte/bluelikon/',
+      productCompany:
+        'GPI Gesellschaft für Prüfstanduntersuchungen und Ingenieurdienstleistungen mbH',
+      productDescription:
+        'Unser Energiemanagementsystem BlueLiKon wurde speziell für Gewerbe- und Industriekunden konzipiert. Wir stellen Ihnen ein System zur Verfügung, mit dem Sie die Anforderungen an ein Energiemanagementsystem nach DIN EN ISO 50001 oder die Durchführung von Energieaudits nach DIN EN 16247 aufwandsarm realisieren können. Dabei setzen wir vor allem auf einen hohen Sicherheitsstandard. Diesen können wir unter anderem durch die Nutzung des Betriebssystems Linux gewährleisten.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'EnEffCo®',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.oekotec.de/unser-portfolio/energieeffizienz-controlling/',
+      productCompany: 'ÖKOTEC Energiemanagement GmbH',
+      productDescription:
+        'Profitieren Sie von Expertenwissen, Nutzerorientierung und einer sehr breiten Anwendungsmöglichkeit mit EnEffCo®– vom Monitoring, über das ISO-50001 Management und die statistische Anlagenüberwachung bis hin zum Last- sowie Flexibilitätsmanagement und der Steuerung Ihrer E-Fahrzeugladung. Neben einer Basisversion mit umfangreichen Feature-Umfang können Sie Ihr System flexibel nach Ihrem Bedarf und Umsetzungsplan um passende Module wie u.a. Mobile App, Sankey-Diagramm, Smart Query oder EnEffReg® erweitern.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Anlagen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'EDM-Software',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.wgs-energie.de/edmsoftware_17_de.html',
+      productCompany: 'WGS Energietechnik GmbH',
+      productDescription:
+        'Nur was Sie messen, können Sie kontrollieren! Mit der EDM-Software können Sie Energiedaten auswerten, Fehlverhalten erkennen und Ihre Energieeffizienz steigern! Die EDM – Software dient als maßgeschneiderte Systemlösung im PDCA (Plan,Do,Scheck,Act) – Kreislauf für Strom, Wasser, Gas, Öl, Wärme, Kälte, Druckluft und Dampf.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+        Mitarbeiter: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'ResMa®',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.weidmueller.de/de/loesungen/energiemanagement_loesungen/index.jsp',
+      productCompany: 'Weidmüller GTI Software GmbH',
+      productDescription:
+        'ResMa® unterstützt alle Aufgaben für ein effizientes und aktives Energiemanagement und bezieht sich auf die vom Unternehmen beeinflussbaren Faktoren und kann an individuelle Anforderungen angepasst werden. ResMa® liefert eine Reihe von Visualisierungs-Apps, die Ihnen helfen, eine optimale Konfiguration der Prozessvariablen herauszufinden. Die Software ermöglicht die Überwachung aller eingehenden Tags und Generierung von Alarmen, die per Mail/SMS versendet werden können. ResMa® ermöglich ein automatisiertes Berichtswesen einzurichten und hilft, Transparenz zu fördern und einen Verbesserungsprozess einzuleiten.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        integriert: true,
+        'Add-On': true,
+        'Stand-Alone': true,
+        'SaaS-Lösung': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'WAGO EnergieDatenManagement',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.wago.com/de/energiemanagement/energiedatenmanagement',
+      productCompany: 'WAGO Kontakttechnik GmbH & Co. KG',
+      productDescription:
+        'Das WAGO Energiedatenmanagement, bestehend aus einer Software in Kombination mit einem modularen Steuerungssystem, erfasst Messdaten verschiedener Medien und Einflussgrößen für das Energie-Monitoring und verarbeitet diese für weitere Analysen, die Archivierung und das Reporting. Die unterschiedlichen Signale aus den angeschlossenen Zählern und Sensoren werden automatisch von der Software erkannt und können durch einfache Parametrierung komfortabel für weitere Energieanalyse-Tools bereitgestellt werden.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'VKW Energiecockpit',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://eco.vkw.at/',
+      productCompany: 'Vorarlberger Kraftwerke AG',
+      productDescription:
+        'Das webbasierte Tool vkw Energiecockpit dient zur Unterstützung des Energiemanagements und ermöglicht eine umfangreihe automatische Erfassung, Auswertung und Kontrolle sämtlicher Verbräuche Ihres Unternehmens ohne aufwendige Installationen. So behalten Sie Ihre Energie- und Ressourcenmanagementbilanz jederzeit im Blick und können nicht nur Verbräuche, sondern auch Kosten und Emissionen optimieren und senken.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Viridis Energy and Sustainability Platform',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://viridis.energy/en/solutions',
+      productCompany: 'SMS group',
+      productDescription:
+        'Viridis is a complete energy management solution developed exclusively for companies which are heavy energy consumers. Viridis includes sophisticated engineering and artificial intelligence tools to facilitate control over processes in real time. Viridis also includes advanced management models, making the shop floor perspective visible to corporate management.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'ENTECTIV®',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.engie-deutschland.de/sites/default/files/2021-09/ENGIE-Energiemonitoring-ENTECTIV.pdf',
+      productCompany: 'ENGIE Deutschland GmbH',
+      productDescription:
+        'Das herstellerunabhängige Energiemonitoring-System ENTECTIV®: Die Rohdaten einzelner Energiezähler werden von Datenloggern kontinuierlich erfasst, zwischengespeichert und zyklisch durch die ENTECTIV® Energiedatenbank ausgelesen. In der Energiedatenbank werden die Zählerdaten archiviert, ggf. bereinigt, sowie abgeleitete Größen und Kennzahlen berechnet. Im webbasierten Energieportal erfolgt die Darstellung von Kennzahlen und Diagrammen interaktiv und klar strukturiert bei intuitiver Bedienung. Einmal eingerichtete Energieberichte werden in regelmäßigen Abständen per E-Mail an einen definierten Nutzerkreis versandt. Wer noch tiefer in die Analyse einsteigen will, nutzt das Excel-Modul für beliebige, individuelle Auswertungen.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'audako® IoT Plattform',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.audako.com/de/audako-plattform',
+      productCompany: 'narz systems GmbH & Co. KG',
+      productDescription:
+        'audako® ist ein nachhaltiges Software Produkt für Ihr Energiemonitoring und Ressourcen-Management. Sie können mit audako Energieverbräuche transparent machen und mithilfe von Verbrauchsdaten Ihr Energiemanagement effektiver gestalten. Mit dem Einsatz von IoT Monitoringsystemen können Sie generierte Datenmengen (Smart Data) aus den Sektoren Wasser, Abwasser, Verkehr und Energie effizienter als zuvor nutzen. Sie erhalten viele Möglichkeiten Prozesse und Verbräuche zu optimieren. Sie können mögliche Einsparpotenziale, Entscheidungsunterstützungen und Planungsprozesse auf dieser Basis erschließen.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+        Lebenszyklus: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Emissionen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+        Produkt: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'COMMUNALFM®',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.communal-fm.de/software.html',
+      productCompany: 'Communal-FM GmbHC',
+      productDescription:
+        'Die Software COMMUNALFM® ist speziell auf die Wahrnehmung kommunaler Facility-Management-Aufgaben zugeschnitten. Das Modul Energiemanagement ist das zentrale Informations- und Entscheidungstool für energiebeauftragte Anwender. Die Grundlage jeglichen Energiemanagements, die Erfassung und Übertragung von Zählerständen und Verbräuchen, kann durch die Anbindung an das Internet ortsunabhängig (z. B. Hausmeister in der Schule) auch von mobilen Geräten aus vorgenommen werden. Die erfassten Daten laufen plausibilitätsgeprüft an zentraler Stelle zusammen. Dem komplexen Thema Energiemanagement begegnet das Modul mit einer Fülle an durchdachten Arbeitserleichterungen (z. B. automatische Bereitstellung aktueller Klimafaktoren zur Witterungsbereinigung, Vergleichskennwerte, Plausibilitätsprüfung, Warnschwellendefinition, Erinnerungsfunktion, …), wodurch es zum unabdingbaren Werkzeug für Energiemanager und zur Erstellung von Energieberichten wird.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Energinet',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://cebyc.de/',
+      productCompany: 'Cebyc GmbH',
+      productDescription:
+        'Energinet ist ein Verwaltungstool für das Energie-, Abfall- und Umweltmanagement und deckt die gesamte Kette von der Messung bis zum Reporting ab. Unsere Software wird von Kunden aus der Industrie, dem privaten und öffentlichen Sektor, Netzbetreibern und Energieberatern eingesetzt. Energinet ist eine benutzerfreundliche, anpassungsfähige und hochgradig konfigurierbare Plattform, die für Benutzer aller Erfahrungsstufen geeignet ist. Über individuelle Dashboards und automatische Berichtsverteilungen können Sie direkt mit Ihren Kollegen-innen, Kunden und Mietern kommunizieren. Energinet verwendet gängige Analysemethoden für den Energieverbrauch sowie Algorithmen zur Abweichungserkennung und Prognose des Energieverbrauchs.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+        Mitarbeiter: true,
+        'externe Stakeholder': true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'EMS-EDM PROPHET®',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.edm-prophet.de/',
+      productCompany: 'Fraunhofer ISOB-AST',
+      productDescription:
+        'Unsere Plattform EMS-EDM PROPHET® ist ein TÜV-zertifiziertes Energiedatenmanagement nach DIN EN ISO 50001. Durch unsere Herkunft aus der Fraunhofer-Gesellschaft arbeiten wir an Lösungen, die unseren Kunden einen Vorsprung im Wettbewerb verschaffen. Diese Lösungen können sehr schnell in unserer Plattform EMS-EDM PROPHET® integriert und damit von unseren Kunden bequem in Ihrem Geschäftsmodell eingebunden werden.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'ELOG-Report',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.fraenz-jaeger.de/de/news-de-im-menu/elog-report',
+      productCompany: 'Fränz & Jaeger GmbH',
+      productDescription:
+        'eLOG Report ergänzt das universelle Messsystem eLOG node um eine EMS-Zentrale. eLOG Report unterstützt die wichtigen Darstellungsarten: Kurven-, Balken-, Torten-, Sankey Diagramm und erzeugt daraus Berichte. Der eLOG Server archiviert die Messwerte verschiedener Messstationen und bereitet die Daten für die Darstellung auf. eLOG Report summiert automatisch die Messwerte von mehreren Messgeräten und stellt das Ergebnis in einem Diagramm dar.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'ELOG-Node',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.fraenz-jaeger.de/de/energieemonitoring-de-in-news',
+      productCompany: 'Fränz & Jaeger GmbH',
+      productDescription:
+        'Das ELOG System: Die Energie-Erfassunglösung für Industrie und IT und Liegenschaften. Der zentrale Baustein für die Zertifizierung nach ISO 50001:2011. Mit eLOG node können Sie Elektroenergie sekundengenau erfassen, Strom und Spannung aufzeichnen und die Kurven im Web-Browser anzeigen. Weitere Funktionen sind die Erfassung von Klimadaten (Temperatur, Feuchte .. ) und Verbrauchsdaten (Energie, Wasser, Gas, Dampf, Druckluft), Elektro Oberwellenanalyse, Gasverbrauch messen, uvm.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'SPARTACUS Facility Management®',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.spartacus-fm.de/fm-prozesse/energiecontrolling',
+      productCompany: 'N+P Informationssysteme GmbH',
+      productDescription:
+        'Die CAFM-Lösung SPARTACUS Facility Management® (SPARTACUS) unterstützt Unternehmen vollumfänglich beim Energiecontrolling. Basierend auf den durch die GEFMA-Richtlinie 444 empfohlenen Teilprozessen, können Sie folgende Aufgaben durchgängig abbilden: Erfassung und Monitoring der Medienverbräuche, Vorbereitung für Energieberichte und Entscheidungsvorlagen und Unterstützung bei der Planung und Realisierung von Maßnahmen zur Verbesserung der Energieeffizienz.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'VADEV®',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.nzr.de/home/loesungen/systemtechnik/software/vadev/',
+      productCompany: 'NZR®',
+      productDescription:
+        'Das Energiedatenmanagementsystem VADEV® erfüllt vor allem folgende Aufgaben: Automatische Erfassung der Zählerdaten, strukturiertes Abspeichern der erfassten Werte, Analyse und Auswertung der Daten innerhalb VADEV® und Export der Daten in weitere Formate zur Weiterverarbeitung der Daten.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'CountVision',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://www.nzr.de/home/loesungen/systemtechnik/software/countvision/',
+      productCompany: 'NZR®',
+      productDescription:
+        'Die Energiemanagement Software CountVision ist die Lösung für Industrie-, Filial-Unternehmen und alle, die ihre Verbräuche im Griff haben müssen. Sie dient dazu, Energiesparpotentiale aufzudecken und systematisch zu analysieren. So bietet das System die Möglichkeit, die erfassten Verbrauchs- und Energiedaten durch eigene unternehmensspezifische Größen anzureichern. Das System liefert Informationen, um der Belegschaft Zusammenhänge zu verdeutlichen. Mitarbeiterinformation fördert die Akzeptanz und das Verständnis von Einsparmaßnahmen und den damit verbundenen Verhaltensänderungen. Durch den flexiblen Dashboard-Konfigurator können Sie jederzeit Ihre eigenen Vorstellungen und Ideen schnell umsetzen und vorzeigbare Ergebnisse liefern.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Mitarbeiter: true,
+        'externe Stakeholder': true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'InfoCarrier® EnMS',
+      productImage: '',
+      state: 'published',
+      productLink:
+        'https://onoff-group.de/leistungen/infocarrier-ems-environmental-monitoring-system',
+      productCompany: 'on/off it-solutions GmbH',
+      productDescription:
+        'Das Environmental Monitoring System des InfoCarrier® (EMS) erfasst, visualisiert und dokumentiert Bedingungen der Produktionsumgebung, wie Temperaturen, Drücke, Luftfeuchten, Partikelmengen aber auch zum Beispiel Gerätewerte, wie Temperaturen von Tiefkühlzellen/-schränken. Und dies sowohl von stationären als auch mobilen Sensoren. Dafür verwenden wir standardisierte, im Haus onoff entwickelte und vorgetestete Module, die mit Zusatzfunktionen wie Gradientenberechnung, automatischer Grenzwertanpassung, Datenpufferung oder einem chargenbezogenen Reporting erweitert werden können.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Anlagen: true,
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'deZemVis',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.dezem.de/visualisierung-und-analyse/',
+      productCompany: 'deZem GmbH',
+      productDescription:
+        'deZemVis ist unsere webbasierte, interaktive Visualisierungs­software mit vielen praktischen, innovativen Analysefunktionen. Mit deZemVis können Energieverbräuche und Instandhaltung optimiert, Kosten reduziert, und die Anforderungen der ISO 50001 mehr als erfüllt werden. Wichtig ist uns, mit deZemVis eine für Manager, Controller und Techniker gemeinsam nutzbare, professionelle Plattform anzubieten.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+        Mitarbeiter: true,
+      },
+      anwendungsbereich: {
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'deZemBoard',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.dezem.de/dashboards/',
+      productCompany: 'deZem GmbH',
+      productDescription:
+        'deZemBoard ist ein Baukasten für Dashboards mit einer großen Anzahl interaktiver Widgets, die Sie schnell, einfach und flexibel nach Ihren Wünschen einsetzen können. Konfigurieren Sie mit wenigen Klicks individuelle Dashboards aus Diagrammen, Nachrichten, Bildern oder komplexeren Bausteinen, um Ihr Energiemanagement oder andere datenbasierte Projekte gezielt zu unterstützen und um vertiefte Erkenntnisse zu gewinnen, Auffälligkeiten zu studieren, Berichte anzufertigen oder Ihr Energiecontrollingsystem zu verwalten.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'deZemReport',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.dezem.de/berichte/',
+      productCompany: 'deZem GmbH',
+      productDescription:
+        'deZemReport ist das Modul zum Konfigurieren von Energie- und Umweltberichten, die automatisch und regelmäßig per E‑Mail versandt werden. Das Besondere an deZemReport ist die sehr einfache Konfiguration, der Nutzer wird unaufdringlich von Schritt zu Schritt geleitet, der fertige Bericht wird noch einmal in Voransicht gezeigt. Berichte werden wahlweise täglich, wöchentlich, monatlich oder jährlich an frei konfigurierbare Nutzergruppen verschickt.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Berichterstattung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'PlantMaster',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.bmsvision.com/products/plantmaster',
+      productCompany: 'BMSVision',
+      productDescription:
+        'PlantMaster is a leading MES system for discrete manufacturing. It is a powerful and extensive yet flexible tool enabling managers to achieve operational excellence and rapidly respond to changing conditions.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+        Mitarbeiter: true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Anlagen: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+        Produkt: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Enit Messkonzeptplaner',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.messkonzept-planer.de/',
+      productCompany: 'Enit Energy IT Systems GmbH',
+      productDescription:
+        'Die Erstellung eines Messkonzepts ist für betriebliches Energiemanagement unabdingbar und legt den Grundstein für ein effizientes kosten- und energieeinsparendes Wirtschaften in jedem Industriebetrieb. Um bereits vorhandene Metadaten visuell darstellen zu können, werfen Sie doch einen ersten Blick in unser Messkonzeptplaner Startertool. Dieser Service ist für Sie kostenfrei. Warum brauche ich ein Messkonzept? Zur Einhaltung gesetzlicher Vorgaben und Regulierungen im Rahmen von Zertifizierungen und Auditierungen, zur Inanspruchnahme von Förderprogrammen wie BAFA, für die Dokumentation und Planung Ihrer Energieflüsse und zur effizienten Nutzung einer Energiemanagement-Software.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Ökobilanzierung: true,
+        Entscheidungsunterstützung: true,
+      },
+      gradDerIntegrierung: {
+        'SaaS-Lösung': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Enit act',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://enit.io/produkte/lastmanagement',
+      productCompany: 'Enit Energy IT Systems GmbH',
+      productDescription:
+        'Lastspitzen können zu sehr hohen Stromkosten führen. Unternehmen können oftmals ihre schaltbaren Verbraucher nicht identifizieren oder haben keinen Überblick über die Energieverbräuche der Prozessabläufe innerhalb einzelner Produktionsschritte. Mit unserem dynamischen Lastmanagementsysetem ENIT act, werden die Lastspitzen Ihres Unternehmens durch intelligente Algorithmen erfasst und gesteuert. Mit der Kombination aus der ENIT Hardware und der ENIT act Software, werden Lastspitzen erkannt und können dadurch frühzeitig verhindert werden. Durch die real-time Übertragung werden Metadaten direkt an die ENIT act Software übermittelt. Mittels eines Algorithmus steuert unser System gegen sich anbahnenden Lastspitze. Anhand der gesammelten Daten lernt das System wann und warum Lastspitzen auftreten. Ein frühzeitiges und langfristiges Entgegensteuern und Vermeiden ist dadurch möglich.',
+      zielgruppe: {
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+      },
+      gradDerIntegrierung: {
+        'Stand-Alone': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Managementzentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'Enit carbon',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://enit.io/produkte/co2-bilanzierung',
+      productCompany: 'Enit Energy IT Systems GmbH',
+      productDescription:
+        'ENIT carbon begleitet Sie auf dem Weg in Richtung CO2 -freier Unternehmensführung. Für die ersten Schritte in Richtung unternehmensweiter CO2 -Bilanz stellen wir Ihnen unser CO2 - Bilanzierung Startertool als Software-Feature zur Verfügung, damit Sie einen ersten Überblick bzgl. der verbrauchten Emissionen Ihrer Unternehmensstruktur erhalten.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+      },
+      anwendungsbereich: {
+        Ökobilanzierung: true,
+      },
+      gradDerIntegrierung: {
+        'SaaS-Lösung': true,
+      },
+      objektAspekt: {
+        Energie: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+      },
+      betrachtungskonzept: {
+        Bewertungszentriert: true,
+      },
+    },
   ];
 
   for (const product of products) {
