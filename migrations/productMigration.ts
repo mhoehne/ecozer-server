@@ -244,41 +244,6 @@ export default async function productMigration(req: Request, res: Response) {
         Managementzentriert: true,
       },
     },
-
-    // {
-    //   account_id: 0,
-    //   productName: '360report',
-    //   productImage: '',
-    //   state: 'published',
-    //   productLink: '',
-    //   productCompany: '',
-    //   productDescription: '',
-    //   zielgruppe: {
-    //     Geschäftsführung: true,
-    //     Umweltbeauftragte: true,
-    //     Fachabteilung: true,
-    //     'externe Stakeholder': true,
-    //     Behörden: true,
-    //   },
-    //   anwendungsbereich: {
-    //     Gesetzeskonformität: true,
-    //     Zertifizierung: true,
-    //     Ökobilanzierung: true,
-    //   },
-    //   gradDerIntegrierung: {
-    //     'SaaS-Lösung': true,
-    //   },
-    //   objektAspekt: {
-    //     Emissionen: true,
-    //   },
-    //   systemgrenzen: {
-    //     'Standort/Betrieb': true,
-    //   },
-    //   betrachtungskonzept: {
-    //     Bewertungszentriert: true,
-    //   },
-    // },
-
     {
       account_id: 0,
       productName: 'e!Sankey',
@@ -3591,6 +3556,58 @@ export default async function productMigration(req: Request, res: Response) {
       },
       betrachtungskonzept: {
         Bewertungszentriert: true,
+      },
+    },
+    {
+      account_id: 0,
+      productName: 'emson Tools',
+      productImage: '',
+      state: 'published',
+      productLink: 'https://www.adapton.de/emson-tools/',
+      productCompany: 'adapton AG',
+      productDescription:
+        'Die emson Tools bieten einen einfachen und schnellen Einstieg in das Energiemanagement. Entwickelt von Energieexperten und im täglichen Einsatz durch die adapton Berater, wird in zahlreichen Projekten die Praxis Tauglichkeit gefördert. emson ist ISO 50001 konform und gelistet als förderfähige Energiemanagement-Software nach BAFA Richtlinien. Dabei profitieren Sie von allen Vorteilen einer modernen und sicheren Energiemanagement-Software. Sie haben unabhängig von Ihrem Standort und Endgerät Zugriff auf Ihre gesamten Energiedaten. Die Stärke liegt insbesondere in der ganzheitlichen Betrachtung aller Themen, von der Energieeffizienz bis zur Energie-Compliance. Dass emson alle Energie und Verbrauchsmedien wie Strom, Erdgas, Fernwärme, Wasser etc. betrachtet ist selbstverständlich.',
+      zielgruppe: {
+        Geschäftsführung: true,
+        Umweltbeauftragte: true,
+        Fachabteilung: true,
+        Mitarbeiter: true,
+        'externe Stakeholder': true,
+        Behörden: true,
+      },
+      anwendungsbereich: {
+        Gesetzeskonformität: true,
+        Zertifizierung: true,
+        Ökobilanzierung: true,
+        Berichterstattung: true,
+        Entscheidungsunterstützung: true,
+        Arbeitsschutz: true,
+      },
+      gradDerIntegrierung: {
+        integriert: true,
+        'Add-On': true,
+        'Stand-Alone': true,
+        'SaaS-Lösung': true,
+      },
+      objektAspekt: {
+        Abfall: true,
+        Anlagen: true,
+        Gefahrstoffe: true,
+        Emissionen: true,
+        Energie: true,
+        StoffeStoffströme: true,
+        Kosten: true,
+      },
+      systemgrenzen: {
+        'Standort/Betrieb': true,
+        Prozess: true,
+        Produkt: true,
+        Zwischenbetrieblich: true,
+      },
+      betrachtungskonzept: {
+        Verwaltungszentriert: true,
+        Bewertungszentriert: true,
+        Managementzentriert: true,
       },
     },
   ];
