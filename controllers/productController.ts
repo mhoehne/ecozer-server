@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { Schema, model } from 'mongoose';
-import mongoose from 'mongoose';
+import mongoose, { model, Schema } from 'mongoose';
 import autoIncrement from 'mongoose-auto-increment';
+
 import { AccountModel } from './accountController';
 import { NotificationModel } from './notificationController';
 
@@ -365,6 +365,7 @@ export async function createProduct(req: Request, res: Response) {
     rejectReason: '',
     createdAt: Date.now(),
     isRead: false,
+    messageType: 'pending',
   });
 
   productSchema.pre('save', function (next) {
