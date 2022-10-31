@@ -1,38 +1,26 @@
-import express from 'express';
-import fileUpload from 'express-fileupload';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
-import {
-  listAccount,
-  createAccount,
-  updateAccount,
-  deleteAccount,
-  GetOneAccount,
-  GetOneAccountByID,
-} from './controllers/accountController';
-import {
-  listProduct,
-  getProduct,
-  createProduct,
-  updateProduct,
-  deleteProduct,
-  rejectProduct,
-  publishProduct,
-  unpublishProduct,
-  incrementNewCount,
-  productSchema,
-} from './controllers/productController';
-import {
-  listNotifications,
-  markAsReadNotification,
-  deleteNotification,
-} from './controllers/notificationController';
 import cors from 'cors';
+import express from 'express';
+import fileUpload from 'express-fileupload';
 import mongoose from 'mongoose';
-import productMigration from './migrations/productMigration';
-import accountMigration from './migrations/accountMigration';
+
+import {
+    createAccount, deleteAccount, GetOneAccount, GetOneAccountByID, listAccount, updateAccount
+} from './controllers/accountController';
 import { checkAuthentication } from './controllers/authenticationController';
 import { getFile, postFile } from './controllers/fileController';
+import {
+    deleteNotification, listNotifications, markAsReadNotification
+} from './controllers/notificationController';
+import {
+    createProduct, deleteProduct, getProduct, incrementNewCount, listProduct, publishProduct,
+    rejectProduct, unpublishProduct, updateProduct
+} from './controllers/productController';
+import { createReportingEntry, deleteReportingEntry } from './controllers/reportingController';
+import { createSurveyEntry, deleteSurveyEntry } from './controllers/surveyController';
+import accountMigration from './migrations/accountMigration';
+import productMigration from './migrations/productMigration';
 
 // rest of the code remains same
 const app = express();
@@ -90,6 +78,14 @@ app.post('/products/:_id/view', incrementNewCount);
 app.post('/products/:id/reject', rejectProduct);
 app.post('/products/:id/publish', publishProduct);
 app.post('/products/:id/unpublish', unpublishProduct);
+
+// REPORTING
+app.post('/reportings', createReportingEntry);
+app.delete('/reportings', deleteReportingEntry);
+
+// SURVEY
+app.post('/user-survey', createSurveyEntry);
+app.delete('/user-survey', deleteSurveyEntry);
 
 //product migration
 app.post('/migration/products', productMigration);
