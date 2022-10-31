@@ -17,7 +17,9 @@ import {
     createProduct, deleteProduct, getProduct, incrementNewCount, listProduct, publishProduct,
     rejectProduct, unpublishProduct, updateProduct
 } from './controllers/productController';
-import { createReportingEntry, deleteReportingEntry } from './controllers/reportingController';
+import {
+    createReportingEntry, deleteReportingEntry, getReport, listReportings
+} from './controllers/reportingController';
 import {
     createSurveyEntry, deleteSurveyEntry, getSurveyEntry, listSurveyEntries
 } from './controllers/surveyController';
@@ -82,8 +84,8 @@ app.post('/products/:id/publish', publishProduct);
 app.post('/products/:id/unpublish', unpublishProduct);
 
 // REPORTING
-//app.get('/reportings', listReportings);
-//app.get('/reportings/:id', );
+app.get('/reportings', listReportings);
+app.get('/reportings/:id', getReport);
 app.post('/reportings', createReportingEntry);
 app.delete('/reportings', deleteReportingEntry);
 
