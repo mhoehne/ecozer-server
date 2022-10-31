@@ -41,6 +41,39 @@ surveySchema.plugin(autoIncrement.plugin, 'Survey');
 export const SurveyModel = model<Survey>('Survey', surveySchema);
 
 /************************************************************************************************/
+// GET
+export async function listSurveyEntries(req: Request, res: Response) {
+  const sort: { [key: string]: number } = {};
+  const query: {
+    [key: string]: boolean | number | string | RegExp;
+  } = {};
+  let limit = (req.query.limit as string) ?? '';
+  //parseInt(' '.trim() ?0:1) weird error on production
+  if (!limit.trim()) {
+    limit = '100';
+  }
+
+  const surveyEntries = await SurveyModel.find(query)
+    .sort(sort)
+    .limit(parseInt(limit));
+
+  res.send({ surveyEntries });
+}
+
+export async function getSurveyEntry(req: Request, res: Response) {
+  const surveyEntry = await SurveyModel.findOne({
+    _id: parseInt(req.params.id),
+  });
+
+  if (surveyEntry === null) {
+    res.sendStatus(404);
+    return;
+  }
+
+  res.send(surveyEntry);
+}
+
+/************************************************************************************************/
 //POST / CREATE
 export async function createSurveyEntry(req: Request, res: Response) {
   const createNewSurveyEntry = new SurveyModel(req.body);

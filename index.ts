@@ -18,7 +18,9 @@ import {
     rejectProduct, unpublishProduct, updateProduct
 } from './controllers/productController';
 import { createReportingEntry, deleteReportingEntry } from './controllers/reportingController';
-import { createSurveyEntry, deleteSurveyEntry } from './controllers/surveyController';
+import {
+    createSurveyEntry, deleteSurveyEntry, getSurveyEntry, listSurveyEntries
+} from './controllers/surveyController';
 import accountMigration from './migrations/accountMigration';
 import productMigration from './migrations/productMigration';
 
@@ -80,10 +82,14 @@ app.post('/products/:id/publish', publishProduct);
 app.post('/products/:id/unpublish', unpublishProduct);
 
 // REPORTING
+//app.get('/reportings', listReportings);
+//app.get('/reportings/:id', );
 app.post('/reportings', createReportingEntry);
 app.delete('/reportings', deleteReportingEntry);
 
 // SURVEY
+app.get('/user-survey', listSurveyEntries);
+app.get('/user-survey/:id', getSurveyEntry);
 app.post('/user-survey', createSurveyEntry);
 app.delete('/user-survey', deleteSurveyEntry);
 
