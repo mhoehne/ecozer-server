@@ -54,3 +54,17 @@ export async function createSurveyEntry(req: Request, res: Response) {
 
   return res.status(201).send(createNewSurveyEntry);
 }
+
+/************************************************************************************************/
+//DELETE
+export async function deleteSurveyEntry(req: Request, res: Response) {
+  try {
+    await SurveyModel.findOneAndDelete({
+      _id: req.body._id,
+    }).exec();
+    return res.status(202).send('Survey entry successfully deleted');
+  } catch (e) {
+    res.status(500).send(e);
+    return;
+  }
+}

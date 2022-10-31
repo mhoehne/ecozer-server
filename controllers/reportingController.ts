@@ -44,3 +44,17 @@ export async function createReportingEntry(req: Request, res: Response) {
 
   return res.status(201).send(createNewReportingEntry);
 }
+
+/************************************************************************************************/
+//DELETE
+export async function deleteReportingEntry(req: Request, res: Response) {
+  try {
+    await ReportingModel.findOneAndDelete({
+      _id: req.body._id,
+    }).exec();
+    return res.status(202).send('Report successfully deleted');
+  } catch (e) {
+    res.status(500).send(e);
+    return;
+  }
+}
