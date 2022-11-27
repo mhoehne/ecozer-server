@@ -48,7 +48,6 @@ export async function listSurveyEntries(req: Request, res: Response) {
     [key: string]: boolean | number | string | RegExp;
   } = {};
   let limit = (req.query.limit as string) ?? '';
-  //parseInt(' '.trim() ?0:1) weird error on production
   if (!limit.trim()) {
     limit = '100';
   }
