@@ -17,7 +17,6 @@ interface Survey {
 
 export const surveySchema = new Schema<Survey>(
   {
-    _id: { type: Number, required: true },
     role: { type: String, required: false },
     companySize: { type: String, required: false },
     corporateSector: { type: String, required: false },
