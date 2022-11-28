@@ -4,12 +4,9 @@ import autoIncrement from 'mongoose-auto-increment';
 
 interface Survey {
   _id: number;
-  account_id: number;
-  firstName: string;
-  lastName: string;
-  emailAddress: string;
   role: string;
   companySize: string;
+  corporateSector: string;
   Q1: string;
   Q2: string;
   Q3: string;
@@ -20,12 +17,9 @@ interface Survey {
 
 export const surveySchema = new Schema<Survey>(
   {
-    account_id: { type: Number, required: true, immutable: true },
-    firstName: { type: String, required: false },
-    lastName: { type: String, required: false },
-    emailAddress: { type: String, required: true },
     role: { type: String, required: false },
     companySize: { type: String, required: false },
+    corporateSector: { type: String, required: false },
     Q1: { type: String, required: false },
     Q2: { type: String, required: false },
     Q3: { type: String, required: false },
