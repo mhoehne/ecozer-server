@@ -409,6 +409,7 @@ export async function rejectProduct(req: Request, res: Response) {
     { new: true }
   );
   if (product?.state === 'rejected') {
+    //SEND NOTIFICATION
     res.status(200).send();
     return;
   }
@@ -438,6 +439,7 @@ export async function publishProduct(req: Request, res: Response) {
     { new: true }
   );
   if (product?.state === 'published') {
+    //SEND NOTIFICATION
     res.status(200).send();
     return;
   }
@@ -461,6 +463,7 @@ export async function unpublishProduct(req: Request, res: Response) {
     { new: true }
   );
   if (product?.state === 'unpublished') {
+    //SEND NOTIFICATION
     res.status(200).send();
     return;
   }
@@ -484,6 +487,7 @@ export async function updateProduct(req: Request, res: Response) {
       productBody,
       { new: true }
     ).exec();
+    //SEND NOTIFICATION
     return res.status(202).send(product);
   } catch (e) {
     res.status(500).send(e);
