@@ -345,6 +345,8 @@ export async function updateProduct(req: Request, res: Response) {
   try {
     const product: Product = Object.assign({}, { ...req.body, state: 'pending' });
 
+    await storeProduct(product);
+
     //SEND NOTIFICATION
     return res
       .status(202)
