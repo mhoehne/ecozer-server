@@ -1,7 +1,17 @@
 import { Request, Response } from 'express';
 
-import { Product, ProductModel } from '../models/productModel';
-import { deleteProductById, findProductById, findProductsByQuery, publishProductById, rejectProductById, scoreProductView, SortType, storeProduct, unpublishProductById } from '../repositories/productRepository';
+import { Product } from '../models/productModel';
+import { 
+  deleteProductById,
+  findProductById,
+  findProductsByQuery,
+  publishProductById,
+  rejectProductById,
+  scoreProductView,
+  SortType,
+  storeProduct,
+  unpublishProductById,
+} from '../repositories/productRepository';
 import { AccountModel } from './accountController';
 import { NotificationModel } from './notificationController';
 
