@@ -128,7 +128,7 @@ const betrachtungskonzeptSchema = new Schema(
 );
 
 export interface Product {
-  _id: number;
+  _id?: number;
   account_id: number;
   productName: string;
   productImage: string | null;
