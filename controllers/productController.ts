@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { ProductModel, productSchema } from '../models/productModel';
+import { ProductModel } from '../models/productModel';
 import { AccountModel } from './accountController';
 import { NotificationModel } from './notificationController';
 
@@ -191,11 +191,6 @@ export async function createProduct(req: Request, res: Response) {
     createdAt: Date.now(),
     isRead: false,
     messageType: 'pending',
-  });
-
-  productSchema.pre('save', function (next) {
-    this.updatedAt = Date.now();
-    next();
   });
 
   try {

@@ -148,7 +148,7 @@ interface Product {
   rejectReason: string | null;
 }
 
-export const productSchema = new Schema(
+const productSchema = new Schema(
   {
     account_id: { type: Number, required: true, immutable: true },
     productName: { type: String, required: true },
@@ -172,5 +172,10 @@ export const productSchema = new Schema(
 );
 autoIncrement.initialize(mongoose.connection);
 productSchema.plugin(autoIncrement.plugin, 'Product');
+
+productSchema.pre('save', function (next) {
+  this.updatedAt = Date.now();
+  next();
+});
 
 export const ProductModel = model<Product>('Product', productSchema);
