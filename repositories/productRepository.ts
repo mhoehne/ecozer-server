@@ -72,3 +72,17 @@ export async function publishProductById(productId: number): Promise<Product> {
 
   return product;
 }
+
+export async function unpublishProductById(productId: number): Promise<Product> {
+  const product = await ProductModel.findOneAndUpdate(
+    { _id: productId },
+    { state: 'unpublished' },
+    { new: true }
+  );
+
+  if (product === null) {
+    throw new Error(`Could not unpublish product ${productId} because it was not found.`);
+  }
+
+  return product;
+}

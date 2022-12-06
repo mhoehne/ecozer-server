@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
 import { Product, ProductModel } from '../models/productModel';
-import { findProductById, findProductsByQuery, publishProductById, rejectProductById, SortType, storeProduct } from '../repositories/productRepository';
+import { findProductById, findProductsByQuery, publishProductById, rejectProductById, SortType, storeProduct, unpublishProductById } from '../repositories/productRepository';
 import { AccountModel } from './accountController';
 import { NotificationModel } from './notificationController';
 
@@ -291,26 +291,36 @@ export async function publishProduct(req: Request, res: Response) {
 
 export async function unpublishProduct(req: Request, res: Response) {
   // in this case everyone (user & admin) can unpublish a product
-  let product = await ProductModel.findOne({ _id: req.params.id });
-  if (product === null || product === undefined) {
-    res.status(404).send();
+  let product: Product;
+  try {
+    product = await findProductById(parseInt(req.params.id));
+  } catch (err) {
+    res
+      .status(404)
+      .send();
     return;
   }
-  if (product?.state !== 'published') {
-    res.status(400).send(req.params.id);
+
+  if (product.state !== 'published') {
+    res
+      .status(400)
+      .send(req.params.id);
     return;
   }
-  product = await ProductModel.findOneAndUpdate(
-    { _id: req.params.id },
-    { state: 'unpublished' },
-    { new: true }
-  );
-  if (product?.state === 'unpublished') {
+
+  product = await unpublishProductById(parseInt(req.params.id));
+
+  if (product.state === 'unpublished') {
     //SEND NOTIFICATION
-    res.status(200).send();
+    res
+      .status(200)
+      .send();
     return;
   }
-  res.status(412).send();
+
+  res
+    .status(412)
+    .send();
 }
 
 // FEATURE USE CASE:
