@@ -102,3 +102,16 @@ export async function unpublishProductById(productId: number): Promise<Product> 
 
   return product;
 }
+
+export async function scoreProductView(productId: number): Promise<Product> {
+  const product = await ProductModel.findOneAndUpdate(
+    { _id: productId },
+    { $inc: { viewCounter: 1 } }
+  );
+
+  if (product === null) {
+    throw new Error(`Could not score view on product ${productId} because it was not found.`);
+  }
+
+  return product;
+}

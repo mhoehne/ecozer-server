@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
 import { Product, ProductModel } from '../models/productModel';
-import { findProductById, findProductsByQuery, publishProductById, rejectProductById, SortType, storeProduct, unpublishProductById } from '../repositories/productRepository';
+import { findProductById, findProductsByQuery, publishProductById, rejectProductById, scoreProductView, SortType, storeProduct, unpublishProductById } from '../repositories/productRepository';
 import { AccountModel } from './accountController';
 import { NotificationModel } from './notificationController';
 
@@ -349,15 +349,17 @@ export async function updateProduct(req: Request, res: Response) {
 
 export async function incrementNewCount(req: Request, res: Response) {
   try {
-    const counter = await ProductModel.findOneAndUpdate(
-      {
-        _id: parseInt(req.params._id),
-      },
-      { $inc: { viewCounter: 1 } }
-    );
-    res.send({ counter, productID: req.params._id });
+    const product = await scoreProductView(parseInt(req.params._id));
+
+    res
+      .send({
+        counter: product,
+        productID: req.params._id
+      });
   } catch (e) {
-    res.status(500).send(e);
+    res
+      .status(500)
+      .send(e);
     return;
   }
 }
