@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
 import { Product, ProductModel } from '../models/productModel';
-import { findProductById, findProductsByQuery, rejectProductById, SortType, storeProduct } from '../repositories/productRepository';
+import { findProductById, findProductsByQuery, publishProductById, rejectProductById, SortType, storeProduct } from '../repositories/productRepository';
 import { AccountModel } from './accountController';
 import { NotificationModel } from './notificationController';
 
@@ -249,30 +249,44 @@ export async function publishProduct(req: Request, res: Response) {
   const account = await AccountModel.findOne({
     emailAddress: req.cookies.email,
   });
+
   if (account === undefined || account?.isAdmin === false) {
-    res.status(401).send();
+    res
+      .status(401)
+      .send();
     return;
   }
-  let product = await ProductModel.findOne({ _id: req.params.id });
-  if (product === null || product === undefined) {
-    res.status(404).send();
+
+  let product: Product;
+  try {
+    product = await findProductById(parseInt(req.params.id));
+  } catch (err) {
+    res
+      .status(404)
+      .send();
     return;
   }
-  if (product?.state !== 'pending') {
-    res.status(400).send(req.params.id);
+
+  if (product.state !== 'pending') {
+    res
+      .status(400)
+      .send(req.params.id);
     return;
   }
-  product = await ProductModel.findOneAndUpdate(
-    { _id: req.params.id },
-    { state: 'published' },
-    { new: true }
-  );
-  if (product?.state === 'published') {
+
+  product = await publishProductById(parseInt(req.params.id));
+
+  if (product.state === 'published') {
     //SEND NOTIFICATION
-    res.status(200).send();
+    res
+      .status(200)
+      .send();
     return;
   }
-  res.status(412).send();
+
+  res
+    .status(412)
+    .send();
 }
 
 export async function unpublishProduct(req: Request, res: Response) {

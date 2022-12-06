@@ -58,3 +58,17 @@ export async function rejectProductById(productId: number): Promise<Product> {
 
   return product;
 }
+
+export async function publishProductById(productId: number): Promise<Product> {
+  const product = await ProductModel.findOneAndUpdate(
+    { _id: productId },
+    { state: 'published' },
+    { new: true }
+  );
+
+  if (product === null) {
+    throw new Error(`Could not publish product ${productId} because it was not found.`);
+  }
+
+  return product;
+}
