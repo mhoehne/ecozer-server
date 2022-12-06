@@ -332,18 +332,17 @@ export async function unpublishProduct(req: Request, res: Response) {
 /************************************************************************************************/
 //PUT / UPDATE
 export async function updateProduct(req: Request, res: Response) {
-  const productBody = { ...req.body, state: 'pending' };
-  delete productBody._id;
   try {
-    const product = await ProductModel.findOneAndUpdate(
-      { _id: req.body._id },
-      productBody,
-      { new: true }
-    ).exec();
+    const product: Product = Object.assign({}, { ...req.body, state: 'pending' });
+
     //SEND NOTIFICATION
-    return res.status(202).send(product);
+    return res
+      .status(202)
+      .send(product);
   } catch (e) {
-    res.status(500).send(e);
+    res
+      .status(404)
+      .send(e);
     return;
   }
 }

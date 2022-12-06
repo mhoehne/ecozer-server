@@ -34,7 +34,23 @@ export async function findProductById(productId: number): Promise<Product> {
   return product;
 }
 
-export async function storeProduct(product: Product): Promise<Product> {
+export async function storeProduct(input: Product): Promise<Product> {
+  const { _id, ...changedFields } = input;
+
+  if (_id !== undefined) {
+    const product = await ProductModel.findOneAndUpdate(
+      { _id },
+      changedFields,
+      { new: true }
+    );
+
+    if (product === null) {
+      throw new Error(`Could not update product ${_id} because it was not found.`);
+    }
+
+    return product;
+  }
+  
   /**
    * TODO @Martin:
    * My guess is that `await mode.save()` will return `Product`.
@@ -42,7 +58,7 @@ export async function storeProduct(product: Product): Promise<Product> {
    * 
    * If that's the case, make sure you return `product` instead.
    */
-  return await new ProductModel(product).save();
+  return await new ProductModel(changedFields).save();
 }
 
 export async function rejectProductById(productId: number): Promise<Product> {
