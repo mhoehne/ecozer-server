@@ -23,3 +23,13 @@ export async function findProductsByQuery(query: QueryType, sort: SortType, limi
     .sort(mongodbSort)
     .limit(limit);
 }
+
+export async function findProductById(productId: number): Promise<Product> {
+  const product = await ProductModel.findOne({ _id: productId });
+
+  if (product === null) {
+    throw new Error(`Could not find a product with ID ${productId}`);
+  }
+
+  return product;
+}

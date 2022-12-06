@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
 import { ProductModel } from '../models/productModel';
-import { findProductsByQuery, SortType } from '../repositories/productRepository';
+import { findProductById, findProductsByQuery, SortType } from '../repositories/productRepository';
 import { AccountModel } from './accountController';
 import { NotificationModel } from './notificationController';
 
@@ -166,16 +166,13 @@ export async function listProduct(req: Request, res: Response) {
 }
 
 export async function getProduct(req: Request, res: Response) {
-  const product = await ProductModel.findOne({
-    _id: parseInt(req.params.id),
-  });
+  try {
+    const product = await findProductById(parseInt(req.params.id));
 
-  if (product === null) {
+    res.send(product);
+  } catch (e) {
     res.sendStatus(404);
-    return;
   }
-
-  res.send(product);
 }
 
 /************************************************************************************************/
