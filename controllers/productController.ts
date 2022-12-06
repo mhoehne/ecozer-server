@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
 import { Product, ProductModel } from '../models/productModel';
-import { findProductById, findProductsByQuery, publishProductById, rejectProductById, scoreProductView, SortType, storeProduct, unpublishProductById } from '../repositories/productRepository';
+import { deleteProductById, findProductById, findProductsByQuery, publishProductById, rejectProductById, scoreProductView, SortType, storeProduct, unpublishProductById } from '../repositories/productRepository';
 import { AccountModel } from './accountController';
 import { NotificationModel } from './notificationController';
 
@@ -368,12 +368,15 @@ export async function incrementNewCount(req: Request, res: Response) {
 //DELETE
 export async function deleteProduct(req: Request, res: Response) {
   try {
-    await ProductModel.findOneAndDelete({
-      _id: req.body._id,
-    }).exec();
-    return res.status(202).send('product successfully deleted');
+    await deleteProductById(req.body._id);
+
+    return res
+      .status(202)
+      .send('product successfully deleted');
   } catch (e) {
-    res.status(500).send(e);
+    res
+      .status(500)
+      .send(e);
     return;
   }
 }

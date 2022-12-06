@@ -115,3 +115,9 @@ export async function scoreProductView(productId: number): Promise<Product> {
 
   return product;
 }
+
+export async function deleteProductById(productId: number): Promise<void> {
+  await ProductModel.findOneAndDelete({
+    _id: productId,
+  });
+}
