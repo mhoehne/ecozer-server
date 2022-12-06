@@ -33,3 +33,14 @@ export async function findProductById(productId: number): Promise<Product> {
 
   return product;
 }
+
+export async function storeProduct(product: Product): Promise<Product> {
+  /**
+   * TODO @Martin:
+   * My guess is that `await mode.save()` will return `Product`.
+   * It may be that it returns `ProductModel` instead, this will cause an error.
+   * 
+   * If that's the case, make sure you return `product` instead.
+   */
+  return await new ProductModel(product).save();
+}

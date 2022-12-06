@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
-import { ProductModel } from '../models/productModel';
-import { findProductById, findProductsByQuery, SortType } from '../repositories/productRepository';
+import { Product, ProductModel } from '../models/productModel';
+import { findProductById, findProductsByQuery, SortType, storeProduct } from '../repositories/productRepository';
 import { AccountModel } from './accountController';
 import { NotificationModel } from './notificationController';
 
@@ -178,12 +178,11 @@ export async function getProduct(req: Request, res: Response) {
 /************************************************************************************************/
 //POST / CREATE
 export async function createProduct(req: Request, res: Response) {
-  const createNewProduct = new ProductModel(req.body);
-  createNewProduct.state = 'pending';
+  const product: Product = Object.assign({}, { ...req.body, state: 'pending' });
 
   const createNewNotification = new NotificationModel({
-    account_id: createNewProduct.account_id,
-    productName: createNewProduct.productName,
+    account_id: product.account_id,
+    productName: product.productName,
     rejectReason: '',
     createdAt: Date.now(),
     isRead: false,
@@ -191,14 +190,19 @@ export async function createProduct(req: Request, res: Response) {
   });
 
   try {
-    await createNewProduct.save();
+    await storeProduct(product);
     await createNewNotification.save();
-  } catch (e) {
-    res.status(500).send(e);
-    return;
-  }
 
-  return res.status(201).send(createNewProduct);
+    return res
+      .status(201)
+      .send(product);
+  } catch (e) {
+    console.error(`Failed to save product: ${e}`);
+
+    return res
+      .status(500)
+      .send(e);
+  }
 }
 
 export async function rejectProduct(req: Request, res: Response) {
