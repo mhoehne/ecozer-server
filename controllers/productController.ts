@@ -1,20 +1,13 @@
 import { Request, Response } from 'express';
 
 import { ProductModel } from '../models/productModel';
+import { findProductsByQuery, SortType } from '../repositories/productRepository';
 import { AccountModel } from './accountController';
 import { NotificationModel } from './notificationController';
 
 /************************************************************************************************/
 //GET / READ
 export async function listProduct(req: Request, res: Response) {
-  const sort: { [key: string]: number } = {};
-  if (req.query.sortBy === 'createdAt') {
-    sort.createdAt = req.query.sortOrder === 'asc' ? 1 : -1;
-  }
-  if (req.query.sortBy === 'viewCounter') {
-    sort.viewCounter = req.query.sortOrder === 'asc' ? 1 : -1;
-  }
-
   // START ### FILTER ON SEARCH PAGE ###
   const query: {
     [key: string]: boolean | number | string | RegExp;
@@ -158,9 +151,16 @@ export async function listProduct(req: Request, res: Response) {
     limit = '100';
   }
 
-  const products = await ProductModel.find(query)
-    .sort(sort)
-    .limit(parseInt(limit));
+  const sort: SortType = {};
+  if (req.query.sortBy === 'createdAt') {
+    sort.createdAt = req.query.sortOrder === 'asc' ? 'ascending' : 'descending';
+  }
+
+  if (req.query.sortBy === 'viewCounter') {
+    sort.viewCounter = req.query.sortOrder === 'asc' ? 'ascending' : 'descending';
+  }
+
+  const products = await findProductsByQuery(query, sort, parseInt(limit));
 
   res.send({ products });
 }
