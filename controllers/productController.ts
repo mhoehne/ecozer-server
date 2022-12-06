@@ -1,195 +1,23 @@
 import { Request, Response } from 'express';
-import mongoose, { model, Schema } from 'mongoose';
-import autoIncrement from 'mongoose-auto-increment';
 
+import { Product } from '../models/productModel';
+import { 
+  deleteProductById,
+  findProductById,
+  findProductsByQuery,
+  publishProductById,
+  rejectProductById,
+  scoreProductView,
+  SortType,
+  storeProduct,
+  unpublishProductById,
+} from '../repositories/productRepository';
 import { AccountModel } from './accountController';
 import { NotificationModel } from './notificationController';
-
-//Zielgruppe
-interface Zielgruppe {
-  Geschäftsführung: Boolean;
-  Umweltbeauftragte: Boolean;
-  Fachabteilung: Boolean;
-  Mitarbeiter: Boolean;
-  'externe Stakeholder': Boolean;
-  Behörden: Boolean;
-}
-
-const zielgruppeSchema = new Schema<Zielgruppe>(
-  {
-    Geschäftsführung: { type: Boolean, required: true, default: false },
-    Umweltbeauftragte: { type: Boolean, required: true, default: false },
-    Fachabteilung: { type: Boolean, required: true, default: false },
-    Mitarbeiter: { type: Boolean, required: true, default: false },
-    'externe Stakeholder': { type: Boolean, required: true, default: false },
-    Behörden: { type: Boolean, required: true, default: false },
-  },
-  { _id: false, autoIndex: false }
-);
-
-//Anwendungsbereich
-interface Anwendungsbereich {
-  Gesetzeskonformität: Boolean;
-  Zertifizierung: Boolean;
-  Ökobilanzierung: Boolean;
-  Lebenszyklus: Boolean;
-  Berichterstattung: Boolean;
-  Entscheidungsunterstützung: Boolean;
-  Arbeitsschutz: Boolean;
-}
-
-const anwendungsbereichSchema = new Schema<Anwendungsbereich>(
-  {
-    Gesetzeskonformität: { type: Boolean, required: true, default: false },
-    Zertifizierung: { type: Boolean, required: true, default: false },
-    Ökobilanzierung: { type: Boolean, required: true, default: false },
-    Lebenszyklus: { type: Boolean, required: true, default: false },
-    Berichterstattung: { type: Boolean, required: true, default: false },
-    Entscheidungsunterstützung: {
-      type: Boolean,
-      required: true,
-      default: false,
-    },
-    Arbeitsschutz: { type: Boolean, required: true, default: false },
-  },
-  { _id: false, autoIndex: false }
-);
-
-//gradDerIntegrierung
-interface GradDerIntegrierung {
-  integriert: Boolean;
-  'Add-On': Boolean;
-  'Stand-Alone': Boolean;
-  'SaaS-Lösung': Boolean;
-}
-
-const gradDerIntegrierungSchema = new Schema<GradDerIntegrierung>(
-  {
-    integriert: { type: Boolean, required: true, default: false },
-    'Add-On': { type: Boolean, required: true, default: false },
-    'Stand-Alone': { type: Boolean, required: true, default: false },
-    'SaaS-Lösung': { type: Boolean, required: true, default: false },
-  },
-  { _id: false, autoIndex: false }
-);
-
-//objektAspekt
-interface ObjektAspekt {
-  Abfall: Boolean;
-  Anlagen: Boolean;
-  Gefahrstoffe: Boolean;
-  Emissionen: Boolean;
-  Energie: Boolean;
-  'Stoffe/Stoffströme': Boolean;
-  Kosten: Boolean;
-}
-
-const objektAspektSchema = new Schema<ObjektAspekt>(
-  {
-    Abfall: { type: Boolean, required: true, default: false },
-    Anlagen: { type: Boolean, required: true, default: false },
-    Gefahrstoffe: { type: Boolean, required: true, default: false },
-    Emissionen: { type: Boolean, required: true, default: false },
-    Energie: { type: Boolean, required: true, default: false },
-    'Stoffe/Stoffströme': { type: Boolean, required: true, default: false },
-    Kosten: { type: Boolean, required: true, default: false },
-  },
-  { _id: false, autoIndex: false }
-);
-
-//systemgrenzen
-interface Systemgrenzen {
-  'Standort/Betrieb': Boolean;
-  Prozess: Boolean;
-  Produkt: Boolean;
-  Zwischenbetrieblich: Boolean;
-}
-
-const systemgrenzenSchema = new Schema<Systemgrenzen>(
-  {
-    'Standort/Betrieb': { type: Boolean, required: true, default: false },
-    Prozess: { type: Boolean, required: true, default: false },
-    Produkt: { type: Boolean, required: true, default: false },
-    Zwischenbetrieblich: { type: Boolean, required: true, default: false },
-  },
-  { _id: false, autoIndex: false }
-);
-
-//Betrachtungskonzept
-interface Betrachtungskonzept {
-  Verwaltungszentriert: Boolean;
-  Bewertungszentriert: Boolean;
-  Managementzentriert: Boolean;
-}
-
-const betrachtungskonzeptSchema = new Schema<Betrachtungskonzept>(
-  {
-    Verwaltungszentriert: { type: Boolean, required: true, default: false },
-    Bewertungszentriert: { type: Boolean, required: true, default: false },
-    Managementzentriert: { type: Boolean, required: true, default: false },
-  },
-  { _id: false, autoIndex: false }
-);
-
-interface Product {
-  _id: number;
-  account_id: number;
-  productName: string;
-  productImage: string | null;
-  productLink: string;
-  productCompany: string;
-  productDescription: string;
-  zielgruppe: Zielgruppe;
-  anwendungsbereich: Anwendungsbereich;
-  gradDerIntegrierung: GradDerIntegrierung;
-  objektAspekt: ObjektAspekt;
-  systemgrenzen: Systemgrenzen;
-  betrachtungskonzept: Betrachtungskonzept;
-  createdAt: Date;
-  updatedAt: Date;
-  viewCounter: number;
-  state: 'pending' | 'published' | 'unpublished' | 'rejected';
-  rejectReason: string | null;
-}
-
-export const productSchema = new Schema<Product>(
-  {
-    account_id: { type: Number, required: true, immutable: true },
-    productName: { type: String, required: true },
-    productImage: { type: String, required: false },
-    productLink: { type: String, required: true, lowercase: true },
-    productCompany: { type: String, required: true, minlength: 3 },
-    productDescription: { type: String, required: false },
-    zielgruppe: zielgruppeSchema,
-    anwendungsbereich: anwendungsbereichSchema,
-    gradDerIntegrierung: gradDerIntegrierungSchema,
-    objektAspekt: objektAspektSchema,
-    systemgrenzen: systemgrenzenSchema,
-    betrachtungskonzept: betrachtungskonzeptSchema,
-    createdAt: { type: Date, immutable: true, default: () => Date.now() },
-    updatedAt: { type: Date, default: () => Date.now() },
-    viewCounter: { type: Number, default: () => 0 },
-    state: { type: String, required: true, default: () => 'pending' },
-    rejectReason: { type: String, required: false, default: () => '' },
-  },
-  { timestamps: true }
-);
-autoIncrement.initialize(mongoose.connection);
-productSchema.plugin(autoIncrement.plugin, 'Product');
-
-export const ProductModel = model<Product>('Product', productSchema);
 
 /************************************************************************************************/
 //GET / READ
 export async function listProduct(req: Request, res: Response) {
-  const sort: { [key: string]: number } = {};
-  if (req.query.sortBy === 'createdAt') {
-    sort.createdAt = req.query.sortOrder === 'asc' ? 1 : -1;
-  }
-  if (req.query.sortBy === 'viewCounter') {
-    sort.viewCounter = req.query.sortOrder === 'asc' ? 1 : -1;
-  }
-
   // START ### FILTER ON SEARCH PAGE ###
   const query: {
     [key: string]: boolean | number | string | RegExp;
@@ -333,141 +161,176 @@ export async function listProduct(req: Request, res: Response) {
     limit = '100';
   }
 
-  const products = await ProductModel.find(query)
-    .sort(sort)
-    .limit(parseInt(limit));
+  const sort: SortType = {};
+  if (req.query.sortBy === 'createdAt') {
+    sort.createdAt = req.query.sortOrder === 'asc' ? 'ascending' : 'descending';
+  }
+
+  if (req.query.sortBy === 'viewCounter') {
+    sort.viewCounter = req.query.sortOrder === 'asc' ? 'ascending' : 'descending';
+  }
+
+  const products = await findProductsByQuery(query, sort, parseInt(limit));
 
   res.send({ products });
 }
 
 export async function getProduct(req: Request, res: Response) {
-  const product = await ProductModel.findOne({
-    _id: parseInt(req.params.id),
-  });
+  try {
+    const product = await findProductById(parseInt(req.params.id));
 
-  if (product === null) {
+    res.send(product);
+  } catch (e) {
     res.sendStatus(404);
-    return;
   }
-
-  res.send(product);
 }
 
 /************************************************************************************************/
 //POST / CREATE
 export async function createProduct(req: Request, res: Response) {
-  const createNewProduct = new ProductModel(req.body);
-  createNewProduct.state = 'pending';
+  const product: Product = Object.assign({}, { ...req.body, state: 'pending' });
 
   const createNewNotification = new NotificationModel({
-    account_id: createNewProduct.account_id,
-    productName: createNewProduct.productName,
+    account_id: product.account_id,
+    productName: product.productName,
     rejectReason: '',
     createdAt: Date.now(),
     isRead: false,
     messageType: 'pending',
   });
 
-  productSchema.pre('save', function (next) {
-    this.updatedAt = Date.now();
-    next();
-  });
-
   try {
-    await createNewProduct.save();
+    await storeProduct(product);
     await createNewNotification.save();
-  } catch (e) {
-    res.status(500).send(e);
-    return;
-  }
 
-  return res.status(201).send(createNewProduct);
+    return res
+      .status(201)
+      .send(product);
+  } catch (e) {
+    console.error(`Failed to save product: ${e}`);
+
+    return res
+      .status(500)
+      .send(e);
+  }
 }
 
 export async function rejectProduct(req: Request, res: Response) {
   const account = await AccountModel.findOne({
     emailAddress: req.cookies.email,
   });
+
   if (account === undefined || account?.isAdmin === false) {
     res.status(401).send();
     return;
   }
-  let product = await ProductModel.findOne({ _id: req.params.id });
-  if (product === null || product === undefined) {
+
+  let product: Product;
+  try {
+    product = await findProductById(parseInt(req.params.id));
+  } catch (err) {
     res.status(404).send();
     return;
   }
-  if (product?.state !== 'pending') {
-    res.status(400).send(req.params.id);
-    return;
-  }
-  product = await ProductModel.findOneAndUpdate(
-    { _id: req.params.id },
-    // change the rejection reason to value xy
-    { state: 'rejected' },
 
-    { new: true }
-  );
-  if (product?.state === 'rejected') {
-    //SEND NOTIFICATION
-    res.status(200).send();
+  if (product.state !== 'pending') {
+    res
+      .status(400)
+      .send(req.params.id);
     return;
   }
-  res.status(412).send();
+
+  product = await rejectProductById(parseInt(req.params.id));
+
+  if (product.state === 'rejected') {
+    //SEND NOTIFICATION
+    res
+      .status(200)
+      .send();
+    return;
+  }
+
+  res
+    .status(412)
+    .send();
 }
 
 export async function publishProduct(req: Request, res: Response) {
   const account = await AccountModel.findOne({
     emailAddress: req.cookies.email,
   });
+
   if (account === undefined || account?.isAdmin === false) {
-    res.status(401).send();
+    res
+      .status(401)
+      .send();
     return;
   }
-  let product = await ProductModel.findOne({ _id: req.params.id });
-  if (product === null || product === undefined) {
-    res.status(404).send();
+
+  let product: Product;
+  try {
+    product = await findProductById(parseInt(req.params.id));
+  } catch (err) {
+    res
+      .status(404)
+      .send();
     return;
   }
-  if (product?.state !== 'pending') {
-    res.status(400).send(req.params.id);
+
+  if (product.state !== 'pending') {
+    res
+      .status(400)
+      .send(req.params.id);
     return;
   }
-  product = await ProductModel.findOneAndUpdate(
-    { _id: req.params.id },
-    { state: 'published' },
-    { new: true }
-  );
-  if (product?.state === 'published') {
+
+  product = await publishProductById(parseInt(req.params.id));
+
+  if (product.state === 'published') {
     //SEND NOTIFICATION
-    res.status(200).send();
+    res
+      .status(200)
+      .send();
     return;
   }
-  res.status(412).send();
+
+  res
+    .status(412)
+    .send();
 }
 
 export async function unpublishProduct(req: Request, res: Response) {
   // in this case everyone (user & admin) can unpublish a product
-  let product = await ProductModel.findOne({ _id: req.params.id });
-  if (product === null || product === undefined) {
-    res.status(404).send();
+  let product: Product;
+  try {
+    product = await findProductById(parseInt(req.params.id));
+  } catch (err) {
+    res
+      .status(404)
+      .send();
     return;
   }
-  if (product?.state !== 'published') {
-    res.status(400).send(req.params.id);
+
+  if (product.state !== 'published') {
+    res
+      .status(400)
+      .send(req.params.id);
     return;
   }
-  product = await ProductModel.findOneAndUpdate(
-    { _id: req.params.id },
-    { state: 'unpublished' },
-    { new: true }
-  );
-  if (product?.state === 'unpublished') {
+
+  product = await unpublishProductById(parseInt(req.params.id));
+
+  if (product.state === 'unpublished') {
     //SEND NOTIFICATION
-    res.status(200).send();
+    res
+      .status(200)
+      .send();
     return;
   }
-  res.status(412).send();
+
+  res
+    .status(412)
+    .send();
 }
 
 // FEATURE USE CASE:
@@ -479,33 +342,36 @@ export async function unpublishProduct(req: Request, res: Response) {
 /************************************************************************************************/
 //PUT / UPDATE
 export async function updateProduct(req: Request, res: Response) {
-  const productBody = { ...req.body, state: 'pending' };
-  delete productBody._id;
   try {
-    const product = await ProductModel.findOneAndUpdate(
-      { _id: req.body._id },
-      productBody,
-      { new: true }
-    ).exec();
+    const product: Product = Object.assign({}, { ...req.body, state: 'pending' });
+
+    await storeProduct(product);
+
     //SEND NOTIFICATION
-    return res.status(202).send(product);
+    return res
+      .status(202)
+      .send(product);
   } catch (e) {
-    res.status(500).send(e);
+    res
+      .status(404)
+      .send(e);
     return;
   }
 }
 
 export async function incrementNewCount(req: Request, res: Response) {
   try {
-    const counter = await ProductModel.findOneAndUpdate(
-      {
-        _id: parseInt(req.params._id),
-      },
-      { $inc: { viewCounter: 1 } }
-    );
-    res.send({ counter, productID: req.params._id });
+    const product = await scoreProductView(parseInt(req.params._id));
+
+    res
+      .send({
+        counter: product,
+        productID: req.params._id
+      });
   } catch (e) {
-    res.status(500).send(e);
+    res
+      .status(500)
+      .send(e);
     return;
   }
 }
@@ -514,12 +380,15 @@ export async function incrementNewCount(req: Request, res: Response) {
 //DELETE
 export async function deleteProduct(req: Request, res: Response) {
   try {
-    await ProductModel.findOneAndDelete({
-      _id: req.body._id,
-    }).exec();
-    return res.status(202).send('product successfully deleted');
+    await deleteProductById(parseInt(req.body._id));
+
+    return res
+      .status(202)
+      .send('product successfully deleted');
   } catch (e) {
-    res.status(500).send(e);
+    res
+      .status(500)
+      .send(e);
     return;
   }
 }
