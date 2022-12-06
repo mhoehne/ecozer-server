@@ -44,3 +44,17 @@ export async function storeProduct(product: Product): Promise<Product> {
    */
   return await new ProductModel(product).save();
 }
+
+export async function rejectProductById(productId: number): Promise<Product> {
+  const product = await ProductModel.findOneAndUpdate(
+    { _id: productId },
+    { state: 'rejected' },
+    { new: true }
+  );
+
+  if (product === null) {
+    throw new Error(`Could not reject product ${productId} because it was not found.`);
+  }
+
+  return product;
+}

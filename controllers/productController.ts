@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
 import { Product, ProductModel } from '../models/productModel';
-import { findProductById, findProductsByQuery, SortType, storeProduct } from '../repositories/productRepository';
+import { findProductById, findProductsByQuery, rejectProductById, SortType, storeProduct } from '../repositories/productRepository';
 import { AccountModel } from './accountController';
 import { NotificationModel } from './notificationController';
 
@@ -209,32 +209,40 @@ export async function rejectProduct(req: Request, res: Response) {
   const account = await AccountModel.findOne({
     emailAddress: req.cookies.email,
   });
+
   if (account === undefined || account?.isAdmin === false) {
     res.status(401).send();
     return;
   }
-  let product = await ProductModel.findOne({ _id: req.params.id });
-  if (product === null || product === undefined) {
+
+  let product: Product;
+  try {
+    product = await findProductById(parseInt(req.params.id));
+  } catch (err) {
     res.status(404).send();
     return;
   }
-  if (product?.state !== 'pending') {
-    res.status(400).send(req.params.id);
-    return;
-  }
-  product = await ProductModel.findOneAndUpdate(
-    { _id: req.params.id },
-    // change the rejection reason to value xy
-    { state: 'rejected' },
 
-    { new: true }
-  );
-  if (product?.state === 'rejected') {
-    //SEND NOTIFICATION
-    res.status(200).send();
+  if (product.state !== 'pending') {
+    res
+      .status(400)
+      .send(req.params.id);
     return;
   }
-  res.status(412).send();
+
+  product = await rejectProductById(parseInt(req.params.id));
+
+  if (product.state === 'rejected') {
+    //SEND NOTIFICATION
+    res
+      .status(200)
+      .send();
+    return;
+  }
+
+  res
+    .status(412)
+    .send();
 }
 
 export async function publishProduct(req: Request, res: Response) {
