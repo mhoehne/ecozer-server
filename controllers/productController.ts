@@ -380,7 +380,7 @@ export async function incrementNewCount(req: Request, res: Response) {
 //DELETE
 export async function deleteProduct(req: Request, res: Response) {
   try {
-    await deleteProductById(req.body._id);
+    await deleteProductById(parseInt(req.body._id));
 
     return res
       .status(202)
