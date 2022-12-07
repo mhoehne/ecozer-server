@@ -109,6 +109,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -146,6 +150,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -191,6 +199,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -224,6 +236,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -262,6 +278,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -297,6 +317,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -334,6 +358,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -372,6 +400,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -409,6 +441,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -443,6 +479,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -482,6 +522,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -520,6 +564,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -555,6 +603,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -593,6 +645,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -626,6 +682,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -661,6 +721,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -693,6 +757,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -727,6 +795,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -762,6 +834,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -796,6 +872,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -834,6 +914,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -867,6 +951,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
 
     // {
@@ -903,6 +991,10 @@ export default async function productMigration(req: Request, res: Response) {
     //       },
     //     },
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -934,6 +1026,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -961,6 +1057,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -993,6 +1093,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1024,6 +1128,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1059,6 +1167,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1093,6 +1205,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1124,6 +1240,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1156,6 +1276,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1186,6 +1310,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1216,6 +1344,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1244,6 +1376,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1272,6 +1408,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1301,6 +1441,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1329,6 +1473,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1358,6 +1506,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1390,6 +1542,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1422,6 +1578,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1454,6 +1614,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1489,6 +1653,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1519,6 +1687,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1548,6 +1720,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1584,6 +1760,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1617,6 +1797,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1653,6 +1837,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1689,6 +1877,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1720,6 +1912,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1752,6 +1948,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1783,6 +1983,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1816,6 +2020,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1851,6 +2059,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1881,6 +2093,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1914,6 +2130,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1947,6 +2167,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -1981,6 +2205,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2012,6 +2240,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2043,6 +2275,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2075,6 +2311,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2106,6 +2346,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2139,6 +2383,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2168,6 +2416,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2198,6 +2450,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2228,6 +2484,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2260,6 +2520,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2291,6 +2555,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2323,6 +2591,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2351,6 +2623,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2382,6 +2658,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2413,6 +2693,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2446,6 +2730,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2482,6 +2770,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2517,6 +2809,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2550,6 +2846,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2582,6 +2882,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2614,6 +2918,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2648,6 +2956,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2681,6 +2993,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2718,6 +3034,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2749,6 +3069,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2783,6 +3107,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2820,6 +3148,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2856,6 +3188,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2897,6 +3233,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2934,6 +3274,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -2971,6 +3315,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3002,6 +3350,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3035,6 +3387,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3074,6 +3430,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3105,6 +3465,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3139,6 +3503,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3167,6 +3535,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3196,6 +3568,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3225,6 +3601,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3260,6 +3640,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3289,6 +3673,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3324,6 +3712,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3357,6 +3749,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3390,6 +3786,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3421,6 +3821,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3451,6 +3855,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Verwaltungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3488,6 +3896,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Bewertungszentriert: true,
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3519,6 +3931,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3547,6 +3963,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Managementzentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3576,6 +3996,10 @@ export default async function productMigration(req: Request, res: Response) {
     //   betrachtungskonzept: {
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
     // {
     //   account_id: 0,
@@ -3611,6 +4035,10 @@ export default async function productMigration(req: Request, res: Response) {
     //     Verwaltungszentriert: true,
     //     Bewertungszentriert: true,
     //   },
+    // rejectReason: '',
+    //   viewCounter: 0,
+    //   createdAt: new Date(),
+    //   updatedAt: new Date(),
     // },
   ];
 
