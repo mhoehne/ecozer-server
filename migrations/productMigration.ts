@@ -1211,6 +1211,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Anlagen: true,
@@ -1268,6 +1272,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -1317,6 +1325,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Anlagen: true,
@@ -1369,6 +1381,10 @@ export default async function productMigration(req: Request, res: Response) {
       }
         gradDerIntegrierung: {
           'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
         },
         objektAspekt: {
           Abfall: true,
@@ -1421,6 +1437,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Gefahrstoffe: true,
@@ -1469,6 +1489,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {},
       systemgrenzen: { Zwischenbetrieblich: true },
@@ -1514,6 +1538,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Gefahrstoffe: true,
@@ -1562,6 +1590,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Anlagen: true,
@@ -1610,6 +1642,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -1660,6 +1696,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -1712,6 +1752,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -1761,6 +1805,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -1808,6 +1856,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -1856,6 +1908,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -1901,6 +1957,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -1946,6 +2006,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Gefahrstoffe: true,
@@ -1992,6 +2056,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Emissionen: true,
@@ -2037,6 +2105,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Emissionen: true,
@@ -2083,6 +2155,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Emissionen: true,
@@ -2132,6 +2208,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -2181,6 +2261,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -2227,6 +2311,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         'Stoffe/Stoffströme': true,
@@ -2280,6 +2368,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         'Stoffe/Stoffströme': true,
@@ -2329,6 +2421,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Gefahrstoffe: true,
@@ -2375,6 +2471,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Emissionen: true,
@@ -2426,6 +2526,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -2477,6 +2581,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -2529,6 +2637,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -2583,6 +2695,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         'Stoffe/Stoffströme': true,
@@ -2631,6 +2747,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Emissionen: true,
@@ -2679,6 +2799,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -2727,6 +2851,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -2777,6 +2905,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -2828,6 +2960,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -2876,6 +3012,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'SaaS-Lösung': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -2925,6 +3065,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -2976,6 +3120,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -3026,6 +3174,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -3075,6 +3227,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -3123,6 +3279,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -3172,6 +3332,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -3220,6 +3384,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -3270,6 +3438,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -3318,6 +3490,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -3365,6 +3541,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Anlagen: true,
@@ -3412,6 +3592,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Anlagen: true,
@@ -3460,6 +3644,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Gefahrstoffe: true,
@@ -3508,6 +3696,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Gefahrstoffe: true,
@@ -3557,6 +3749,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Gefahrstoffe: true,
@@ -3603,6 +3799,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Gefahrstoffe: true,
@@ -3648,6 +3848,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'SaaS-Lösung': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Emissionen: true,
@@ -3697,6 +3901,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'SaaS-Lösung': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Emissionen: true,
@@ -3747,6 +3955,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'SaaS-Lösung': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Emissionen: true,
@@ -3797,6 +4009,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'SaaS-Lösung': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -3850,6 +4066,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'SaaS-Lösung': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Emissionen: true,
@@ -3903,6 +4123,10 @@ export default async function productMigration(req: Request, res: Response) {
       gradDerIntegrierung: {
         integriert: true,
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Gefahrstoffe: true,
@@ -3951,6 +4175,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4001,6 +4229,10 @@ export default async function productMigration(req: Request, res: Response) {
       gradDerIntegrierung: {
         'Add-On': true,
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4051,6 +4283,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4101,6 +4337,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4154,6 +4394,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Emissionen: true,
@@ -4205,6 +4449,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4255,6 +4503,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4307,6 +4559,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Anlagen: true,
@@ -4360,6 +4616,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4473,6 +4733,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4526,6 +4790,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4576,6 +4844,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4626,6 +4898,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4677,6 +4953,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Abfall: true,
@@ -4730,6 +5010,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4781,6 +5065,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4827,6 +5115,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4873,6 +5165,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4919,6 +5215,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -4969,6 +5269,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -5017,6 +5321,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -5068,6 +5376,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -5117,6 +5429,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Anlagen: true,
@@ -5169,6 +5485,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -5217,6 +5537,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -5264,6 +5588,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -5314,6 +5642,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Anlagen: true,
@@ -5366,6 +5698,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'SaaS-Lösung': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -5411,6 +5747,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -5457,6 +5797,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'SaaS-Lösung': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
@@ -5507,6 +5851,10 @@ export default async function productMigration(req: Request, res: Response) {
       },
       gradDerIntegrierung: {
         'Stand-Alone': true,
+        integriert: false,
+        'Add-On': false,
+        'Stand-Alone': false,
+        'SaaS-Lösung': false,
       },
       objektAspekt: {
         Energie: true,
