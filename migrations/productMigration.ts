@@ -5,63 +5,7 @@ import { storeProduct } from '../repositories/productRepository';
 
 export default async function productMigration(req: Request, res: Response) {
   const products: Product[] = [
-    {
-      account_id: 0,
-      productName: 'default',
-      productImage: '',
-      state: 'published',
-      productLink: 'link',
-      productCompany: 'Firmenname',
-      productDescription: 'Beschreibung',
-      zielgruppe: {
-        Geschäftsführung: true,
-        Umweltbeauftragte: true,
-        Fachabteilung: true,
-        Mitarbeiter: true,
-        'externe Stakeholder': true,
-        Behörden: true,
-      },
-      anwendungsbereich: {
-        Gesetzeskonformität: true,
-        Zertifizierung: true,
-        Ökobilanzierung: true,
-        Berichterstattung: true,
-        Entscheidungsunterstützung: true,
-        Arbeitsschutz: true,
-        Lebenszyklus: true,
-      },
-      gradDerIntegrierung: {
-        integriert: true,
-        'Add-On': true,
-        'Stand-Alone': true,
-        'SaaS-Lösung': true,
-      },
-      objektAspekt: {
-        Abfall: true,
-        Anlagen: true,
-        Gefahrstoffe: true,
-        Emissionen: true,
-        Energie: true,
-        'Stoffe/Stoffströme': true,
-        Kosten: true,
-      },
-      systemgrenzen: {
-        'Standort/Betrieb': true,
-        Prozess: true,
-        Produkt: true,
-        Zwischenbetrieblich: true,
-      },
-      betrachtungskonzept: {
-        Verwaltungszentriert: true,
-        Bewertungszentriert: true,
-        Managementzentriert: true,
-      },
-      rejectReason: '',
-      viewCounter: 0,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-    },
-
+    
     {
       account_id: 0,
       productName: 'Umberto Efficiency+',
