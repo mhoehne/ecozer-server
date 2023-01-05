@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
-import { AccountModel } from '../controllers/accountController';
 import Cookies from 'universal-cookie';
+
+import { AccountModel } from '../models/accountModel';
 
 async function canUserLogin(emailaddress: string, password: string) {
   const account = await AccountModel.findOne({

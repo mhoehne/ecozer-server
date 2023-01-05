@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import mongoose, { model, Schema } from 'mongoose';
 import autoIncrement from 'mongoose-auto-increment';
 
-import { AccountModel } from './accountController';
+import { AccountModel } from '../models/accountModel';
 
 interface Notifications {
   _id: number;
