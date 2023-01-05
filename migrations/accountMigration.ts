@@ -1,5 +1,6 @@
-import { Response, Request } from 'express';
-import { AccountModel, accountSchema } from '../controllers/accountController';
+import { Request, Response } from 'express';
+
+import { AccountModel, accountSchema } from '../models/accountModel';
 
 export default async function accountMigration(req: Request, res: Response) {
   const accounts = [
