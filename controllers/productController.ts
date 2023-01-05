@@ -1,18 +1,11 @@
 import { Request, Response } from 'express';
 
+import { AccountModel } from '../models/accountModel';
 import { Product } from '../models/productModel';
-import { 
-  deleteProductById,
-  findProductById,
-  findProductsByQuery,
-  publishProductById,
-  rejectProductById,
-  scoreProductView,
-  SortType,
-  storeProduct,
-  unpublishProductById,
+import {
+    deleteProductById, findProductById, findProductsByQuery, publishProductById, rejectProductById,
+    scoreProductView, SortType, storeProduct, unpublishProductById
 } from '../repositories/productRepository';
-import { AccountModel } from './accountController';
 import { NotificationModel } from './notificationController';
 
 /************************************************************************************************/
@@ -167,7 +160,8 @@ export async function listProduct(req: Request, res: Response) {
   }
 
   if (req.query.sortBy === 'viewCounter') {
-    sort.viewCounter = req.query.sortOrder === 'asc' ? 'ascending' : 'descending';
+    sort.viewCounter =
+      req.query.sortOrder === 'asc' ? 'ascending' : 'descending';
   }
 
   const products = await findProductsByQuery(query, sort, parseInt(limit));
@@ -203,15 +197,11 @@ export async function createProduct(req: Request, res: Response) {
     await storeProduct(product);
     await createNewNotification.save();
 
-    return res
-      .status(201)
-      .send(product);
+    return res.status(201).send(product);
   } catch (e) {
     console.error(`Failed to save product: ${e}`);
 
-    return res
-      .status(500)
-      .send(e);
+    return res.status(500).send(e);
   }
 }
 
@@ -234,9 +224,7 @@ export async function rejectProduct(req: Request, res: Response) {
   }
 
   if (product.state !== 'pending') {
-    res
-      .status(400)
-      .send(req.params.id);
+    res.status(400).send(req.params.id);
     return;
   }
 
@@ -244,15 +232,11 @@ export async function rejectProduct(req: Request, res: Response) {
 
   if (product.state === 'rejected') {
     //SEND NOTIFICATION
-    res
-      .status(200)
-      .send();
+    res.status(200).send();
     return;
   }
 
-  res
-    .status(412)
-    .send();
+  res.status(412).send();
 }
 
 export async function publishProduct(req: Request, res: Response) {
@@ -261,9 +245,7 @@ export async function publishProduct(req: Request, res: Response) {
   });
 
   if (account === undefined || account?.isAdmin === false) {
-    res
-      .status(401)
-      .send();
+    res.status(401).send();
     return;
   }
 
@@ -271,16 +253,12 @@ export async function publishProduct(req: Request, res: Response) {
   try {
     product = await findProductById(parseInt(req.params.id));
   } catch (err) {
-    res
-      .status(404)
-      .send();
+    res.status(404).send();
     return;
   }
 
   if (product.state !== 'pending') {
-    res
-      .status(400)
-      .send(req.params.id);
+    res.status(400).send(req.params.id);
     return;
   }
 
@@ -288,15 +266,11 @@ export async function publishProduct(req: Request, res: Response) {
 
   if (product.state === 'published') {
     //SEND NOTIFICATION
-    res
-      .status(200)
-      .send();
+    res.status(200).send();
     return;
   }
 
-  res
-    .status(412)
-    .send();
+  res.status(412).send();
 }
 
 export async function unpublishProduct(req: Request, res: Response) {
@@ -305,16 +279,12 @@ export async function unpublishProduct(req: Request, res: Response) {
   try {
     product = await findProductById(parseInt(req.params.id));
   } catch (err) {
-    res
-      .status(404)
-      .send();
+    res.status(404).send();
     return;
   }
 
   if (product.state !== 'published') {
-    res
-      .status(400)
-      .send(req.params.id);
+    res.status(400).send(req.params.id);
     return;
   }
 
@@ -322,15 +292,11 @@ export async function unpublishProduct(req: Request, res: Response) {
 
   if (product.state === 'unpublished') {
     //SEND NOTIFICATION
-    res
-      .status(200)
-      .send();
+    res.status(200).send();
     return;
   }
 
-  res
-    .status(412)
-    .send();
+  res.status(412).send();
 }
 
 // FEATURE USE CASE:
@@ -343,18 +309,17 @@ export async function unpublishProduct(req: Request, res: Response) {
 //PUT / UPDATE
 export async function updateProduct(req: Request, res: Response) {
   try {
-    const product: Product = Object.assign({}, { ...req.body, state: 'pending' });
+    const product: Product = Object.assign(
+      {},
+      { ...req.body, state: 'pending' }
+    );
 
     await storeProduct(product);
 
     //SEND NOTIFICATION
-    return res
-      .status(202)
-      .send(product);
+    return res.status(202).send(product);
   } catch (e) {
-    res
-      .status(404)
-      .send(e);
+    res.status(404).send(e);
     return;
   }
 }
@@ -363,15 +328,12 @@ export async function incrementNewCount(req: Request, res: Response) {
   try {
     const product = await scoreProductView(parseInt(req.params._id));
 
-    res
-      .send({
-        counter: product,
-        productID: req.params._id
-      });
+    res.send({
+      counter: product,
+      productID: req.params._id,
+    });
   } catch (e) {
-    res
-      .status(500)
-      .send(e);
+    res.status(500).send(e);
     return;
   }
 }
@@ -382,13 +344,9 @@ export async function deleteProduct(req: Request, res: Response) {
   try {
     await deleteProductById(parseInt(req.body._id));
 
-    return res
-      .status(202)
-      .send('product successfully deleted');
+    return res.status(202).send('product successfully deleted');
   } catch (e) {
-    res
-      .status(500)
-      .send(e);
+    res.status(500).send(e);
     return;
   }
 }
