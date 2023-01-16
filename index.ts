@@ -30,7 +30,8 @@ import productMigration from './migrations/productMigration';
 const app = express();
 app.use(
   cors({
-    origin: '*',
+    origin: ['http://localhost:3000', 'http://141.45.92.203:3000/'],
+    credentials: true,
   })
 );
 

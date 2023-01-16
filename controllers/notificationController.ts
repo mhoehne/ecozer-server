@@ -58,7 +58,7 @@ export async function listNotifications(req: Request, res: Response) {
     account_id: accountByEmailAddress?._id,
   });
 
-  res.send({ notifications });
+  res.status(200).send({ notifications });
 }
 
 export async function markAsReadNotification(req: Request, res: Response) {}
