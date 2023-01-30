@@ -61,6 +61,11 @@ export async function listNotifications(req: Request, res: Response) {
   res.status(200).send({ notifications });
 }
 
-export async function markAsReadNotification(req: Request, res: Response) {}
+export async function markAsReadNotification(req: Request, res: Response) {
+  // get notification by id and update to isRead=true
+  // check if notification.accountID is equal to the loggedin account
+}
 
-export async function deleteNotification(req: Request, res: Response) {}
+export async function deleteNotification(req: Request, res: Response) {
+  // check account or product controller
+}
