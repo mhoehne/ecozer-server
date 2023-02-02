@@ -3,42 +3,7 @@ import mongoose, { model, Schema } from 'mongoose';
 import autoIncrement from 'mongoose-auto-increment';
 
 import { AccountModel } from '../models/accountModel';
-
-interface Notifications {
-  _id: number;
-  account_id: number;
-  productName: string;
-  message: string;
-  messageType:
-    | 'pending'
-    | 'published'
-    | 'unpublished'
-    | 'rejected'
-    | 'assigned';
-  rejectReason: string | null;
-  createdAt: Date;
-  isRead: boolean;
-}
-
-export const notificationSchema = new Schema<Notifications>(
-  {
-    account_id: { type: Number, required: true, immutable: true },
-    productName: { type: String, required: true },
-    message: { type: String, required: false, default: () => '' },
-    messageType: { type: String, required: true },
-    rejectReason: { type: String, required: false, default: () => '' },
-    createdAt: { type: Date, immutable: true, default: () => Date.now() },
-    isRead: { type: Boolean, required: false, default: false },
-  },
-  { timestamps: true }
-);
-
-autoIncrement.initialize(mongoose.connection);
-notificationSchema.plugin(autoIncrement.plugin, 'Notification');
-export const NotificationModel = model<Notifications>(
-  'Notification',
-  notificationSchema
-);
+import { NotificationModel } from '../models/notificationModel';
 
 export async function listNotifications(req: Request, res: Response) {
   const sort: { [key: string]: number } = {};
@@ -64,8 +29,28 @@ export async function listNotifications(req: Request, res: Response) {
 export async function markAsReadNotification(req: Request, res: Response) {
   // get notification by id and update to isRead=true
   // check if notification.accountID is equal to the loggedin account
+  try {
+    const notification = await NotificationModel.findOneAndUpdate(
+      { _id: req.body.account_id },
+      { isRead: true },
+      { new: true }
+    ).exec();
+    return res.status(202).send(notification);
+  } catch (e) {
+    res.status(500).send(e);
+    return;
+  }
 }
 
 export async function deleteNotification(req: Request, res: Response) {
   // check account or product controller
+  try {
+    await NotificationModel.findOneAndDelete({
+      _id: req.body._id,
+    }).exec();
+    return res.status(202).send('notification successfully deleted');
+  } catch (e) {
+    res.status(500).send(e);
+    return;
+  }
 }

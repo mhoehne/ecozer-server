@@ -1,12 +1,12 @@
 import { Request, Response } from 'express';
 
 import { AccountModel } from '../models/accountModel';
+import { NotificationModel } from '../models/notificationModel';
 import { Product } from '../models/productModel';
 import {
     deleteProductById, findProductById, findProductsByQuery, publishProductById, rejectProductById,
     scoreProductView, SortType, storeProduct, unpublishProductById
 } from '../repositories/productRepository';
-import { NotificationModel } from './notificationController';
 
 /************************************************************************************************/
 //GET / READ
