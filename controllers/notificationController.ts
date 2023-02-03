@@ -3,7 +3,7 @@ import mongoose, { model, Schema } from 'mongoose';
 import autoIncrement from 'mongoose-auto-increment';
 
 import { AccountModel } from '../models/accountModel';
-import { NotificationModel } from '../models/notificationModel';
+import { NotificationModel, notificationSchema } from '../models/notificationModel';
 
 export async function listNotifications(req: Request, res: Response) {
   const sort: { [key: string]: number } = {};
@@ -27,11 +27,22 @@ export async function listNotifications(req: Request, res: Response) {
 }
 
 export async function markAsReadNotification(req: Request, res: Response) {
-  // get notification by id and update to isRead=true
-  // check if notification.accountID is equal to the loggedin account
+  
+  // how do I check if notification.accountID is equal to the loggedin account? I should do it before the const notification
+  // const account = await AccountModel.findOne({
+  //   emailAddress: req.cookies.email,
+  // });
+
+  // if (account === undefined || account?._id != account?.account_id) {
+  //   res.status(401).send();
+  //   return;
+  // }
+
   try {
     const notification = await NotificationModel.findOneAndUpdate(
-      { _id: req.body.account_id },
+      
+      // get notification by id and update to isRead=true
+      { _id: req.body._id },
       { isRead: true },
       { new: true }
     ).exec();
