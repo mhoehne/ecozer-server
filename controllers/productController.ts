@@ -210,7 +210,7 @@ export async function rejectProduct(req: Request, res: Response) {
     emailAddress: req.cookies.email,
   });
 
-  if (account === undefined || account?.isAdmin === false) {
+  if (account === null || account?.isAdmin === false) {
     res.status(401).send();
     return;
   }
@@ -231,7 +231,15 @@ export async function rejectProduct(req: Request, res: Response) {
   product = await rejectProductById(parseInt(req.params.id));
 
   if (product.state === 'rejected') {
-    //SEND NOTIFICATION
+    const notification = new NotificationModel({
+      account_id: product.account_id,
+      productName: product.productName,
+      rejectReason: product.rejectReason,
+      createdAt: Date.now(),
+      isRead: false,
+      messageType: 'rejected',
+    });
+    await notification.save();
     res.status(200).send();
     return;
   }
@@ -265,7 +273,15 @@ export async function publishProduct(req: Request, res: Response) {
   product = await publishProductById(parseInt(req.params.id));
 
   if (product.state === 'published') {
-    //SEND NOTIFICATION
+    // TODO
+    const createNewNotification = new NotificationModel({
+      account_id: product.account_id,
+      productName: product.productName,
+      rejectReason: '',
+      createdAt: Date.now(),
+      isRead: false,
+      messageType: 'pending',
+    });
     res.status(200).send();
     return;
   }
@@ -307,6 +323,28 @@ export async function unpublishProduct(req: Request, res: Response) {
 
 /************************************************************************************************/
 //PUT / UPDATE
+export async function assignProduct(req: Request, res: Response) {
+  let product: Product;
+  try {
+    product = await findProductById(parseInt(req.body.id));
+  } catch (err) {
+    res.status(404).send();
+    return;
+  }
+
+  try {
+    product.account_id = parseInt(req.body.account_id)
+console.log(product)
+    await storeProduct(product);
+
+    //SEND NOTIFICATION
+    return res.status(202).send(product);
+  } catch (e) {
+    res.status(404).send(e);
+    return;
+  }
+}
+
 export async function updateProduct(req: Request, res: Response) {
   try {
     const product: Product = Object.assign(
