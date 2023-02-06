@@ -148,6 +148,7 @@ export async function listProduct(req: Request, res: Response) {
   }
 
   // END ### FILTER ON SEARCH PAGE ###
+
   let limit = (req.query.limit as string) ?? '';
   //parseInt(' '.trim() ?0:1) weird error on production
   if (!limit.trim()) {
@@ -273,15 +274,14 @@ export async function publishProduct(req: Request, res: Response) {
   product = await publishProductById(parseInt(req.params.id));
 
   if (product.state === 'published') {
-    // TODO
-    const createNewNotification = new NotificationModel({
+    const notification = new NotificationModel({
       account_id: product.account_id,
       productName: product.productName,
-      rejectReason: '',
       createdAt: Date.now(),
       isRead: false,
-      messageType: 'pending',
+      messageType: 'published',
     });
+    await notification.save();
     res.status(200).send();
     return;
   }
@@ -307,19 +307,20 @@ export async function unpublishProduct(req: Request, res: Response) {
   product = await unpublishProductById(parseInt(req.params.id));
 
   if (product.state === 'unpublished') {
-    //SEND NOTIFICATION
+    const notification = new NotificationModel({
+      account_id: product.account_id,
+      productName: product.productName,
+      createdAt: Date.now(),
+      isRead: false,
+      messageType: 'unpublished',
+    });
+    await notification.save();
     res.status(200).send();
     return;
   }
 
   res.status(412).send();
 }
-
-// FEATURE USE CASE:
-// if admin updates a product, product state should keep published if state is published
-// export async function pendProduct(req: Request, res: Response) {
-//   // currently not needed
-// }
 
 /************************************************************************************************/
 //PUT / UPDATE
@@ -334,10 +335,15 @@ export async function assignProduct(req: Request, res: Response) {
 
   try {
     product.account_id = parseInt(req.body.account_id)
-console.log(product)
     await storeProduct(product);
-
-    //SEND NOTIFICATION
+    const notification = new NotificationModel({
+      account_id: product.account_id,
+      productName: product.productName,
+      createdAt: Date.now(),
+      isRead: false,
+      messageType: 'assigned',
+    });
+    await notification.save();
     return res.status(202).send(product);
   } catch (e) {
     res.status(404).send(e);
@@ -353,8 +359,14 @@ export async function updateProduct(req: Request, res: Response) {
     );
 
     await storeProduct(product);
-
-    //SEND NOTIFICATION
+    const notification = new NotificationModel({
+      account_id: product.account_id,
+      productName: product.productName,
+      createdAt: Date.now(),
+      isRead: false,
+      messageType: 'pending',
+    });
+    await notification.save();
     return res.status(202).send(product);
   } catch (e) {
     res.status(404).send(e);
