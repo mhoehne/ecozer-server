@@ -14,8 +14,8 @@ import {
     deleteNotification, listNotifications, markAsReadNotification
 } from './controllers/notificationController';
 import {
-    createProduct, deleteProduct, getProduct, incrementNewCount, listProduct, publishProduct,
-    rejectProduct, unpublishProduct, updateProduct
+    assignProduct, createProduct, deleteProduct, getProduct, incrementNewCount, listProduct,
+    publishProduct, rejectProduct, unpublishProduct, updateProduct
 } from './controllers/productController';
 import {
     createReportingEntry, deleteReportingEntry, getReport, listReportings
@@ -30,7 +30,7 @@ import productMigration from './migrations/productMigration';
 const app = express();
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'http://141.45.92.203:3000/'],
+    origin: ['http://localhost:3000', 'http://141.45.204.38:3000/'],
     credentials: true,
   })
 );
@@ -75,6 +75,7 @@ app.delete('/notifications/:id', deleteNotification);
 // PRODUCT
 app.get('/products', listProduct);
 app.post('/products', createProduct);
+app.post('/products/assign', assignProduct);
 app.put('/products', updateProduct);
 app.delete('/products', deleteProduct);
 app.get('/products/:id', getProduct);

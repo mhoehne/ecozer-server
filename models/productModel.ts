@@ -150,7 +150,7 @@ export interface Product {
 
 const productSchema = new Schema(
   {
-    account_id: { type: Number, required: true, immutable: true },
+    account_id: { type: Number, required: true },
     productName: { type: String, required: true },
     productImage: { type: String, required: false },
     productLink: { type: String, required: true, lowercase: true },

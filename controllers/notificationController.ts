@@ -3,7 +3,7 @@ import mongoose, { model, Schema } from 'mongoose';
 import autoIncrement from 'mongoose-auto-increment';
 
 import { AccountModel } from '../models/accountModel';
-import { NotificationModel } from '../models/notificationModel';
+import { NotificationModel, notificationSchema } from '../models/notificationModel';
 
 export async function listNotifications(req: Request, res: Response) {
   const sort: { [key: string]: number } = {};
@@ -27,11 +27,25 @@ export async function listNotifications(req: Request, res: Response) {
 }
 
 export async function markAsReadNotification(req: Request, res: Response) {
-  // get notification by id and update to isRead=true
-  // check if notification.accountID is equal to the loggedin account
+  
+
+  const account = await AccountModel.findOne({
+    emailAddress: req.cookies.email,
+  });
+
+  const notification = await NotificationModel.findOne({
+    _id: req.params.id
+  })
+
+  if (account === null || account?._id != notification?.account_id ) {
+    res.status(401).send();
+    return;
+  }
+
   try {
     const notification = await NotificationModel.findOneAndUpdate(
-      { _id: req.body.account_id },
+      
+      { _id: req.params.id },
       { isRead: true },
       { new: true }
     ).exec();
@@ -43,7 +57,6 @@ export async function markAsReadNotification(req: Request, res: Response) {
 }
 
 export async function deleteNotification(req: Request, res: Response) {
-  // check account or product controller
   try {
     await NotificationModel.findOneAndDelete({
       _id: req.body._id,
