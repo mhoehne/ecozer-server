@@ -30,7 +30,7 @@ import productMigration from './migrations/productMigration';
 const app = express();
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'http://141.45.204.38:3000/'],
+    origin: ['http://localhost:3000', 'http://141.45.204.38:3000/', 'http://buis.f2.htw-berlin.de/'],
     credentials: true,
   })
 );
