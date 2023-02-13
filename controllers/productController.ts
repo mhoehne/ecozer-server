@@ -229,7 +229,7 @@ export async function rejectProduct(req: Request, res: Response) {
     return;
   }
 
-  product = await rejectProductById(parseInt(req.params.id));
+  product = await rejectProductById(parseInt(req.params.id),req.body.rejectionReason)
 
   if (product.state === 'rejected') {
     const notification = new NotificationModel({
@@ -327,7 +327,7 @@ export async function unpublishProduct(req: Request, res: Response) {
 export async function assignProduct(req: Request, res: Response) {
   let product: Product;
   try {
-    product = await findProductById(parseInt(req.body.id));
+    product = await findProductById(parseInt(req.body._id));
   } catch (err) {
     res.status(404).send();
     return;

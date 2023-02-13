@@ -58,10 +58,10 @@ export async function storeProduct(input: Product): Promise<Product> {
   return await new ProductModel(changedFields).save();
 }
 
-export async function rejectProductById(productId: number): Promise<Product> {
+export async function rejectProductById(productId: number, rejectReason: string): Promise<Product> {
   const product = await ProductModel.findOneAndUpdate(
     { _id: productId },
-    { state: 'rejected' },
+    { state: 'rejected', rejectReason: rejectReason },
     { new: true }
   );
 
