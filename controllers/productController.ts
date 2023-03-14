@@ -208,7 +208,7 @@ export async function createProduct(req: Request, res: Response) {
 
 export async function rejectProduct(req: Request, res: Response) {
   const account = await AccountModel.findOne({
-    emailAddress: req.cookies.email,
+    emailAddress: req.headers['authorization'],
   });
 
   if (account === null || account?.isAdmin === false) {
@@ -250,7 +250,7 @@ export async function rejectProduct(req: Request, res: Response) {
 
 export async function publishProduct(req: Request, res: Response) {
   const account = await AccountModel.findOne({
-    emailAddress: req.cookies.email,
+    emailAddress: req.headers['authorization'],
   });
 
   if (account === undefined || account?.isAdmin === false) {

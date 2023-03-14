@@ -11,8 +11,9 @@ export async function listNotifications(req: Request, res: Response) {
     sort.createdAt = req.query.sortOrder === 'asc' ? 1 : -1;
   }
 
+  const email = req.headers['authorization']
   const accountByEmailAddress = await AccountModel.findOne({
-    emailAddress: req.cookies.email,
+    emailAddress: email,
   });
   if (accountByEmailAddress === null) {
     res.sendStatus(401);
@@ -30,7 +31,7 @@ export async function markAsReadNotification(req: Request, res: Response) {
   
 
   const account = await AccountModel.findOne({
-    emailAddress: req.cookies.email,
+    emailAddress: req.headers['authorization'],
   });
 
   const notification = await NotificationModel.findOne({
