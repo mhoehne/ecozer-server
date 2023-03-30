@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import jwt from 'jsonwebtoken';
 import Cookies from 'universal-cookie';
 
 import { AccountModel } from '../models/accountModel';
@@ -12,7 +13,7 @@ async function canUserLogin(emailaddress: string, password: string) {
   if (account != null) {
     return true;
   }
-  throw 'email or password are invalid';
+  throw 'email or password is invalid';
 }
 
 export async function checkAuthentication(req: Request, res: Response) {
@@ -20,7 +21,12 @@ export async function checkAuthentication(req: Request, res: Response) {
   const password = req.body.password;
   try {
     await canUserLogin(emailaddress, password);
-    res.send(200);
+    if(process.env.JWTSECRET == undefined) {
+      throw 'jtw secret not configured';
+    }
+    const token = jwt.sign({emailaddress}, process.env.JWTSECRET, { expiresIn: '1800s' });
+
+    res.json(token);
   } catch {
     res.send(401);
   }

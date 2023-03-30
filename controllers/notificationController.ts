@@ -1,6 +1,8 @@
 import { Request, Response } from 'express';
+import jwt, { JsonWebTokenError } from 'jsonwebtoken';
 import mongoose, { model, Schema } from 'mongoose';
 import autoIncrement from 'mongoose-auto-increment';
+import { send } from 'process';
 
 import { AccountModel } from '../models/accountModel';
 import { NotificationModel, notificationSchema } from '../models/notificationModel';
@@ -11,9 +13,12 @@ export async function listNotifications(req: Request, res: Response) {
     sort.createdAt = req.query.sortOrder === 'asc' ? 1 : -1;
   }
 
-  const email = req.headers['authorization']
+  const token = req.headers['authorization']
+  const jwttoken = jwt.decode(token ?? '');
+  const payload = {emailaddress: ''}
+  Object.assign(payload, jwttoken);
   const accountByEmailAddress = await AccountModel.findOne({
-    emailAddress: email,
+    emailAddress: payload.emailaddress,
   });
   if (accountByEmailAddress === null) {
     res.sendStatus(401);
@@ -28,10 +33,18 @@ export async function listNotifications(req: Request, res: Response) {
 }
 
 export async function markAsReadNotification(req: Request, res: Response) {
-  
+
+const token = req.headers.authorization ?? ''
+let tokenpayload = null
+try {
+tokenpayload = jwt.verify(token, `${process.env.JWTSECRET}`) as {emailaddress: string}
+} catch (err) {
+res.status(401).send();
+return;
+}
 
   const account = await AccountModel.findOne({
-    emailAddress: req.headers['authorization'],
+    emailAddress: tokenpayload['emailaddress'],
   });
 
   const notification = await NotificationModel.findOne({

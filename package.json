@@ -13,6 +13,7 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.1.6",
     "mongoose-auto-increment": "^5.0.1",
     "universal-cookie": "^4.0.4"
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^9.0.1",
     "@types/mongoose-auto-increment": "^5.0.34",
     "@types/node": "^17.0.7",
     "nodemon": "^2.0.15",
@@ -28,7 +30,7 @@
   },
   "scripts": {
     "build": "tsc --project ./",
-    "start": "export MONGODB_HOSTNAME=localhost && export SERVER_ADDRESS=141.45.204.38:8000 && nodemon index.ts",
-    "startdev": "export MONGODB_HOSTNAME=mongo && export SERVER_ADDRESS=localhost:8000 && nodemon index.ts"
+    "start": "export JWTSECRET=8a248154ee47a68779cae0650ef0f1ec788fb2b7109349257d13070c98fd2fe3d2524bc198dd2d4f04d05823eacaa118dc01543d4669d9bd586911aab559211f && export MONGODB_HOSTNAME=localhost && export SERVER_ADDRESS=141.45.204.38:8000 && nodemon index.ts",
+    "startdev": "export JWTSECRET=8a248154ee47a68779cae0650ef0f1ec788fb2b7109349257d13070c98fd2fe3d2524bc198dd2d4f04d05823eacaa118dc01543d4669d9bd586911aab559211f && export MONGODB_HOSTNAME=mongo && export SERVER_ADDRESS=localhost:8000 && nodemon index.ts"
   }
 }
