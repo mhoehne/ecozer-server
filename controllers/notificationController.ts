@@ -13,13 +13,22 @@ export async function listNotifications(req: Request, res: Response) {
     sort.createdAt = req.query.sortOrder === 'asc' ? 1 : -1;
   }
 
-  const token = req.headers['authorization']
-  const jwttoken = jwt.decode(token ?? '');
-  const payload = {emailaddress: ''}
-  Object.assign(payload, jwttoken);
-  const accountByEmailAddress = await AccountModel.findOne({
-    emailAddress: payload.emailaddress,
-  });
+  // check all other endpoints and adjust the code to the following
+  const token = req.headers.authorization ?? ''
+  let tokenpayload = null
+  try {
+  tokenpayload = jwt.verify(token, `${process.env.JWTSECRET}`) as {emailaddress: string}
+  } catch (err) {
+  res.status(401).send();
+  return;
+  }
+  
+    const accountByEmailAddress = await AccountModel.findOne({
+      emailAddress: tokenpayload['emailaddress'],
+    });
+
+    // check end
+
   if (accountByEmailAddress === null) {
     res.sendStatus(401);
     return;

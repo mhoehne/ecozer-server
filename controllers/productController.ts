@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import jwt, { JsonWebTokenError } from 'jsonwebtoken';
 
 import { AccountModel } from '../models/accountModel';
 import { NotificationModel } from '../models/notificationModel';
@@ -152,7 +153,7 @@ export async function listProduct(req: Request, res: Response) {
   let limit = (req.query.limit as string) ?? '';
   //parseInt(' '.trim() ?0:1) weird error on production
   if (!limit.trim()) {
-    limit = '100';
+    limit = '200';
   }
 
   const sort: SortType = {};
@@ -207,9 +208,19 @@ export async function createProduct(req: Request, res: Response) {
 }
 
 export async function rejectProduct(req: Request, res: Response) {
-  const account = await AccountModel.findOne({
-    emailAddress: req.headers['authorization'],
-  });
+
+  const token = req.headers.authorization ?? ''
+  let tokenpayload = null
+  try {
+  tokenpayload = jwt.verify(token, `${process.env.JWTSECRET}`) as {emailaddress: string}
+  } catch (err) {
+  res.status(401).send();
+  return;
+  }
+  
+    const account = await AccountModel.findOne({
+      emailAddress: tokenpayload['emailaddress'],
+    });
 
   if (account === null || account?.isAdmin === false) {
     res.status(401).send();
