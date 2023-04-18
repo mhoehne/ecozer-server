@@ -41,13 +41,25 @@ export async function cookieHeader(req: Request, res: Response) {
 }
 
 /************************************************************************************************/
-// GET COOKIE
-export async function getCookie(req: Request, res: Response) {}
-
-/************************************************************************************************/
 // SET / UPDATE COOKIE
-export async function setCookie(req: Request, res: Response) {}
+export async function renewToken(req: Request, res: Response) {
+  const token = req.headers.authorization ?? ''
+    let tokenpayload = null
+    try {
+    tokenpayload = jwt.verify(token, `${process.env.JWTSECRET}`) as {emailaddress: string}
+    } catch (err) {
+    res.status(401).send();
+    return;
+    }
+    const emailaddress = tokenpayload['emailaddress']
+  try {
+    if(process.env.JWTSECRET == undefined) {
+      throw 'jtw secret not configured';
+    }
+    const token = jwt.sign({emailaddress}, process.env.JWTSECRET, { expiresIn: '1800s' });
 
-/************************************************************************************************/
-// REMOVE / DELETE COOKIE
-export async function deleteCookie(req: Request, res: Response) {}
+    res.json(token);
+  } catch {
+    res.send(401);
+  }
+}

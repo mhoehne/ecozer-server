@@ -8,7 +8,7 @@ import mongoose from 'mongoose';
 import {
     createAccount, deleteAccount, GetOneAccount, GetOneAccountByID, listAccount, updateAccount
 } from './controllers/accountController';
-import { checkAuthentication } from './controllers/authenticationController';
+import { checkAuthentication, renewToken } from './controllers/authenticationController';
 import { getFile, postFile } from './controllers/fileController';
 import {
     deleteNotification, listNotifications, markAsReadNotification
@@ -102,6 +102,7 @@ app.post('/migration/accounts', accountMigration);
 
 //authentication
 app.post('/authentication', checkAuthentication);
+app.post('/renewauthentication', renewToken);
 
 mongoose
   .connect(`mongodb://${process.env.MONGODB_HOSTNAME}:27017/`)
