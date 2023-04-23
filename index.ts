@@ -20,9 +20,6 @@ import {
 import {
     createReportingEntry, deleteReportingEntry, getReport, listReportings
 } from './controllers/reportingController';
-import {
-    createSurveyEntry, deleteSurveyEntry, getSurveyEntry, listSurveyEntries
-} from './controllers/surveyController';
 import accountMigration from './migrations/accountMigration';
 import productMigration from './migrations/productMigration';
 
@@ -87,12 +84,6 @@ app.get('/reportings', listReportings);
 app.get('/reportings/:id', getReport);
 app.post('/reportings', createReportingEntry);
 app.delete('/reportings', deleteReportingEntry);
-
-// SURVEY
-app.get('/user-survey', listSurveyEntries);
-app.get('/user-survey/:id', getSurveyEntry);
-app.post('/user-survey', createSurveyEntry);
-app.delete('/user-survey', deleteSurveyEntry);
 
 //product migration
 app.post('/migration/products', productMigration);
