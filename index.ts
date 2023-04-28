@@ -6,7 +6,7 @@ import fileUpload from 'express-fileupload';
 import mongoose from 'mongoose';
 
 import {
-    createAccount, deleteAccount, GetOneAccount, GetOneAccountByID, listAccount, updateAccount
+    createAccount, deleteAccount, GetOneAccount, listAccount, updateAccount
 } from './controllers/accountController';
 import { checkAuthentication, renewToken } from './controllers/authenticationController';
 import { getFile, postFile } from './controllers/fileController';
@@ -56,7 +56,6 @@ app.post('/files', postFile);
 // ACCOUNT
 app.get('/accounts', listAccount);
 app.get('/accounts/:email', GetOneAccount);
-app.get('/accounts/:id', GetOneAccountByID);
 app.post('/accounts', createAccount);
 app.put('/accounts', updateAccount);
 app.delete('/accounts', deleteAccount);

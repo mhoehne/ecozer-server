@@ -1,7 +1,7 @@
 import mongoose, { model, Schema } from 'mongoose';
 import autoIncrement from 'mongoose-auto-increment';
 
-interface Account {
+export interface Account {
   account_id: number;
   isAdmin: boolean;
   emailAddress: string;
